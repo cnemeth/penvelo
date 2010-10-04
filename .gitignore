@@ -1,0 +1,11 @@
+db/*.sqlite3
+db/schema.rb
+db/backups
+log/*
+tmp/*
+test/*
+config/database.yml
+config/development_config.yml
+public/system
+public/javascripts/ckeditor/config.js
+
