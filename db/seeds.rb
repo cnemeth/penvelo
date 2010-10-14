@@ -7,7 +7,7 @@
 #   Major.create(:name => 'Daley', :city => cities.first)
 #
 ##############################################
-## Club
+## class Club
 ##############################################
 # == Schema Information
 #
@@ -36,7 +36,7 @@ Club.create(
   :name => "Peninsula Velo Cycling Club",
   :headline => "A proud member of the Burlingame Chamber of Commerce",
   :logo_url => "pv_logo.png",
-  :mission_statement =>
+  :mission =>
 	  %{<p>
 		  Support club membership through fun racing and recreational riding
 activities to improve performance.
@@ -54,15 +54,15 @@ and ride.
   :phone => %{(650) 555-1212},
   :email => %{info@penvelo.org},
   :url => %{http://penvelo.org/},
-  :legal_notice => "Legal Notice.",
-  :privacy_notice => "Privacy Notice",
+  :legal => "Legal Notice.",
+  :privacy => "Privacy Notice",
   :year => 1974,
-  :copyright_notice => %{Copyright © 2010, Peninsula Velo Cycling CLub. All
+  :copyright => %{Copyright © 2010, Peninsula Velo Cycling CLub. All
 rights reserved.},
   :webmaster_email => %{webmaster@penvelo.org})
 
 ##############################################
-## Sponsor
+## class Sponsor
 ##############################################
 # == Schema Information
 #
@@ -452,7 +452,7 @@ ventilation.</p>},
 )
 
 ##############################################
-## SponsorDiscount
+## class SponsorDiscount
 ##############################################
 # == Schema Information
 #
@@ -560,65 +560,66 @@ SponsorDiscount.create(
 )
 
 ##############################################
-## SponsorType
+## class SponsorType
 ##############################################
 # == Schema Information
 #
 # Table name: sponsor_types
 #
 #  id           :integer(4)      not null, primary key
-#  sponsor_type :string(255)
+#  name :string(255)
 #  created_at   :datetime
 #  updated_at   :datetime
 #
 SponsorType.delete_all
 SponsorType.create(
-  :sponsor_type => 'title')
+  :name => 'title')
 
 SponsorType.create(
-  :sponsor_type => 'premier')
+  :name => 'premier')
 
 SponsorType.create(
-  :sponsor_type => 'associate')
+  :name => 'associate')
 
 ##############################################
-## RideType
+## class RideType
 ##############################################
 # == Schema Information
 #
 # Table name: ride_types
 #
 #  id         :integer(4)      not null, primary key
-#  ride_type  :string(255)
+#  name       :string(255)
 #  created_at :datetime
 #  updated_at :datetime
 #
 RideType.delete_all
 RideType.create(
-  :ride_type => 'group ride')
+  :name => 'group ride')
 RideType.create(
-  :ride_type => 'long ride')
+  :name => 'long ride')
 RideType.create(
-  :ride_type => 'century')
+  :name => 'century')
 RideType.create(
-  :ride_type => 'double century')
+  :name => 'double century')
 
 ##############################################
-## Ride
+## class Ride
 ##############################################
 # == Schema Information
 #
 # Table name: rides
 #
 #  id           :integer(4)      not null, primary key
-#  name         :string(255)
+#  name         :string(255)     not null
 #  days         :string(255)
+#  location     :string(255)
 #  time         :time
 #  start_point  :string(255)
 #  end_point    :string(255)
-#  distance     :decimal(5, 2)
-#  elevevation  :integer(4)
 #  description  :text
+#  distance     :decimal(5, 2)
+#  elevation    :integer(4)
 #  link_to_pdf  :string(255)
 #  link_to_map  :string(255)
 #  ride_type_id :integer(4)
@@ -628,6 +629,7 @@ RideType.create(
 Ride.delete_all
 Ride.create(
 	:name => %{HMB - Lobitos - 84},
+	:location => 'Penninsula',
 	:start_point => %{Canada & 92},
 	:end_point => 'same as start point',
 	:days => 'Tuesday, Thursday, Saturday, Sunday',
@@ -670,6 +672,7 @@ pkValue=1065},
 
 Ride.create(
 	:name => %{Kings - Alpine},
+	:location => 'Penninsula',
 	:start_point => %{Canada & 92},
 	:end_point => 'same as start point',
 	:days => 'Tuesday, Thursday, Saturday, Sunday',
@@ -701,6 +704,7 @@ Space preserve)
 
 Ride.create(
 	:name => %{Mt. Eden},
+	:location => 'Penninsula',
 	:start_point => %{Canada & 92},
 	:end_point => 'same as start point',
 	:days => 'Tuesday, Thursday, Saturday, Sunday',
@@ -736,6 +740,7 @@ Canada and 92 3:20 total time},
 
 Ride.create(
 	:name => %{OLH - San Gregorio - Tunitas},
+	:location => 'Penninsula',
 	:start_point => %{Canada & 92},
 	:end_point => 'same as start point',
 	:days => 'Tuesday, Thursday, Saturday, Sunday',
@@ -775,6 +780,7 @@ pkValue=1065},
 
 Ride.create(
 	:name => %{OLH - W. Alpine},
+	:location => 'Penninsula',
 	:start_point => %{Canada & 92},
 	:end_point => 'same as start point',
 	:days => 'Tuesday, Thursday, Saturday, Sunday',
@@ -814,6 +820,7 @@ pkValue=1065},
 
 Ride.create(
 	:name => %{Rancho San Antonio},
+	:location => 'Penninsula',
 	:start_point => %{Canada & 92},
 	:end_point => 'same as start point',
 	:days => 'Tuesday, Thursday, Saturday, Sunday',
@@ -853,7 +860,7 @@ Hwy 92},
 	:ride_type_id => 1)
 
 ##############################################
-## Content
+## class Content
 ##############################################
 # == Schema Information
 #
@@ -906,132 +913,170 @@ Content.create(
   :content_type_id => 4)
 
 ##############################################
-## ContentType
+## class ContentType
 ##############################################
 # == Schema Information
 #
 # Table name: content_types
 #
-#  id           :integer(4)      not null, primary key
-#  content_type :string(255)
-#  created_at   :datetime
-#  updated_at   :datetime
+#  id         :integer(4)      not null, primary key
+#  name       :string(40)      not null
+#  created_at :datetime
+#  updated_at :datetime
 #
 ContentType.delete_all
 ContentType.create(
-  :content_type => 'news')
+  :name => 'news')
 
 ContentType.create(
-  :content_type => 'announcement')
+  :name => 'announcement')
 
 ContentType.create(
-  :content_type => 'meeting notice')
+  :name => 'meeting notice')
 
 ContentType.create(
-  :content_type => 'special event')
+  :name => 'special event')
 
 ##############################################
-## RaceDiscipline
+## class RaceDiscipline
 ##############################################
 # == Schema Information
 #
 # Table name: race_disciplines
 #
-#  id              :integer(4)      not null, primary key
-#  race_discipline :string(255)
-#  created_at      :datetime
-#  updated_at      :datetime
+#  id         :integer(4)      not null, primary key
+#  name       :string(40)      not null
+#  created_at :datetime
+#  updated_at :datetime
 #
 RaceDiscipline.delete_all
 RaceDiscipline.create(
-  :race_discipline => 'road')
+  :name => 'road')
 RaceDiscipline.create(
-  :race_discipline => 'criterium')
+  :name => 'criterium')
 RaceDiscipline.create(
-  :race_discipline => 'track')
+  :name => 'track')
 RaceDiscipline.create(
-  :race_discipline => 'cyclocross')
+  :name => 'cyclocross')
 RaceDiscipline.create(
-  :race_discipline => 'mtb')
+  :name => 'mtb')
 RaceDiscipline.create(
-  :race_discipline => 'hillclimb')
+  :name => 'hillclimb')
 RaceDiscipline.create(
-  :race_discipline => 'time trial')
+  :name => 'time trial')
 RaceDiscipline.create(
-  :race_discipline => 'kids ride')
+  :name => 'kids ride')
 
 
 ##############################################
-## RaceCategory
+## class RaceCategory
 ##############################################
 # == Schema Information
 #
 # Table name: race_categories
 #
-#  id            :integer(4)      not null, primary key
-#  race_category :string(255)
-#  created_at    :datetime
-#  updated_at    :datetime
+#  id         :integer(4)      not null, primary key
+#  name       :string(40)      not null
+#  created_at :datetime
+#  updated_at :datetime
 #
 RaceCategory.delete_all
 RaceCategory.create(
-  :race_category => 'pro')
+  :name => 'pro')
 RaceCategory.create(
-  :race_category => '1')
+  :name => '1')
 RaceCategory.create(
-  :race_category => '2')
+  :name => '2')
 RaceCategory.create(
-  :race_category => '3')
+  :name => '3')
 RaceCategory.create(
-  :race_category => '4')
+  :name => '4')
 RaceCategory.create(
-  :race_category => '5')
+  :name => '5')
 
 ##############################################
-## Role
+## class Role
 ##############################################
 # == Schema Information
 #
 # Table name: roles
 #
-#  id         :integer(4)      not null, primary key
-#  role       :string(255)
-#  created_at :datetime
-#  updated_at :datetime
+#  id                :integer(4)      not null, primary key
+#  name              :string(40)
+#  authorizable_type :string(40)
+#  authorizable_id   :integer(4)
+#  created_at        :datetime
+#  updated_at        :datetime
 #
 Role.delete_all
 Role.create(
-  :role => 'president')
+  :name => 'president',
+  :authorizable_type => 'admin',
+  :authorizable_id => 1)
 Role.create(
-  :role => 'vice president')
+  :name => 'vice president',
+  :authorizable_type => 'admin',
+  :authorizable_id => 1)
 Role.create(
-  :role => 'treasurer')
+  :name => 'treasurer',
+  :authorizable_type => 'admin',
+  :authorizable_id => 1)
 Role.create(
-  :role => 'secretary')
+  :name => 'secretary',
+  :authorizable_type => 'admin',
+  :authorizable_id => 1)
 Role.create(
-  :role => 'board chairman')
+  :name => 'board chairman',
+  :authorizable_type => 'admin',
+  :authorizable_id => 1)
 Role.create(
-  :role => 'board member')
+  :name => 'board member',
+  :authorizable_type => 'non admin',
+  :authorizable_id => 0)
 Role.create(
-  :role => 'sponsor')
+  :name => 'sponsor',
+  :authorizable_type => 'non admin',
+  :authorizable_id => 0)
 Role.create(
-  :role => 'director, uniforms')
+  :name => 'director, uniforms',
+  :authorizable_type => 'director',
+  :authorizable_id => 2)
 Role.create(
-  :role => 'director, sponsorship')
+  :name => 'director, sponsorship',
+  :authorizable_type => 'director',
+  :authorizable_id => 2)
 Role.create(
-  :role => 'director, membership')
+  :name => 'director, membership',
+  :authorizable_type => 'admin',
+  :authorizable_id => 2)
 Role.create(
-  :role => 'director, athletics')
+  :name => 'director, athletics',
+  :authorizable_type => 'director',
+  :authorizable_id => 2)
 Role.create(
-  :role => %{director, women's team})
+  :name => %{director, women's team},
+  :authorizable_type => 'director',
+  :authorizable_id => 2)
 Role.create(
-  :role => 'director, century and recreational rides')
+  :name => 'director, century and recreational rides',
+  :authorizable_type => 'director',
+  :authorizable_id => 2)
 Role.create(
-  :role => 'director, race, Burlingame Criterium')
+  :name => 'director, race, Burlingame Criterium',
+  :authorizable_type => 'director',
+  :authorizable_id => 2)
 Role.create(
-  :role => 'director, race, San Bruno Hill Climb')
+  :name => 'director, race, San Bruno Hill Climb',
+  :authorizable_type => 'director',
+  :authorizable_id => 2)
 Role.create(
-  :role => 'webmaster')
+  :name => 'webmaster',
+  :authorizable_type => 'site admin',
+  :authorizable_id => 1)
+Role.create(
+  :name => 'club member',
+  :authorizable_type => 'non admin',
+  :authorizable_id => 3)
 
 ##############################################
 ## ImType
@@ -1041,357 +1086,58 @@ Role.create(
 # Table name: im_types
 #
 #  id         :integer(4)      not null, primary key
-#  im_type    :string(255)
+#  name       :string(40)      not null
 #  created_at :datetime
 #  updated_at :datetime
 #
 ImType.delete_all
 ImType.create(
-  :im_type => 'aim')
+  :name => 'aim')
 ImType.create(
-  :im_type => 'icq')
+  :name => 'icq')
 ImType.create(
-  :im_type => 'skype')
+  :name => 'skype')
 ImType.create(
-  :im_type => %{yahoo! messenger})
+  :name => %{yahoo! messenger})
 
 ##############################################
-## Member
+## class User
 ##############################################
 # == Schema Information
 #
-# Table name: members
+# Table name: users
 #
-#  id                      :integer(4)      not null, primary key
-#  first_name              :string(255)
-#  last_name               :string(255)
-#  middle_initial          :string(255)
-#  name                    :string(255)
-#  date_of_birth           :date
-#  gender                  :string(255)
-#  image_url               :string(255)
-#  member_since            :date
-#  active                  :boolean(1)
-#  performance_team_member :boolean(1)
-#  usac_license            :string(255)
-#  user_name               :string(255)
-#  crypted_password        :string(255)
-#  password_salt           :string(255)
-#  persistence_token       :string(255)
-#  profile                 :text
-#  created_at              :datetime
-#  updated_at              :datetime
+#  id                  :integer(4)      not null, primary key
+#  first_name          :string(40)      not null
+#  middle_initial      :string(255)
+#  last_name           :string(40)      not null
+#  date_of_birth       :date
+#  gender              :string(255)     default("Male"), not null
+#  user_image_url      :string(255)
+#  image_gallery_url   :string(255)
+#  member_since        :date            not null
+#  usac_license        :string(20)
+#  profile             :text
+#  login               :string(255)     not null
+#  crypted_password    :string(255)     not null
+#  password_salt       :string(255)     not null
+#  persistence_token   :string(255)     not null
+#  single_access_token :string(255)     not null
+#  perishable_token    :string(255)     not null
+#  login_count         :integer(4)      default(0), not null
+#  failed_login_count  :integer(4)      default(0), not null
+#  last_request_at     :datetime
+#  last_login_at       :datetime
+#  current_login_at    :datetime
+#  last_login_ip       :string(255)
+#  current_login_ip    :string(255)
+#  created_at          :datetime
+#  updated_at          :datetime
 #
-Member.delete_all
-Member.create(
-	:first_name	=>	'Erik',
-  :last_name	=>	'Salander',
-	:middle_initial	=>	'',
-	:name => %{Erik Salander},
-	:date_of_birth	=> "",
-	:gender	=>	'M',
-	:image_url	=>	%{rails.png},
-	:performance_team_member => 1,
-	:usac_license	=>	%{xyz123},
-	:active => 1,
-	:member_since	=>	1974,
-	:user_name	=>	%{esalander},
-	:crypted_password	=>	%{},
-	:password_salt	=>	%{penvelo},
-	:profile	=>	%{... Erik's profile ...'})
-
-Member.create(
-	:first_name	=>	'Robert',
-  :last_name	=>	'Baesman',
-	:middle_initial	=>	'',
-	:name => %{robert Baesman},
-	:date_of_birth	=> "",
-	:gender	=>	'M',
-	:image_url	=>	%{rails.png},
-	:performance_team_member => 1,
-	:usac_license	=>	%{xyz123},
-	:active => 1,
-	:member_since	=>	1974,
-	:user_name	=>	%{rbaesman},
-	:crypted_password	=>	%{},
-	:password_salt	=>	%{penvelo},
-	:profile	=>	%{... Rob's profile ...'})
-
-Member.create(
-	:first_name	=>	'Pat',
-  :last_name	=>	'McNulty',
-	:middle_initial	=>	'',
-	:name => %{Pat mcNulty},
-	:date_of_birth	=> "",
-	:gender	=>	'M',
-	:image_url	=>	%{rails.png},
-	:performance_team_member => 1,
-	:usac_license	=>	%{xyz123},
-	:active => 1,
-	:member_since	=>	1974,
-	:user_name	=>	%{pmcnulty},
-	:crypted_password	=>	%{},
-	:password_salt	=>	%{penvelo},
-	:profile	=>	%{... Pat's profile ...'})
-
-Member.create(
-	:first_name	=>	'Dave',
-  :last_name	=>	'Nader',
-	:middle_initial	=>	'',
-	:name => %{Dave Nader},
-	:date_of_birth	=> "",
-	:gender	=>	'M',
-	:image_url	=>	%{rails.png},
-	:performance_team_member => 1,
-	:usac_license	=>	%{xyz123},
-	:active => 1,
-	:member_since	=>	1974,
-	:user_name	=>	%{dnader},
-	:crypted_password	=>	%{},
-	:password_salt	=>	%{penvelo},
-	:profile	=>	%{... Dave's profile ...'})
-
-Member.create(
-	:first_name	=>	'Kim',
-  :last_name	=>	'Perez',
-	:middle_initial	=>	'',
-	:name => %{Kim Perez},
-	:date_of_birth	=> "",
-	:gender	=>	'W',
-	:image_url	=>	%{rails.png},
-	:performance_team_member => 1,
-	:usac_license	=>	%{xyz123},
-	:active => 1,
-	:member_since	=>	1974,
-	:user_name	=>	%{kperez},
-	:crypted_password	=>	%{},
-	:password_salt	=>	%{penvelo},
-	:profile	=>	%{... Kim's profile ...'})
-
-Member.create(
-	:first_name	=>	'Ray',
-  :last_name	=>	'Gildea',
-	:middle_initial	=>	'',
-	:name => %{Ray gildea},
-	:date_of_birth	=> "",
-	:gender	=>	'M',
-	:image_url	=>	%{rails.png},
-	:performance_team_member => 1,
-	:usac_license	=>	%{xyz123},
-	:active => 1,
-	:member_since	=>	1974,
-	:user_name	=>	%{rgildea},
-	:crypted_password	=>	%{},
-	:password_salt	=>	%{penvelo},
-	:profile	=>	%{... Ray's profile ...'})
-
-Member.create(
-	:first_name	=>	'Cory',
-  :last_name	=>	'Roay',
-	:middle_initial	=>	'',
-	:name => %{Cory Roay},
-	:date_of_birth	=> "",
-	:gender	=>	'M',
-	:image_url	=>	%{rails.png},
-	:performance_team_member => 1,
-	:usac_license	=>	%{xyz123},
-	:active => 1,
-	:member_since	=>	1974,
-	:user_name	=>	%{croay},
-	:crypted_password	=>	%{},
-	:password_salt	=>	%{penvelo},
-	:profile	=>	%{... Cory's profile ...'})
-
-Member.create(
-	:first_name	=>	'Andrew',
-  :last_name	=>	'Shu',
-	:middle_initial	=>	'',
-	:name => %{Andrew Shu},
-	:date_of_birth	=> "",
-	:gender	=>	'M',
-	:image_url	=>	%{rails.png},
-	:performance_team_member => 1,
-	:usac_license	=>	%{xyz123},
-	:active => 1,
-	:member_since	=>	1974,
-	:user_name	=>	%{ashu},
-	:crypted_password	=>	%{},
-	:password_salt	=>	%{penvelo},
-	:profile	=>	%{... Andrew's profile ...'})
-
-Member.create(
-	:first_name	=>	'Ryan',
-  :last_name	=>	'Poplawski',
-	:middle_initial	=>	'',
-	:name => %{Ryan Poplawski},
-	:date_of_birth	=> "",
-	:gender	=>	'M',
-	:image_url	=>	%{rails.png},
-	:performance_team_member => 1,
-	:usac_license	=>	%{xyz123},
-	:active => 1,
-	:member_since	=>	1974,
-	:user_name	=>	%{rpoplawski},
-	:crypted_password	=>	%{},
-	:password_salt	=>	%{penvelo},
-	:profile	=>	%{... Ryan's profile ...'})
-
-Member.create(
-	:first_name	=>	'Randy',
-  :last_name	=>	'Smith',
-	:middle_initial	=>	'',
-	:name => %{Randy Smith},
-	:date_of_birth	=> "",
-	:gender	=>	'M',
-	:image_url	=>	%{rails.png},
-	:performance_team_member => 1,
-	:usac_license	=>	%{xyz123},
-	:active => 1,
-	:member_since	=>	1974,
-	:user_name	=>	%{rsmith},
-	:crypted_password	=>	%{},
-	:password_salt	=>	%{penvelo},
-	:profile	=>	%{... Randy's profile ...'})
-
-Member.create(
-	:first_name	=>	'Ted',
-  :last_name	=>	'Zayner',
-	:middle_initial	=>	'',
-	:name => %{Ted Zayner},
-	:date_of_birth	=> "",
-	:gender	=>	'M',
-	:image_url	=>	%{rails.png},
-	:performance_team_member => 1,
-	:usac_license	=>	%{xyz123},
-	:active => 1,
-	:member_since	=>	1974,
-	:user_name	=>	%{tzayner},
-	:crypted_password	=>	%{},
-	:password_salt	=>	%{penvelo},
-	:profile	=>	%{... Ted's profile ...'})
-
-Member.create(
-	:first_name	=>	'Travis',
-  :last_name	=>	'Ma',
-	:middle_initial	=>	'',
-	:name => %{Travis Ma},
-	:date_of_birth	=> "",
-	:gender	=>	'M',
-	:image_url	=>	%{rails.png},
-	:performance_team_member => 1,
-	:usac_license	=>	%{xyz123},
-	:active => 1,
-	:member_since	=>	1974,
-	:user_name	=>	%{tma},
-	:crypted_password	=>	%{},
-	:password_salt	=>	%{penvelo},
-	:profile	=>	%{... Travis' profile ...'})
-
-Member.create(
-	:first_name	=>	'Bill',
-  :last_name	=>	'Fallis',
-	:middle_initial	=>	'',
-	:name => %{Bill Fallis},
-	:date_of_birth	=> "",
-	:gender	=>	'M',
-	:image_url	=>	%{rails.png},
-	:performance_team_member => 1,
-	:usac_license	=>	%{xyz123},
-	:active => 1,
-	:member_since	=>	1974,
-	:user_name	=>	%{bfallis},
-	:crypted_password	=>	%{},
-	:password_salt	=>	%{penvelo},
-	:profile	=>	%{... Bill's profile ...'})
-
-Member.create(
-	:first_name	=>	'Mark',
-  :last_name	=>	'Powers',
-	:middle_initial	=>	'',
-	:name => %{Mark Powers},
-	:date_of_birth	=> "",
-	:gender	=>	'M',
-	:image_url	=>	%{rails.png},
-	:performance_team_member => 1,
-	:usac_license	=>	%{xyz123},
-	:active => 1,
-	:member_since	=>	1974,
-	:user_name	=>	%{mpowers},
-	:crypted_password	=>	%{},
-	:password_salt	=>	%{penvelo},
-	:profile	=>	%{... Mark's profile ...'})
-
-Member.create(
-	:first_name	=>	'Mark',
-  :last_name	=>	'Nutini',
-	:middle_initial	=>	'',
-	:name => %{Mark Nutini},
-	:date_of_birth	=> "",
-	:gender	=>	'M',
-	:image_url	=>	%{rails.png},
-	:performance_team_member => 1,
-	:usac_license	=>	%{xyz123},
-	:active => 1,
-	:member_since	=>	1974,
-	:user_name	=>	%{mnutini},
-	:crypted_password	=>	%{},
-	:password_salt	=>	%{penvelo},
-	:profile	=>	%{... Mark's profile ...'})
-
-Member.create(
-	:first_name	=>	'Csaba',
-  :last_name	=>	'Nemeth',
-	:middle_initial	=>	'',
-	:name => %{Csaba Nemeth},
-	:date_of_birth	=> "",
-	:gender	=>	'M',
-	:image_url	=>	%{rails.png},
-	:performance_team_member => 0,
-	:usac_license	=>	%{''},
-	:active => 1,
-	:member_since	=>	2009,
-	:user_name	=>	%{cnemeth},
-	:crypted_password	=>	%{},
-	:password_salt	=>	%{penvelo},
-	:profile	=>	%{... Csaba's profile ...'})
-
-Member.create(
-	:first_name	=>	'Frank',
-  :last_name	=>	'Spiteri',
-	:middle_initial	=>	'',
-	:name => %{Frank Spiteri},
-	:date_of_birth	=> "",
-	:gender	=>	'M',
-	:image_url	=>	%{rails.png},
-	:performance_team_member => 1,
-	:usac_license	=>	%{xyz123},
-	:active => 1,
-	:member_since	=>	1974,
-	:user_name	=>	%{fspiteri},
-	:crypted_password	=>	%{},
-	:password_salt	=>	%{penvelo},
-	:profile	=>	%{... Frak's profile ...'})
-
-Member.create(
-	:first_name	=>	'Jeromy',
-  :last_name	=>	'Cottell',
-	:middle_initial	=>	'',
-	:name => %{Jeromy Cottell},
-	:date_of_birth	=> "",
-	:gender	=>	'M',
-	:image_url	=>	%{rails.png},
-	:performance_team_member => 1,
-	:usac_license	=>	%{xyz123},
-	:active => 1,
-	:member_since	=>	1974,
-	:user_name	=>	%{jcottell},
-	:crypted_password	=>	%{},
-	:password_salt	=>	%{penvelo},
-	:profile	=>	%{... Jeromy's profile ...'})
 
 
 ##############################################
-## Contact
+## class Contact
 ##############################################
 # == Schema Information
 #
@@ -1399,243 +1145,35 @@ Member.create(
 #
 #  id              :integer(4)      not null, primary key
 #  street          :string(255)
-#  city            :string(255)
-#  state           :string(255)
-#  zip             :string(255)
+#  city            :string(40)      not null
+#  state           :string(40)      not null
+#  zip             :string(10)
 #  country         :string(255)
-#  primary_phone   :string(255)
+#  primary_phone   :string(40)      not null
 #  secondary_phone :string(255)
-#  email           :string(255)
-#  im              :string(255)
-#  member_id       :integer(4)
+#  email           :string(40)      not null
+#  im_handle       :string(255)
 #  im_type_id      :integer(4)
+#  user_id         :integer(4)
 #  created_at      :datetime
 #  updated_at      :datetime
 #
-Contact.delete_all
-Contact.create(
-	:street	=>	%{1110 Alameda De Las Pulgas},
-	:city	=>	'Belmont',
-	:state	=>	'CA',
-	:zip	=>	'94002',
-	:country	=>	'USA',
-	:primary_phone	=>	%{(650) 591-8286},
-	:secondary_phone	=>	%{(650) 555-1212},
-	:email	=>	%{esalander@penvelo.org},
-	:im	=>	%{im_handle},
-	:member_id	=>	1,
-	:im_type_id => 3)
-
-Contact.create(
-	:street	=>	%{1110 Alameda De Las Pulgas},
-	:city	=>	'Belmont',
-	:state	=>	'CA',
-	:zip	=>	'94002',
-	:country	=>	'USA',
-	:primary_phone	=>	%{(650) 591-8286},
-	:secondary_phone	=>	%{(650) 555-1212},
-	:email	=>	%{rbaesman@penvelo.org},
-	:im	=>	%{im_handle},
-	:member_id	=>	2,
-	:im_type_id => 3)
-
-Contact.create(
-	:street	=>	%{1110 Alameda De Las Pulgas},
-	:city	=>	'Belmont',
-	:state	=>	'CA',
-	:zip	=>	'94002',
-	:country	=>	'USA',
-	:primary_phone	=>	%{(650) 591-8286},
-	:secondary_phone	=>	%{(650) 555-1212},
-	:email	=>	%{pmcnulty@penvelo.org},
-	:im	=>	%{im_handle},
-	:member_id	=>	3,
-	:im_type_id => 3)
-
-Contact.create(
-	:street	=>	%{1110 Alameda De Las Pulgas},
-	:city	=>	'Belmont',
-	:state	=>	'CA',
-	:zip	=>	'94002',
-	:country	=>	'USA',
-	:primary_phone	=>	%{(650) 591-8286},
-	:secondary_phone	=>	%{(650) 555-1212},
-	:email	=>	%{dnader@penvelo.org},
-	:im	=>	%{im_handle},
-	:member_id	=>	4,
-	:im_type_id => 4)
-
-Contact.create(
-	:street	=>	%{1110 Alameda De Las Pulgas},
-	:city	=>	'Belmont',
-	:state	=>	'CA',
-	:zip	=>	'94002',
-	:country	=>	'USA',
-	:primary_phone	=>	%{(650) 591-8286},
-	:secondary_phone	=>	%{(650) 555-1212},
-	:email	=>	%{kperez@penvelo.org},
-	:im	=>	%{im_handle},
-	:member_id	=>	5,
-	:im_type_id => 3)
-
-Contact.create(
-	:street	=>	%{1110 Alameda De Las Pulgas},
-	:city	=>	'Belmont',
-	:state	=>	'CA',
-	:zip	=>	'94002',
-	:country	=>	'USA',
-	:primary_phone	=>	%{(650) 591-8286},
-	:secondary_phone	=>	%{(650) 555-1212},
-	:email	=>	%{rgildea@penvelo.org},
-	:im	=>	%{im_handle},
-	:member_id	=>	6,
-	:im_type_id => 4)
-
-Contact.create(
-	:street	=>	%{1110 Alameda De Las Pulgas},
-	:city	=>	'Belmont',
-	:state	=>	'CA',
-	:zip	=>	'94002',
-	:country	=>	'USA',
-	:primary_phone	=>	%{(650) 591-8286},
-	:secondary_phone	=>	%{(650) 555-1212},
-	:email	=>	%{croay@penvelo.org},
-	:im	=>	%{im_handle},
-	:member_id	=>	7,
-	:im_type_id => 3)
-
-Contact.create(
-	:street	=>	%{1110 Alameda De Las Pulgas},
-	:city	=>	'Belmont',
-	:state	=>	'CA',
-	:zip	=>	'94002',
-	:country	=>	'USA',
-	:primary_phone	=>	%{(650) 591-8286},
-	:secondary_phone	=>	%{(650) 555-1212},
-	:email	=>	%{ashu@penvelo.org},
-	:im	=>	%{im_handle},
-	:member_id	=>	8,
-	:im_type_id => 3)
-
-Contact.create(
-	:street	=>	%{1110 Alameda De Las Pulgas},
-	:city	=>	'Belmont',
-	:state	=>	'CA',
-	:zip	=>	'94002',
-	:country	=>	'USA',
-	:primary_phone	=>	%{(650) 591-8286},
-	:secondary_phone	=>	%{(650) 555-1212},
-	:email	=>	%{rpoplawski@penvelo.org},
-	:im	=>	%{im_handle},
-	:member_id	=>	9,
-	:im_type_id => 3)
-
-Contact.create(
-	:street	=>	%{1110 Alameda De Las Pulgas},
-	:city	=>	'Belmont',
-	:state	=>	'CA',
-	:zip	=>	'94002',
-	:country	=>	'USA',
-	:primary_phone	=>	%{(650) 591-8286},
-	:secondary_phone	=>	%{(650) 555-1212},
-	:email	=>	%{rsmith@penvelo.org},
-	:im	=>	%{im_handle},
-	:member_id	=>	10,
-	:im_type_id => 3)
-
-Contact.create(
-	:street	=>	%{1110 Alameda De Las Pulgas},
-	:city	=>	'Belmont',
-	:state	=>	'CA',
-	:zip	=>	'94002',
-	:country	=>	'USA',
-	:primary_phone	=>	%{(650) 591-8286},
-	:secondary_phone	=>	%{(650) 555-1212},
-	:email	=>	%{tzayner@penvelo.org},
-	:im	=>	%{im_handle},
-	:member_id	=>	11,
-	:im_type_id => 3)
-
-Contact.create(
-	:street	=>	%{1110 Alameda De Las Pulgas},
-	:city	=>	'Belmont',
-	:state	=>	'CA',
-	:zip	=>	'94002',
-	:country	=>	'USA',
-	:primary_phone	=>	%{(650) 591-8286},
-	:secondary_phone	=>	%{(650) 555-1212},
-	:email	=>	%{tma@penvelo.org},
-	:im	=>	%{im_handle},
-	:member_id	=>	12,
-	:im_type_id => 3)
-
-Contact.create(
-	:street	=>	%{1110 Alameda De Las Pulgas},
-	:city	=>	'Belmont',
-	:state	=>	'CA',
-	:zip	=>	'94002',
-	:country	=>	'USA',
-	:primary_phone	=>	%{(650) 591-8286},
-	:secondary_phone	=>	%{(650) 555-1212},
-	:email	=>	%{bfallis@penvelo.org},
-	:im	=>	%{im_handle},
-	:member_id	=>	13,
-	:im_type_id => 3)
-
-Contact.create(
-	:street	=>	%{1110 Alameda De Las Pulgas},
-	:city	=>	'Belmont',
-	:state	=>	'CA',
-	:zip	=>	'94002',
-	:country	=>	'USA',
-	:primary_phone	=>	%{(650) 591-8286},
-	:secondary_phone	=>	%{(650) 555-1212},
-	:email	=>	%{mpowers@penvelo.org},
-	:im	=>	%{im_handle},
-	:member_id	=>	14,
-	:im_type_id => 1)
-
-Contact.create(
-	:street	=>	%{1110 Alameda De Las Pulgas},
-	:city	=>	'Belmont',
-	:state	=>	'CA',
-	:zip	=>	'94002',
-	:country	=>	'USA',
-	:primary_phone	=>	%{(650) 591-8286},
-	:secondary_phone	=>	%{(650) 555-1212},
-	:email	=>	%{mnutini@penvelo.org},
-	:im	=>	%{im_handle},
-	:member_id	=>	15,
-	:im_type_id => 2)
-
-Contact.create(
-	:street	=>	%{1110 Alameda De Las Pulgas},
-	:city	=>	'Belmont',
-	:state	=>	'CA',
-	:zip	=>	'94002',
-	:country	=>	'USA',
-	:primary_phone	=>	%{(650) 591-8286},
-	:secondary_phone	=>	%{(650) 555-1212},
-	:email	=>	%{cnemeth@penvelo.org},
-	:im	=>	%{im_handle},
-	:member_id	=>	16,
-	:im_type_id => 3)
 
 ##############################################
-## Race
+## class Race
 ##############################################
 # == Schema Information
 #
 # Table name: races
 #
 #  id                   :integer(4)      not null, primary key
-#  name                 :string(255)
-#  date                 :date
+#  name                 :string(255)     not null
+#  date                 :date            not null
 #  time                 :time
+#  place                :string(255)     not null
 #  organizer            :string(255)
-#  location             :string(255)
-#  start                :string(255)
-#  finish               :string(255)
+#  start_location       :string(255)
+#  finish_location      :string(255)
 #  description          :text
 #  link_to_website      :string(255)
 #  link_to_registration :string(255)
@@ -1648,10 +1186,10 @@ Race.create(
   :name => 'San Bruno Hill Climb',
 	:date =>  2010-01-01,
   :organizer => 'Pat McNulty, Penninsula Velo Club',
-  :location => 'San Bruno, CA',
-  :start => "East side of San Bruno Mt. in Brisbane
+  :place => 'San Bruno, CA',
+  :start_location => "East side of San Bruno Mt. in Brisbane
   at the corner of Guadalupe Canyon Parkway and Bayshore Blvd.",
-  :finish => 'Top of the hill',
+  :finish_location => 'Top of the hill',
   :description =>
   %{<p>7-8% up Guadalupe Canyon, right turn into San Bruno Mtn Park, back under
 Guadalupe Canyon to Radio Road with narrow switchbacks and grades to 10%. Total
@@ -1666,9 +1204,9 @@ Race.create(
   :name => 'Fidelity Investments Burlingame Criterium',
 	:date => 2010-06-28,
   :organizer => 'Travis Ma, Penninsula Velo Club',
-  :location => 'Burlingame, CA',
-  :start => 'Lorton & Burlingame Ave.',
-  :finish => 'Lorton & Burlingame Ave.',
+  :place => 'Burlingame, CA',
+  :start_location => 'Lorton & Burlingame Ave.',
+  :finish_location => 'Lorton & Burlingame Ave.',
   :description => %{<p>This is an exciting race through the downtown Burlingame.
 You will be challenged! There are multiple levels for different types of rides,
 and prizes in each category.</p>
@@ -1684,9 +1222,9 @@ Race.create(
   :name => %{Ryan Phua Memorial Kids' Ride (Burlingame)},
 	:date => 2010-06-28,
   :organizer => 'Travis Ma, Penninsula Velo Club',
-  :location => 'Burlingame, CA',
-  :start => 'Lorton & Burlingame Ave.',
-  :finish => 'Lorton & Burlingame Ave.',
+  :place => 'Burlingame, CA',
+  :start_location => 'Lorton & Burlingame Ave.',
+  :finish_location => 'Lorton & Burlingame Ave.',
   :description => %{<p>This year, the Burlingame Criterium’s Kids’ Race is
 renamed in memory of Ryan Phua, one of twin sons born to cancer survivor John
 Phua and his wife, Michele Phua. This fun and exciting bike ride is a special
@@ -1699,7 +1237,7 @@ station as a scenic backdrop.</p>},
   :race_discipline_id => 8)
 
 ##############################################
-## RaceResult
+## class RaceResult
 ##############################################
 # == Schema Information
 #
@@ -1710,110 +1248,37 @@ station as a scenic backdrop.</p>},
 #  date               :date
 #  placement          :integer(4)
 #  field_size         :integer(4)
-#  member_id          :integer(4)
 #  race_discipline_id :integer(4)
 #  race_category_id   :integer(4)
+#  user_id            :integer(4)
 #  created_at         :datetime
 #  updated_at         :datetime
 #
-RaceResult.delete_all
-RaceResult.create(
-  :race => %{Nevada City Classic - Pro1/2},
-  :date => "2010-06-20",
-  :placement => 33,
-  :field_size => 88,
-  :member_id => 17,
-  :race_discipline_id => 1,
-  :race_category_id => 1)
-
-RaceResult.create(
-  :race => %{Patterson Pass RR - E3},
-  :date => "2010-08-08",
-  :placement => 2,
-  :field_size => 45,
-  :member_id => 18,
-  :race_discipline_id => 1,
-  :race_category_id => 4)
-
-RaceResult.create(
-  :race => %{Benecia ITT},
-  :date => "2010-07-25",
-  :placement => 4,
-  :field_size => 18,
-  :member_id => 14,
-  :race_discipline_id => 7,
-  :race_category_id => 5)
-
-RaceResult.create(
-  :race => %{San Rafael Twilight Criterium (Pro 1/2)},
-  :date => "2010-07-11",
-  :placement => 8,
-  :field_size => 118,
-  :member_id => 17,
-  :race_discipline_id => 1,
-  :race_category_id => 1)
-
-RaceResult.create(
-  :race => %{Leesville Gap RR, Cat 3},
-  :date => "2010-07-03",
-  :placement => 22,
-  :field_size => 46,
-  :member_id => 18,
-  :race_discipline_id => 1,
-  :race_category_id => 4)
-
-RaceResult.create(
-  :race => %{Leesville Gap RR},
-  :date => 2010-07-03,
-  :placement => 10,
-  :field_size => 55,
-  :member_id => 14,
-  :race_discipline_id => 1,
-  :race_category_id => 5)
-
-RaceResult.create(
-  :race => %{Burlingame Criterium (Pro 1/2)},
-  :date => "2010-06-27",
-  :placement => 12,
-  :field_size => 64,
-  :member_id => 17,
-  :race_discipline_id => 2,
-  :race_category_id => 1)
-
-RaceResult.create(
-  :race => %{Hellyer Park, Wednesday night},
-  :date => "2010-06-23",
-  :placement => 2,
-  :field_size => 30,
-  :member_id => 10,
-  :race_discipline_id => 3,
-  :race_category_id => 5)
 
 ##############################################
-## FeedbackType
+## class FeedbackType
 ##############################################
 # == Schema Information
 #
 # Table name: feedback_types
 #
-#  id            :integer(4)      not null, primary key
-#  feedback_type :string(255)
-#  created_at    :datetime
-#  updated_at    :datetime
-#
+#  id         :integer(4)      not null, primary key
+#  name       :string(40)      not null
+#  created_at :datetime
+#  updated_at :datetime
 #
 FeedbackType.delete_all
 FeedbackType.create(
-  :feedback_type => 'comment')
+  :name => 'comment')
 FeedbackType.create(
-  :feedback_type => 'bug report')
+  :name => 'bug report')
 FeedbackType.create(
-  :feedback_type => 'change request')
+  :name => 'change request')
 FeedbackType.create(
-  :feedback_type => 'new feature')
+  :name => 'new feature')
 
 ##############################################
-## Feedback
+## class Feedback
 ##############################################
 # == Schema Information
 #
