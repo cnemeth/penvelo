@@ -1,0 +1,19 @@
+class RolesUsers < ActiveRecord::Migration
+  def self.up
+    create_table "roles_users", :id => false, :force => true do |t|
+      t.references  :user
+      t.references  :role
+
+      t.timestamps
+    end
+
+    add_index :roles_users, :user_id
+    add_index :roles_users, :role_id
+
+  end
+
+  def self.down
+    drop_table :roles_users
+  end
+end
+
