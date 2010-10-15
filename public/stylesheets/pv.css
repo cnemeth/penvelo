@@ -1,0 +1,387 @@
+@CHARSET "UTF-8";
+
+/*-----------------------------------------------------------------------------
+Prototype Style Sheet (empty commented stylesheet)
+
+version:   1.0
+author:    andy budd
+email:     info@andybudd.com
+website:   http://www.andybudd.com/
+-----------------------------------------------------------------------------*/
+
+/* =General
+-----------------------------------------------------------------------------*/
+
+
+/* Remove padding and margin */
+* {
+  margin: 0;
+	padding: 0;
+}
+
+/* Put it back on certain elements */
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, fieldset, table, ul {
+  margin: 0.25em 0;
+}
+
+/* Class for clearing floats */
+.clear {
+	clear:both;
+}
+
+
+/* Remove border around linked images */
+img {
+	border: 0;
+}
+
+/* =Typography
+-----------------------------------------------------------------------------*/
+
+body {
+	background-color:	#333;
+	margin-top:			25px;
+	min-width:			1200px;
+	font: 62.5%/1.6 "Lucida Grande", "Lucida Sans", "Trebuchet MS", Tahoma, Verdana, sans-serif;
+	text-align:			center;
+	color:					#333;
+	}
+
+#wrapper {
+	background-color:	#fff;
+	width:				1180px;
+	margin:				0 auto;
+	text-align:			left;
+	padding:	0.5em;
+}
+
+#sponsor_banner{
+	width:				100%;
+	margin: 0;
+	padding-bottom:	1em;
+}
+
+#sponsor_banner ul li{
+	list-style:	none;
+}
+
+#header {
+	background-color:	#fff;
+	width:				100%;
+	height:	250px;
+	text-align:			left;
+
+}
+
+#header_1{
+	/*background-color:	#De1800;*/
+	width:	20%;
+	height:	250px;
+	text-align:	center;
+	float:	left;
+}
+
+#header_main{
+	/*background-color:	#De1800;*/
+	width:	50%;
+	height:	250px;
+	text-align:	left;
+	float:	left;
+}
+
+#header_2{
+	/*background-color:	#De1800;*/
+	height:	250px;
+	text-align:	center;
+	float:	right;
+}
+
+#login{
+	float:	right;
+}
+
+#club_logo{
+	margin-top:	1em;
+}
+
+#club_mission p{
+	font-size:	1.5em;
+	font-family:	Arial, Arial, Helvetica, sans-serif;
+	font-style:	italic;
+	font-weight:	bold;
+
+}
+
+#club_dates{
+	font-size: 2em;
+}
+
+#search{
+	padding: 1em 0;
+	height:	10%;
+	/*vertical-align:	middle;*/
+}
+
+#main{
+	width:	100%;
+	float:	left;
+}
+
+#sidebar1{
+	width:	23%;
+	margin:	0;
+	padding:	5px;
+	float: left;
+
+}
+
+#main_content{
+	border-left:	solid 3px #f93;
+	width:	69%;
+	margin:	0;
+	padding:	0 0 0 1%;
+	float: left;
+	text-align:	left;
+	/*border:	solid 1px;*/
+}
+
+#top_half, #bottom_half{
+	width: 100%;
+	float:	left;
+	text-align:	left;
+
+}
+
+#club_meeting, #top_news{
+	float:	left;
+	width:	48%;
+}
+
+#special_events, #announcements{
+	float:	right;
+	width:	48%;
+}
+
+/*
+#about, #news, #sponsors, #discounts, #club_races, #club_rides{
+	padding: 1em 0;
+}
+*/
+
+#club_races ul li h4{
+	text-decoration:	underline;
+	font-style: italic;
+}
+
+#sponsors img{
+	padding: 1em 0;
+}
+
+#main_content ul li{
+	list-style: none;
+}
+
+#footer{
+	text-align:	center;
+}
+
+#club_rides table tr td{
+	border: 	none;
+}
+
+#sponsors h2, #club_rides h2{
+	font: 	italic large bold;
+	background-color: #c0c0c0;
+
+}
+
+/* =Headings
+-----------------------------------------------------------------------------*/
+
+h1{
+	font-size:			15%0;
+	text-align:			left;
+	padding:				0.5em 0;
+	margin:				0.5em 0;
+}
+
+h2{
+	font-size:			125%;
+	text-align:			left;
+	padding:			0.25em 0;
+	margin:				0.25em 0;
+}
+
+h3{
+	font-size:			105%;
+	text-align:			left;
+	padding:			0.1em 0;
+	margin:				0.1em 0;
+}
+
+h4{
+	font-size:			100%;
+	text-align:			left;
+	padding:			0;
+	margin:				0;
+}
+
+
+/* =Links
+-----------------------------------------------------------------------------*/
+
+a{
+	border-color: #0000ff !important;
+	border-width: 0 0 1px 0 !important;
+	color: #0000ff !important;
+	text-decoration: none !important;
+}
+
+a:visited
+{
+		border-color: #660099 !important;
+		color: #660099 !important;
+}
+
+a:focus, a:hover
+{
+		border-color: #ff0000 !important;
+		color: #ff0000 !important;
+}
+
+
+/* =Branding
+-----------------------------------------------------------------------------*/
+
+
+
+
+/* =Main Nav
+-----------------------------------------------------------------------------*/
+
+#menu {
+	width:				100%;
+	float:				left;
+	/*border-top:		  3px solid #333;*/
+	border-bottom:	3px solid #333;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 100%;
+	list-style: none;
+	text-transform: uppercase;
+}
+
+#menu ul li {
+  float: left;
+  background:  url(../images/tab-right.png) no-repeat top right;
+}
+
+#menu li a{
+	display:	block;
+	padding:	0 2em;
+	line-height:	2.5em;
+	background:	url(../images/tab-left.png) no-repeat top left;
+	text-decoration:	none;
+	color:	#fff;
+	float:	left;
+}
+
+#menu ul a:hover{
+	color:	#333;
+}
+
+
+/* =Sub Nav
+-----------------------------------------------------------------------------*/
+
+#bottombar{
+	background-color:	#fff;
+	width:				100%;
+	float:				left;
+/*			padding:			0px -5px 0px 5px;*/
+	margin:				0;
+	text-align:			left;
+	font-size:			0.75em;
+
+	border-top:		   3px solid #333;
+	border-bottom:		   3px solid #333;
+	}
+
+div#bottombar ul{
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 100%;
+	list-style: none;
+	text-transform: uppercase;
+	}
+
+div#bottombar ul li {
+	display:	block;
+	padding:	0 2em;
+	line-height:	2.1em;
+	text-decoration:	none;
+	color: #fff;
+	float: left;
+}
+
+
+/* =Main Content
+-----------------------------------------------------------------------------*/
+
+
+
+
+/* =Secondary Content
+-----------------------------------------------------------------------------*/
+
+
+
+/* =Footer
+-----------------------------------------------------------------------------*/
+
+
+
+/* =Forms
+-----------------------------------------------------------------------------*/
+
+/* Removes fieldset borders. even on Opea 7 */
+fieldset {
+    border: 1px solid transparent;
+}
+
+
+/* =Tables
+-----------------------------------------------------------------------------*/
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: left;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+th, td{
+    vertical-align:     top;
+    border:     none;
+    padding:    0 1em;
+}
+
+
+
+/* =Misc 1
+-----------------------------------------------------------------------------*/
+
+
+
+/* =Misc 2
+-----------------------------------------------------------------------------*/
+

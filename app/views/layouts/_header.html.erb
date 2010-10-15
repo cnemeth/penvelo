@@ -1,0 +1,43 @@
+<% @clubs = Club.find(:all) %>
+<% for club in @clubs -%>
+
+<div id="header_1">
+
+	<div id="club_logo">
+		<%= image_tag(club.logo_url) %>
+	</div>
+
+	<div id="club_dates"><em>Est. <%= club.year %></em></div>
+
+</div>
+
+<div id="header_main">
+
+	<div id="headline">
+		<h1>Welcome to the <%= club.name  %></h1>
+		<p><em><%=h club.headline -%></em></p>
+	</div>
+	<h2>Our Mission</h2>
+	<div id="club_mission">
+		<p><%= club.mission  %></p>
+	</div>
+
+</div>
+
+<div id="header_2">
+
+	<div id="search">
+		<form method="get" action="">
+			<input class="iform" type="text"  size="25" maxlength="256" name="query" value="... search query ..." />
+			<input type="submit" value="Search" class="button" />
+		</form>
+	</div>
+
+	<div id="sponsor_banner">
+		<%= render :partial => "layouts/sponsors" %>
+	</div>
+
+</div>
+
+<% end %>
+

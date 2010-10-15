@@ -1,0 +1,26 @@
+<% @clubs = Club.find(:all) %>
+<% for club in @clubs -%>
+
+<div id="header_1">
+
+	<div id="club_logo">
+		<%= image_tag(club.logo_url) %>
+	</div>
+
+	<div id="club_dates"><em>Est. <%= club.year %></em></div>
+
+</div>
+
+<div id="header_main">
+
+	<div id="headline">
+		<h1><%= club.name  %> Admin Page</h1>
+	</div>
+
+
+</div>
+
+
+
+<% end %>
+

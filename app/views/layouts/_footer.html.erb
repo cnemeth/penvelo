@@ -1,0 +1,9 @@
+<% @clubs = Club.find(:all) %>
+<% for club in @clubs -%>
+
+<p> <%= club.copyright %><br />
+		<a href="mailto:<%= club.webmaster_email %>?subject=attention penvelo webmaster">Contact Webmaster</a>
+</p>
+
+<% end %>
+

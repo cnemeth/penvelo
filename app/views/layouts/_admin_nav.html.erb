@@ -1,0 +1,60 @@
+
+<ul>
+  <li><%= link_to "Admin Home", admin_home_url %></li>
+</ul>
+<h2>Club Profile</h2>
+<ul>
+	<li><%= link_to "Club", :controller => 'clubs', :action => 'index' %></li>
+<h2>Club Members</h2>
+<ul>
+	<li><%= link_to "Club Members", :controller => 'users', :action => 'index' %></li>
+	<li><%= link_to "Contacts Info", :controller => 'contacts', :action => 'index' %></li>
+</ul>
+
+<h2>Club News and Events</h2>
+<ul>
+	<li><%= link_to "Contents (news, events, etc.)", :controller => 'contents', :action => 'index' %></li>
+
+<h2>Club Sponsors</h2>
+<ul>
+	<li><%= link_to "Club Sponsors", :controller => 'sponsors', :action => 'index' %></li>
+	<li><%= link_to "Sponsors Discounts", :controller => 'sponsor_discounts', :action => 'index' %></li>
+
+</ul>
+<h2>Club Races and Rides</h2>
+<ul>
+	<li><%= link_to "Club Rides", :controller => 'rides', :action => 'index' %></li>
+
+	<li><%= link_to "Club Races", :controller => 'races', :action => 'index' %></li>
+
+	<li><%= link_to "Race Results", :controller => 'race_results', :action => 'index' %></li>
+  <br />
+
+</ul>
+
+<h2>Feedback</h2>
+<h3>View Reports</h3>
+<ul>
+  <li><%= link_to "Comments", :controller => 'comments', :action => 'index' %></li>
+  <li><%= link_to "Bug Reports", :controller => 'bug_reports', :action => 'index' %></li>
+  <li><%= link_to "Change Requests", :controller => 'change_requests', :action => 'index' %></li>
+  <li><%= link_to "New Features", :controller => 'new_features', :action => 'index' %></li>
+</ul>
+<h3>Add New/Edit All Feedback Types</h3>
+<ul>
+ 	<li><%= link_to "Feedback", :controller => 'feedbacks', :action => 'index' %></li>
+</ul>
+
+<h2>Miscellaneous</h2>
+<ul>
+  <li><%= link_to "Role Types", :controller => 'roles', :action => 'index' %></li>
+	<li><%= link_to "IM Types", :controller => 'im_types', :action => 'index' %></li>
+	<li><%= link_to "Content Types", :controller => 'content_types', :action => 'index' %></li>
+</ul>
+  <li><%= link_to "Sponsor Types", :controller => 'sponsor_types', :action => 'index' %></li>
+  <li><%= link_to "Ride Types", :controller => 'ride_types', :action => 'index' %></li>
+  <li><%= link_to "Race Disciplines", :controller => 'race_disciplines', :action => 'index' %></li>
+	<li><%= link_to "Race Categories", :controller => 'race_categories', :action => 'index' %></li>
+  <li><%= link_to "Feedback Types", :controller => 'feedback_types', :action => 'index' %></li>
+</ul>
+
