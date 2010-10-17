@@ -2898,3 +2898,2598 @@ Migrating to CreateClubs (20101014004449)
   [4;35;1mRideType Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `ride_types`[0m
   [4;36;1mRaceDiscipline Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
   [4;35;1mContentType Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `content_types`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-17 14:54:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.5ms)
+Rendered layouts/_header (40.6ms)
+Rendered layouts/_topnav (9.7ms)
+Rendered layouts/_bottomnav (1.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.2ms)
+Completed in 195ms (View: 191, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2010-10-17 14:55:02) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (22.2ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2010-10-17 14:55:58) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (22.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-17 14:56:03) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (23.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-17 14:56:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (83.7ms)
+Rendered layouts/_topnav (6.4ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 96ms (View: 92, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-10-17 14:56:14) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (13.2ms)
+Rendered layouts/_topnav (1.6ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 45ms (View: 25, DB: 2) | 200 OK [http://localhost/user_session/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-10-17 14:56:23) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "login"=>"cnemeth"}, "action"=>"create", "authenticity_token"=>"g+m10lEmpOzs7VWBWw02TkVAHpY8fgT5nmj51cxdgdM=", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'cnemeth') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 21:56:23', `perishable_token` = '3qOkO9oyPDpEQXZVATAq', `last_login_at` = '2010-10-17 21:42:13', `current_login_at` = '2010-10-17 21:56:23', `login_count` = 3, `last_request_at` = '2010-10-17 21:56:23' WHERE `id` = 1[0m
+  [4;36;1mSQL (33.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/user_session/new
+Completed in 200ms (DB: 36) | 302 Found [http://localhost/user_session]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-10-17 14:56:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 21:56:23', `perishable_token` = '8Qb-0DHVd-0qwLKYpj6Y', `last_request_at` = '2010-10-17 21:56:23' WHERE `id` = 1[0m
+  [4;35;1mSQL (64.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 94ms (DB: 67) | 302 Found [http://localhost/user_session/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-17 14:56:24) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (97.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-17 14:58:35) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (Missing template contents/_maincontents.erb in view path app/views) on line #1 of app/views/home/index.html.erb:
+1: <p><%= render :partial => "contents/maincontents", :locals => {:contents => @contents }%></p>
+
+    app/views/home/index.html.erb:1
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (35.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-10-17 14:59:54) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "login"=>"cnemeth"}, "action"=>"create", "authenticity_token"=>"g+m10lEmpOzs7VWBWw02TkVAHpY8fgT5nmj51cxdgdM=", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 21:59:55', `perishable_token` = 'mc7A7gig2wxgGtnfVqnC', `last_request_at` = '2010-10-17 21:59:55' WHERE `id` = 1[0m
+  [4;36;1mSQL (51.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 170ms (DB: 54) | 302 Found [http://localhost/user_session]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-17 14:59:55) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (22.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-17 15:00:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (Missing template contents/_maincontents.erb in view path app/views) on line #1 of app/views/home/index.html.erb:
+1: <p><%= render :partial => "contents/maincontents", :locals => {:contents => @contents }%></p>
+
+    app/views/home/index.html.erb:1
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (122.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-17 15:01:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (29.9ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 22:01:54', `perishable_token` = 'YPvMTlkGS-UMWnUJcLz5', `last_request_at` = '2010-10-17 22:01:54' WHERE `id` = 1[0m
+  [4;35;1mSQL (46.3ms)[0m   [0mCOMMIT[0m
+Rendered layouts/_topnav (142.8ms)
+Rendered layouts/_bottomnav (1.4ms)
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.8ms)
+Completed in 186ms (View: 135, DB: 50) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-17 15:02:21) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (23.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-17 15:02:57) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (22.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-17 15:03:01) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (23.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-10-17 15:05:40) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"g+m10lEmpOzs7VWBWw02TkVAHpY8fgT5nmj51cxdgdM=", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 22:05:40', `perishable_token` = 'aV4raKBebdobrXctExy7', `last_request_at` = '2010-10-17 22:05:40' WHERE `id` = 1[0m
+  [4;35;1mSQL (41.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000home
+Completed in 74ms (DB: 44) | 302 Found [http://localhost/user_session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-17 15:05:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (110.2ms)
+Rendered layouts/_topnav (6.3ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 122ms (View: 118, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-10-17 15:05:44) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (90.7ms)
+Rendered layouts/_topnav (1.6ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 119ms (View: 99, DB: 2) | 200 OK [http://localhost/user_session/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-10-17 15:05:54) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "login"=>"cn"}, "action"=>"create", "authenticity_token"=>"g+m10lEmpOzs7VWBWw02TkVAHpY8fgT5nmj51cxdgdM=", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (15.5ms)
+Rendered layouts/_topnav (1.6ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 51ms (View: 29, DB: 2) | 200 OK [http://localhost/user_session]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-10-17 15:06:06) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "login"=>"cnemeth"}, "action"=>"create", "authenticity_token"=>"g+m10lEmpOzs7VWBWw02TkVAHpY8fgT5nmj51cxdgdM=", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'cnemeth') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 22:06:06', `perishable_token` = 'PuMHYt1F_CKSKK718hjv', `last_login_at` = '2010-10-17 21:56:23', `current_login_at` = '2010-10-17 22:06:06', `login_count` = 4, `last_request_at` = '2010-10-17 22:06:06' WHERE `id` = 1[0m
+  [4;36;1mSQL (51.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/user_session
+Completed in 84ms (DB: 53) | 302 Found [http://localhost/user_session]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#show (for 127.0.0.1 at 2010-10-17 15:06:06) [GET]
+  Parameters: {"action"=>"show", "controller"=>"user_sessions"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, and new):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-10-17 15:10:05) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "login"=>"cnemeth"}, "action"=>"create", "authenticity_token"=>"g+m10lEmpOzs7VWBWw02TkVAHpY8fgT5nmj51cxdgdM=", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 22:10:05', `perishable_token` = 'qZrMBCWW4M2fQPxaAGIz', `last_request_at` = '2010-10-17 22:10:05' WHERE `id` = 1[0m
+  [4;35;1mSQL (59.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 90ms (DB: 62) | 302 Found [http://localhost/user_session]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-17 15:10:05) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (23.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2010-10-17 15:12:00) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (22.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-17 15:12:05) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (31.7ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 22:12:06', `perishable_token` = 'g-gdpSiPahhsJKVjQjN-', `last_request_at` = '2010-10-17 22:12:06' WHERE `id` = 1[0m
+  [4;36;1mSQL (49.0ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (71.1ms)
+Rendered layouts/_bottomnav (3.3ms)
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.7ms)
+Completed in 113ms (View: 59, DB: 52) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-10-17 15:12:10) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"g+m10lEmpOzs7VWBWw02TkVAHpY8fgT5nmj51cxdgdM=", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 22:12:10', `perishable_token` = 'yA0tV1S1BP9WfcZOQAVj', `last_request_at` = '2010-10-17 22:12:10' WHERE `id` = 1[0m
+  [4;36;1mSQL (40.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000home
+Completed in 79ms (DB: 43) | 302 Found [http://localhost/user_session]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-17 15:12:10) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (108.0ms)
+Rendered layouts/_topnav (6.4ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 121ms (View: 116, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-10-17 15:12:12) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (13.4ms)
+Rendered layouts/_topnav (14.8ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 121ms (View: 101, DB: 2) | 200 OK [http://localhost/user_session/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-10-17 15:12:22) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "login"=>"cnemeth"}, "action"=>"create", "authenticity_token"=>"g+m10lEmpOzs7VWBWw02TkVAHpY8fgT5nmj51cxdgdM=", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'cnemeth') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 22:12:22', `perishable_token` = 'T5LApEQF3uETuMR3xTPe', `last_login_at` = '2010-10-17 22:06:06', `current_login_at` = '2010-10-17 22:12:22', `login_count` = 5, `last_request_at` = '2010-10-17 22:12:22' WHERE `id` = 1[0m
+  [4;35;1mSQL (43.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/user_session
+Completed in 77ms (DB: 46) | 302 Found [http://localhost/user_session]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#show (for 127.0.0.1 at 2010-10-17 15:12:22) [GET]
+  Parameters: {"action"=>"show", "controller"=>"user_sessions"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, and new):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-17 15:24:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (32.1ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 22:24:15', `perishable_token` = 'SAvPuKcxftMT2G_eJb3U', `last_request_at` = '2010-10-17 22:24:15' WHERE `id` = 1[0m
+  [4;36;1mSQL (51.5ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (73.0ms)
+Rendered layouts/_bottomnav (2.8ms)
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.7ms)
+Completed in 117ms (View: 60, DB: 55) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-17 15:24:22) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (24.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-17 15:24:55) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+
+NameError (uninitialized constant UsersController):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (21.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-17 15:25:05) [GET]
+
+ActionController::RoutingError (No route matches "/club_about" with {:method=>:get}):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-17 15:30:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (35.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 22:30:29', `perishable_token` = 'BWCTSamimlnTMMIB_He5', `last_request_at` = '2010-10-17 22:30:29' WHERE `id` = 1[0m
+  [4;36;1mSQL (46.8ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (68.8ms)
+Rendered layouts/_bottomnav (1.5ms)
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.4ms)
+Completed in 205ms (View: 153, DB: 50) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-17 15:30:30) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.2ms)
+Rendered layouts/_header (33.5ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 22:30:30', `perishable_token` = 'mSynFhaoQX_oU62uAXve', `last_request_at` = '2010-10-17 22:30:30' WHERE `id` = 1[0m
+  [4;36;1mSQL (67.3ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (90.4ms)
+Rendered layouts/_bottomnav (1.4ms)
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.7ms)
+Completed in 134ms (View: 62, DB: 71) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 15:30:34) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 22:30:34', `perishable_token` = 'mV2mZQ3o8x_TWStPh0nB', `last_request_at` = '2010-10-17 22:30:34' WHERE `id` = 1[0m
+  [4;36;1mSQL (33.7ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (13.4ms)
+Rendered layouts/_topnav (2.8ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 104ms (View: 35, DB: 37) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-10-17 15:30:39) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"g+m10lEmpOzs7VWBWw02TkVAHpY8fgT5nmj51cxdgdM=", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 22:30:39', `perishable_token` = 'ZXAmjGFq7L2wKtbqkWrI', `last_request_at` = '2010-10-17 22:30:39' WHERE `id` = 1[0m
+  [4;36;1mSQL (85.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000home
+Completed in 215ms (DB: 88) | 302 Found [http://localhost/user_session]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-17 15:30:39) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (106.0ms)
+Rendered layouts/_topnav (7.3ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 120ms (View: 115, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-10-17 15:30:41) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (14.2ms)
+Rendered layouts/_topnav (1.8ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 47ms (View: 23, DB: 2) | 200 OK [http://localhost/user_session/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-10-17 15:30:51) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "login"=>"cnemeth"}, "action"=>"create", "authenticity_token"=>"g+m10lEmpOzs7VWBWw02TkVAHpY8fgT5nmj51cxdgdM=", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'cnemeth') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 22:30:51', `perishable_token` = 'MUEF-Dpsy4S3Dc81COVE', `last_login_at` = '2010-10-17 22:12:22', `current_login_at` = '2010-10-17 22:30:51', `login_count` = 6, `last_request_at` = '2010-10-17 22:30:51' WHERE `id` = 1[0m
+  [4;35;1mSQL (44.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/user_session/new
+Completed in 83ms (DB: 47) | 302 Found [http://localhost/user_session]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-10-17 15:30:52) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 22:30:52', `perishable_token` = 'AtS099BsPhMS37IgtTRv', `last_request_at` = '2010-10-17 22:30:52' WHERE `id` = 1[0m
+  [4;36;1mSQL (69.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 98ms (DB: 71) | 302 Found [http://localhost/user_session/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 15:30:52) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 22:30:52', `perishable_token` = 'ltpXKyWbHhRxuEX7otnz', `last_request_at` = '2010-10-17 22:30:52' WHERE `id` = 1[0m
+  [4;35;1mSQL (41.9ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (15.9ms)
+Rendered layouts/_topnav (3.0ms)
+Rendered layouts/_bottomnav (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 183ms (View: 32, DB: 45) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-10-17 15:30:57) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"g+m10lEmpOzs7VWBWw02TkVAHpY8fgT5nmj51cxdgdM=", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 22:30:57', `perishable_token` = 'D2apGKXlLrAPtLXhPCN2', `last_request_at` = '2010-10-17 22:30:57' WHERE `id` = 1[0m
+  [4;35;1mSQL (36.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000home
+Completed in 70ms (DB: 39) | 302 Found [http://localhost/user_session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-17 15:30:58) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (35.9ms)
+Rendered layouts/_topnav (6.6ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 50ms (View: 45, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-10-17 15:30:59) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;36;1mUser Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (15.0ms)
+Rendered layouts/_topnav (1.9ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 160ms (View: 59, DB: 5) | 200 OK [http://localhost/account/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-10-17 15:32:24) [POST]
+  Parameters: {"commit"=>"Create User", "action"=>"create", "authenticity_token"=>"g+m10lEmpOzs7VWBWw02TkVAHpY8fgT5nmj51cxdgdM=", "controller"=>"users", "user"=>{"member_since(2i)"=>"1", "profile"=>"member profile", "member_since(3i)"=>"1", "password_confirmation"=>"[FILTERED]", "user_image_url"=>"rails.png", "usac_license"=>"xyz123", "performance_team_member"=>"1", "gender"=>"Male", "password_salt"=>"[FILTERED]", "last_name"=>"Kutya", "date_of_birth(1i)"=>"1900", "middle_initial"=>"M", "password"=>"[FILTERED]", "login"=>"mkutya", "date_of_birth(2i)"=>"1", "active"=>"1", "member_since(1i)"=>"2005", "image_gallery_url"=>"", "date_of_birth(3i)"=>"1", "first_name"=>"Morzsa"}}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+WARNING: Can't mass-assign these protected attributes: password_confirmation
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'mkutya') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '226448dfcd7e7cb6df7577949f90fed0878b3a81c9abc352cb42120f81def99d1c2bad9b0e59a119c61d48f36c76e941df2c011d344546419776fbc8a5bb9041') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`single_access_token` = BINARY 'yuFFigl6qcHn2RDFlDtK') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (15.7ms)
+Rendered layouts/_topnav (1.6ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 170ms (View: 58, DB: 3) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-10-17 15:32:39) [POST]
+  Parameters: {"commit"=>"Create User", "action"=>"create", "authenticity_token"=>"g+m10lEmpOzs7VWBWw02TkVAHpY8fgT5nmj51cxdgdM=", "controller"=>"users", "user"=>{"member_since(2i)"=>"1", "profile"=>"member profile", "member_since(3i)"=>"1", "password_confirmation"=>"[FILTERED]", "user_image_url"=>"rails.png", "usac_license"=>"xyz123", "performance_team_member"=>"1", "gender"=>"Male", "password_salt"=>"[FILTERED]", "last_name"=>"Kutya", "date_of_birth(1i)"=>"1900", "middle_initial"=>"M", "password"=>"[FILTERED]", "login"=>"mkutya", "date_of_birth(2i)"=>"1", "active"=>"1", "member_since(1i)"=>"2005", "image_gallery_url"=>"", "date_of_birth(3i)"=>"1", "first_name"=>"Morzsa"}}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+WARNING: Can't mass-assign these protected attributes: password_confirmation
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'mkutya') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '20fb6b8c5465daf09bec321166b1bca83cc69d41cfc63b2434dd89751937408ba0a96ad60e9dc95994872cbeb655593a42bbd6a7c4506f8210d7c224e8568f95') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`single_access_token` = BINARY 'euO494JIkCOWCE_BVhZk') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (14.9ms)
+Rendered layouts/_topnav (1.7ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 159ms (View: 50, DB: 3) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-10-17 15:32:53) [POST]
+  Parameters: {"commit"=>"Create User", "action"=>"create", "authenticity_token"=>"g+m10lEmpOzs7VWBWw02TkVAHpY8fgT5nmj51cxdgdM=", "controller"=>"users", "user"=>{"member_since(2i)"=>"1", "profile"=>"member profile", "member_since(3i)"=>"1", "password_confirmation"=>"[FILTERED]", "user_image_url"=>"rails.png", "usac_license"=>"xyz123", "performance_team_member"=>"1", "gender"=>"Male", "password_salt"=>"[FILTERED]", "last_name"=>"Kutya", "date_of_birth(1i)"=>"1900", "middle_initial"=>"M", "password"=>"[FILTERED]", "login"=>"mkutya", "date_of_birth(2i)"=>"1", "active"=>"1", "member_since(1i)"=>"2005", "image_gallery_url"=>"", "date_of_birth(3i)"=>"1", "first_name"=>"Morzsa"}}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+WARNING: Can't mass-assign these protected attributes: password_confirmation
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'mkutya') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'c867614e13703f99c8f39b16a71d707b2cc5f81560e6914cca65b731d278af9610770f69500c052856759ddd401e2f1918a1d00094b243f65a23bde7099d5081') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`single_access_token` = BINARY 'nXnLY5w8BLVGjKivQ-7O') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mClub Load (0.4ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (15.5ms)
+Rendered layouts/_topnav (1.6ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 179ms (View: 148, DB: 3) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-10-17 15:33:17) [POST]
+  Parameters: {"commit"=>"Create User", "action"=>"create", "authenticity_token"=>"g+m10lEmpOzs7VWBWw02TkVAHpY8fgT5nmj51cxdgdM=", "controller"=>"users", "user"=>{"member_since(2i)"=>"1", "profile"=>"member profile", "member_since(3i)"=>"1", "password_confirmation"=>"[FILTERED]", "user_image_url"=>"rails.png", "usac_license"=>"xyz123", "performance_team_member"=>"1", "gender"=>"Male", "password_salt"=>"[FILTERED]", "last_name"=>"Kutya", "date_of_birth(1i)"=>"1900", "middle_initial"=>"M", "password"=>"[FILTERED]", "login"=>"mkutya", "date_of_birth(2i)"=>"1", "active"=>"1", "member_since(1i)"=>"2005", "image_gallery_url"=>"", "date_of_birth(3i)"=>"1", "first_name"=>"Morzsa"}}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+WARNING: Can't mass-assign these protected attributes: password_confirmation
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'mkutya') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '6134bf5e3ce815a27953a9491532009ec94bcc930492fede160952fc7e9ecd6aa5f1b32234c53924973d2020b7872845301bb33ba28c72994aee36907b8bfa82') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`single_access_token` = BINARY 'L1hEik4PYi_PWLsv10I9') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (16.4ms)
+Rendered layouts/_topnav (2.2ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 191ms (View: 158, DB: 3) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-17 15:33:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (107.5ms)
+Rendered layouts/_topnav (6.9ms)
+Rendered layouts/_bottomnav (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 121ms (View: 117, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-10-17 15:33:46) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (103.1ms)
+Rendered layouts/_topnav (1.7ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 165ms (View: 140, DB: 3) | 200 OK [http://localhost/account/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-10-17 15:34:56) [POST]
+  Parameters: {"commit"=>"Create User", "action"=>"create", "authenticity_token"=>"g+m10lEmpOzs7VWBWw02TkVAHpY8fgT5nmj51cxdgdM=", "controller"=>"users", "user"=>{"member_since(2i)"=>"2", "profile"=>"member profile", "member_since(3i)"=>"12", "password_confirmation"=>"[FILTERED]", "user_image_url"=>"rails.png", "usac_license"=>"xyz123", "performance_team_member"=>"1", "gender"=>"Male", "password_salt"=>"[FILTERED]", "last_name"=>"Kutya", "date_of_birth(1i)"=>"1900", "middle_initial"=>"M", "password"=>"[FILTERED]", "login"=>"mkutya", "date_of_birth(2i)"=>"1", "active"=>"1", "member_since(1i)"=>"2005", "image_gallery_url"=>"", "date_of_birth(3i)"=>"1", "first_name"=>"Morzsa"}}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+WARNING: Can't mass-assign these protected attributes: password_confirmation
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'mkutya') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '533e3e3a4d1b9a76dd2cab017c65faae2bb594591dbfc25d34b70dd3e53fc8fce7cc0db84065067195f374b526bcdf4820e48a0f00b7044fbed53c2ae93abcd8') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`single_access_token` = BINARY 'CDQYgly65rtWLc69i7KP') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (12.0ms)
+Rendered layouts/_header (99.5ms)
+Rendered layouts/_topnav (2.0ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 181ms (View: 148, DB: 3) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-10-17 15:35:27) [POST]
+  Parameters: {"commit"=>"Create User", "action"=>"create", "authenticity_token"=>"g+m10lEmpOzs7VWBWw02TkVAHpY8fgT5nmj51cxdgdM=", "controller"=>"users", "user"=>{"member_since(2i)"=>"2", "profile"=>"member profile", "member_since(3i)"=>"12", "password_confirmation"=>"[FILTERED]", "user_image_url"=>"rails.png", "usac_license"=>"xyz123", "performance_team_member"=>"1", "gender"=>"Male", "password_salt"=>"[FILTERED]", "last_name"=>"Kutya", "date_of_birth(1i)"=>"1900", "middle_initial"=>"M", "password"=>"[FILTERED]", "login"=>"mkutya", "date_of_birth(2i)"=>"1", "active"=>"1", "member_since(1i)"=>"2005", "image_gallery_url"=>"", "date_of_birth(3i)"=>"1", "first_name"=>"Morzsa"}}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+WARNING: Can't mass-assign these protected attributes: password_confirmation
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'mkutya') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '7fd8ffce6f5b608d08bbd23b044da7e9aca27e4f7823393e87a105b96c4a746c260dece766bf75be6e4e8008a65d265345214ff61498ae5c9c3319262c602721') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`single_access_token` = BINARY 'JQBtUqC8HqIPbcjl1SXX') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (14.2ms)
+Rendered layouts/_topnav (1.5ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 90ms (View: 55, DB: 3) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-17 15:35:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (32.7ms)
+Rendered layouts/_topnav (7.0ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 46ms (View: 42, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (57.8ms)[0m   [0;1mDELETE FROM sessions[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-10-17 15:35:56) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (15.3ms)
+Rendered layouts/_topnav (1.8ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 48ms (View: 24, DB: 2) | 200 OK [http://localhost/user_session/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-10-17 15:36:05) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "login"=>"cnemeth"}, "action"=>"create", "authenticity_token"=>"KfFkD5lJ+c+Vz1SR9SXKLiN45ZWDTPdBZNa4fWuc8Zs=", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'cnemeth') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 22:36:05', `perishable_token` = 'Bmh4ng-4GB9diFfQ7wGl', `last_login_at` = '2010-10-17 22:30:51', `current_login_at` = '2010-10-17 22:36:05', `login_count` = 7, `last_request_at` = '2010-10-17 22:36:05' WHERE `id` = 1[0m
+  [4;36;1mSQL (56.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/user_session/new
+Completed in 165ms (DB: 59) | 302 Found [http://localhost/user_session]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-10-17 15:36:05) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 22:36:05', `perishable_token` = 'gnk2YHhhqW5tFaWtwDsB', `last_request_at` = '2010-10-17 22:36:05' WHERE `id` = 1[0m
+  [4;35;1mSQL (64.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 92ms (DB: 66) | 302 Found [http://localhost/user_session/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 15:36:05) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 22:36:05', `perishable_token` = 'vauXeC8tQInOwLHxwDc5', `last_request_at` = '2010-10-17 22:36:05' WHERE `id` = 1[0m
+  [4;36;1mSQL (38.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (95.6ms)
+Rendered layouts/_topnav (2.9ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 184ms (View: 113, DB: 41) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 15:36:13) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 22:36:13', `perishable_token` = 'lFotPJx0axVsWGlw19Q6', `last_request_at` = '2010-10-17 22:36:13' WHERE `id` = 1[0m
+  [4;36;1mSQL (49.8ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (14.4ms)
+Rendered layouts/_topnav (3.1ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 115ms (View: 30, DB: 54) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-10-17 15:36:17) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"KfFkD5lJ+c+Vz1SR9SXKLiN45ZWDTPdBZNa4fWuc8Zs=", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 22:36:17', `perishable_token` = 'MwsqR3_6IrfF7owUNKSe', `last_request_at` = '2010-10-17 22:36:17' WHERE `id` = 1[0m
+  [4;36;1mSQL (60.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000home
+Completed in 99ms (DB: 63) | 302 Found [http://localhost/user_session]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-17 15:36:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (118.6ms)
+Rendered layouts/_topnav (7.5ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.6ms)
+Completed in 134ms (View: 130, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-10-17 15:36:20) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (98.3ms)
+Rendered layouts/_topnav (1.6ms)
+Rendered layouts/_bottomnav (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 156ms (View: 134, DB: 3) | 200 OK [http://localhost/account/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-10-17 15:37:34) [POST]
+  Parameters: {"commit"=>"Create User", "action"=>"create", "authenticity_token"=>"KfFkD5lJ+c+Vz1SR9SXKLiN45ZWDTPdBZNa4fWuc8Zs=", "controller"=>"users", "user"=>{"member_since(2i)"=>"11", "profile"=>"vvbfvbfghdgj", "member_since(3i)"=>"18", "password_confirmation"=>"[FILTERED]", "user_image_url"=>"rails.png", "usac_license"=>"xyz123", "performance_team_member"=>"1", "gender"=>"Male", "password_salt"=>"[FILTERED]", "last_name"=>"Kutya", "date_of_birth(1i)"=>"1900", "middle_initial"=>"M", "password"=>"[FILTERED]", "login"=>"mkutya", "date_of_birth(2i)"=>"1", "active"=>"1", "member_since(1i)"=>"2005", "image_gallery_url"=>"", "date_of_birth(3i)"=>"1", "first_name"=>"Morzsa"}}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+WARNING: Can't mass-assign these protected attributes: password_confirmation
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'mkutya') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '31b0dba35eaa2a4e7df4db3cee51b891cfd5e5da980bbeb3be11326c9f5a7dbd55b42c679403dcd49dbf5f5c3acef8a3432de443a16fb9e5e291ca93842ed9f6') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`single_access_token` = BINARY '1HSDhKNim_emdNfzCY4g') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (96.8ms)
+Rendered layouts/_topnav (1.6ms)
+Rendered layouts/_bottomnav (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 166ms (View: 134, DB: 3) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-10-17 15:38:09) [POST]
+  Parameters: {"commit"=>"Create User", "action"=>"create", "authenticity_token"=>"KfFkD5lJ+c+Vz1SR9SXKLiN45ZWDTPdBZNa4fWuc8Zs=", "controller"=>"users", "user"=>{"member_since(2i)"=>"11", "profile"=>"vvbfvbfghdgj", "member_since(3i)"=>"18", "password_confirmation"=>"[FILTERED]", "user_image_url"=>"rails.png", "usac_license"=>"xyz123", "performance_team_member"=>"0", "gender"=>"Male", "password_salt"=>"[FILTERED]", "last_name"=>"Kutya", "date_of_birth(1i)"=>"1900", "middle_initial"=>"M", "password"=>"[FILTERED]", "login"=>"mkutya", "date_of_birth(2i)"=>"1", "active"=>"1", "member_since(1i)"=>"2005", "image_gallery_url"=>"", "date_of_birth(3i)"=>"1", "first_name"=>"Morzsa"}}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+WARNING: Can't mass-assign these protected attributes: password_confirmation
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'mkutya') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '18d21aa52b741b1bdedec0cae24c369db1221c6d70e3029470a93be9a929161ccbfb84010d0c0de8c08b2c66ecaaf570fbcb56b82318861e7ffdd4faaa218e5e') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`single_access_token` = BINARY '9DcVUsoTo3G6s0L6273w') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (14.2ms)
+Rendered layouts/_topnav (1.8ms)
+Rendered layouts/_bottomnav (15.2ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 170ms (View: 138, DB: 3) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-17 15:38:20) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (30.4ms)
+Rendered layouts/_topnav (6.0ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 43ms (View: 39, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-10-17 15:41:17) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mRole Load (0.4ms)[0m   [0;1mSELECT * FROM `roles` [0m
+  [4;35;1mRole Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRaceDiscipline Load (0.3ms)[0m   [0;1mSELECT * FROM `race_disciplines` [0m
+  [4;35;1mRaceDiscipline Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mRaceCategory Load (0.3ms)[0m   [0;1mSELECT * FROM `race_categories` [0m
+  [4;35;1mRaceCategory Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (97.7ms)
+Rendered layouts/_topnav (3.3ms)
+Rendered layouts/_bottomnav (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 213ms (View: 181, DB: 6) | 200 OK [http://localhost/account/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-10-17 15:42:33) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` [0m
+  [4;35;1mRole Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` [0m
+  [4;35;1mRaceDiscipline Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` [0m
+  [4;35;1mRaceCategory Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (10.4ms)
+Rendered layouts/_topnav (1.6ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.6ms)
+Completed in 197ms (View: 174, DB: 4) | 200 OK [http://localhost/account/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-10-17 15:42:48) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` [0m
+  [4;35;1mRole Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` [0m
+  [4;35;1mRaceDiscipline Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` [0m
+  [4;35;1mRaceCategory Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (10.2ms)
+Rendered layouts/_topnav (1.6ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 210ms (View: 185, DB: 4) | 200 OK [http://localhost/account/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-17 15:56:07) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (117.6ms)
+Rendered layouts/_topnav (6.2ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 130ms (View: 126, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-10-17 15:56:09) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x7f801532f018>) on line #1 of app/views/users/_form.html.erb:
+1: <% f.inputs do %>
+2:     <%= f.input :first_name, :label => 'First name' %>
+3:     <%= f.input :middle_initial, :label => 'Middle initial' %>
+4:     <%= f.input :last_name, :label => 'Last name' %>
+
+    app/views/users/_form.html.erb:1
+    app/views/users/new.html.erb:5
+    vendor/gems/formtastic-1.1.0.beta/lib/formtastic.rb:1860:in `semantic_form_for'
+    vendor/gems/formtastic-1.1.0.beta/lib/formtastic.rb:1826:in `with_custom_field_error_proc'
+    vendor/gems/formtastic-1.1.0.beta/lib/formtastic.rb:1859:in `semantic_form_for'
+    app/views/users/new.html.erb:3
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (41.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-10-17 15:59:04) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x7f8014fa3200>) on line #4 of app/views/users/new.html.erb:
+1: <h1>Register</h1>
+2: 
+3: 
+4:     <%= render :partial => "form", :object => f %>
+
+    app/views/users/new.html.erb:4
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (35.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-10-17 16:01:50) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x7f8015133ae8>) on line #4 of app/views/users/_form.html.erb:
+1: 
+2: 
+3: 
+4:       <%= f.input :first_name, :label => 'First name' %>
+5:       <%= f.input :middle_initial, :label => 'Middle initial' %>
+6:       <%= f.input :last_name, :label => 'Last name' %>
+7:       <%= f.input :date_of_birth, :label => 'Date of birth', :start_year => 1900 %>
+
+    app/views/users/_form.html.erb:4
+    app/views/users/new.html.erb:6
+    vendor/gems/formtastic-1.1.0.beta/lib/formtastic.rb:1364:in `field_set_and_list_wrapping'
+    vendor/gems/formtastic-1.1.0.beta/lib/formtastic.rb:270:in `inputs'
+    app/views/users/new.html.erb:4
+    vendor/gems/formtastic-1.1.0.beta/lib/formtastic.rb:1860:in `semantic_form_for'
+    vendor/gems/formtastic-1.1.0.beta/lib/formtastic.rb:1826:in `with_custom_field_error_proc'
+    vendor/gems/formtastic-1.1.0.beta/lib/formtastic.rb:1859:in `semantic_form_for'
+    app/views/users/new.html.erb:2
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (45.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-10-17 16:03:07) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` [0m
+  [4;36;1mRole Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT * FROM `race_disciplines` [0m
+  [4;36;1mRaceDiscipline Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` [0m
+  [4;36;1mRaceCategory Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_categories`[0m
+Rendered users/_form (73.5ms)
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (9.3ms)
+Rendered layouts/_topnav (1.5ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.6ms)
+Completed in 208ms (View: 94, DB: 4) | 200 OK [http://localhost/account/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-10-17 16:05:04) [POST]
+  Parameters: {"commit"=>"Create User", "action"=>"create", "authenticity_token"=>"KfFkD5lJ+c+Vz1SR9SXKLiN45ZWDTPdBZNa4fWuc8Zs=", "controller"=>"users", "user"=>{"member_since(2i)"=>"1", "race_discipline_ids"=>["", "1", "2", "3", "4"], "profile"=>"member profile", "member_since(3i)"=>"19", "password_confirmation"=>"[FILTERED]", "user_image_url"=>"rails.png", "role_ids"=>["", "1", "5", "6"], "usac_license"=>"", "performance_team_member"=>"0", "gender"=>"Male", "password_salt"=>"[FILTERED]", "last_name"=>"Kutya", "date_of_birth(1i)"=>"1900", "middle_initial"=>"M", "race_category_ids"=>["", "4", "5"], "password"=>"[FILTERED]", "login"=>"mkutya", "date_of_birth(2i)"=>"1", "active"=>"1", "member_since(1i)"=>"2005", "image_gallery_url"=>"", "date_of_birth(3i)"=>"1", "first_name"=>"Morzsa"}}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+WARNING: Can't mass-assign these protected attributes: password_confirmation
+  [4;35;1mRaceDiscipline Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mRaceDiscipline Load (0.3ms)[0m   [0;1mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (1,2,3,4)) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mRole Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` IN (1,5,6)) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mRaceCategory Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mRaceCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (4,5)) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'mkutya') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'ffb81dd82b03678ec0cd037ff0d57971e3a6d5fadaf89a2b17aab764fd9c3f5738fb1fd910538b88c551a8427d99d452dddee11aee9b00b8fe4369cb322a04e7') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`single_access_token` = BINARY 'E3Vzcv4rO0tCctYwBFfO') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mRole Load (15.4ms)[0m   [0;1mSELECT * FROM `roles` [0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT * FROM `race_disciplines` [0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` [0m
+Rendered users/_form (140.2ms)
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (11.4ms)
+Rendered layouts/_topnav (1.7ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 219ms (View: 146, DB: 21) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-10-17 16:11:27) [POST]
+  Parameters: {"commit"=>"Create User", "action"=>"create", "authenticity_token"=>"KfFkD5lJ+c+Vz1SR9SXKLiN45ZWDTPdBZNa4fWuc8Zs=", "controller"=>"users", "user"=>{"member_since(2i)"=>"1", "race_discipline_ids"=>["", "1", "2", "3", "4"], "profile"=>"member profile", "member_since(3i)"=>"19", "password_confirmation"=>"[FILTERED]", "user_image_url"=>"rails.png", "role_ids"=>["", "1", "5", "6"], "usac_license"=>"", "performance_team_member"=>"0", "gender"=>"Male", "password_salt"=>"[FILTERED]", "last_name"=>"Kutya", "date_of_birth(1i)"=>"1900", "middle_initial"=>"M", "race_category_ids"=>["", "4", "5"], "password"=>"[FILTERED]", "login"=>"mkutya", "date_of_birth(2i)"=>"1", "active"=>"1", "member_since(1i)"=>"2005", "image_gallery_url"=>"", "date_of_birth(3i)"=>"1", "first_name"=>"Morzsa"}}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mRaceDiscipline Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (1,2,3,4)) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mRole Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` IN (1,5,6)) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mRaceCategory Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (4,5)) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'mkutya') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY '0d9e98297c4fed929a4818b02ecab0276a31d046e2e5c8223b35c71857afecb3ce20100ba6aa8933c6992f989783d8a3402568952659eb34ed0c26686aaf66e8') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`single_access_token` = BINARY 'RxlhHFT3T0zNSBZgs4lG') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`single_access_token`, `last_request_at`, `created_at`, `profile`, `crypted_password`, `user_image_url`, `perishable_token`, `updated_at`, `performance_team_member`, `usac_license`, `gender`, `failed_login_count`, `current_login_ip`, `password_salt`, `current_login_at`, `last_name`, `persistence_token`, `login_count`, `middle_initial`, `date_of_birth`, `last_login_ip`, `login`, `last_login_at`, `first_name`, `image_gallery_url`, `member_since`, `active`) VALUES('RxlhHFT3T0zNSBZgs4lG', '2010-10-17 23:11:27', '2010-10-17 23:11:27', 'member profile', 'f06bd2b8b525ef27543c2df23c3dc3f7a9b34be3aa61c2c5fa322e9172af92f26469dd996a6c9f7175a86f29b824f7af0402d842f36e327a9f763fe98dbf0326', 'rails.png', '5d0djCRkrKqKiDWe9GLI', '2010-10-17 23:11:27', 0, '', 'Male', 0, '127.0.0.1', 'UyUfwmlsAgRU7euFOpHY', '2010-10-17 23:11:27', 'Kutya', '0d9e98297c4fed929a4818b02ecab0276a31d046e2e5c8223b35c71857afecb3ce20100ba6aa8933c6992f989783d8a3402568952659eb34ed0c26686aaf66e8', 1, 'M', '1900-01-01', NULL, 'mkutya', NULL, 'Morzsa', '', '2005-01-19', 1)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `roles_users`[0m
+  [4;35;1mroles_users Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `roles_users` (`created_at`, `updated_at`, `role_id`, `user_id`) VALUES ('2010-10-14 17:35:28', '2010-10-14 17:35:28', 1, 2)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `roles_users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `roles_users` (`created_at`, `updated_at`, `role_id`, `user_id`) VALUES ('2010-10-14 17:35:28', '2010-10-14 17:35:28', 5, 2)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `roles_users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `roles_users` (`created_at`, `updated_at`, `role_id`, `user_id`) VALUES ('2010-10-14 17:35:28', '2010-10-14 17:35:28', 6, 2)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `race_disciplines_users`[0m
+  [4;36;1mrace_disciplines_users Columns (0.3ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines_users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `race_disciplines_users` (`created_at`, `updated_at`, `user_id`, `race_discipline_id`) VALUES ('2010-10-14 17:35:27', '2010-10-14 17:35:27', 2, 1)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `race_disciplines_users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `race_disciplines_users` (`created_at`, `updated_at`, `user_id`, `race_discipline_id`) VALUES ('2010-10-14 17:35:27', '2010-10-14 17:35:27', 2, 2)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `race_disciplines_users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `race_disciplines_users` (`created_at`, `updated_at`, `user_id`, `race_discipline_id`) VALUES ('2010-10-14 17:35:27', '2010-10-14 17:35:27', 2, 3)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `race_disciplines_users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO `race_disciplines_users` (`created_at`, `updated_at`, `user_id`, `race_discipline_id`) VALUES ('2010-10-14 17:35:27', '2010-10-14 17:35:27', 2, 4)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `race_categories_users`[0m
+  [4;35;1mrace_categories_users Columns (0.3ms)[0m   [0mSHOW FIELDS FROM `race_categories_users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `race_categories_users` (`created_at`, `updated_at`, `race_category_id`, `user_id`) VALUES ('2010-10-14 17:35:28', '2010-10-14 17:35:28', 4, 2)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `race_categories_users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO `race_categories_users` (`created_at`, `updated_at`, `race_category_id`, `user_id`) VALUES ('2010-10-14 17:35:28', '2010-10-14 17:35:28', 5, 2)[0m
+  [4;35;1mSQL (47.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/user_session/new
+Completed in 214ms (DB: 58) | 302 Found [http://localhost/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-10-17 16:11:27) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '0d9e98297c4fed929a4818b02ecab0276a31d046e2e5c8223b35c71857afecb3ce20100ba6aa8933c6992f989783d8a3402568952659eb34ed0c26686aaf66e8') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 23:11:27', `perishable_token` = 'yjy6uBau7gncJedKjsx5', `last_request_at` = '2010-10-17 23:11:27' WHERE `id` = 2[0m
+  [4;36;1mSQL (60.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 89ms (DB: 63) | 302 Found [http://localhost/user_session/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 16:11:27) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '0d9e98297c4fed929a4818b02ecab0276a31d046e2e5c8223b35c71857afecb3ce20100ba6aa8933c6992f989783d8a3402568952659eb34ed0c26686aaf66e8') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 23:11:27', `perishable_token` = 'kHcgS5iFU5b5uqlXFAbb', `last_request_at` = '2010-10-17 23:11:27' WHERE `id` = 2[0m
+  [4;35;1mSQL (36.1ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (108.5ms)
+Rendered layouts/_topnav (3.0ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 192ms (View: 123, DB: 39) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-10-17 16:13:17) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"users"}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '0d9e98297c4fed929a4818b02ecab0276a31d046e2e5c8223b35c71857afecb3ce20100ba6aa8933c6992f989783d8a3402568952659eb34ed0c26686aaf66e8') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 23:13:17', `perishable_token` = 'FOOW28N9uFR2MopDMSnO', `last_request_at` = '2010-10-17 23:13:17' WHERE `id` = 2[0m
+  [4;35;1mSQL (74.2ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` [0m
+  [4;35;1mRole Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mroles_users Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 2 ) [0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` [0m
+  [4;35;1mRaceDiscipline Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mrace_disciplines_users Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines_users`[0m
+  [4;35;1mRaceDiscipline Load (0.3ms)[0m   [0mSELECT * FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 2 ) [0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` [0m
+  [4;35;1mRaceCategory Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mrace_categories_users Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `race_categories_users`[0m
+  [4;35;1mRaceCategory Load (0.3ms)[0m   [0mSELECT * FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 2 ) [0m
+Rendered users/_form (155.4ms)
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (10.1ms)
+Rendered layouts/_topnav (2.9ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 294ms (View: 178, DB: 82) | 200 OK [http://localhost/account/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-10-17 16:13:37) [PUT]
+  Parameters: {"commit"=>"Update User", "action"=>"update", "_method"=>"put", "authenticity_token"=>"KfFkD5lJ+c+Vz1SR9SXKLiN45ZWDTPdBZNa4fWuc8Zs=", "id"=>"2", "controller"=>"users", "user"=>{"member_since(2i)"=>"1", "race_discipline_ids"=>["", "1", "2", "3", "4"], "profile"=>"member profile", "member_since(3i)"=>"19", "password_confirmation"=>"[FILTERED]", "user_image_url"=>"rails.png", "role_ids"=>["", "1", "5", "6"], "usac_license"=>"xyz123", "performance_team_member"=>"1", "gender"=>"Male", "password_salt"=>"[FILTERED]", "last_name"=>"Kutya", "date_of_birth(1i)"=>"1900", "middle_initial"=>"M", "race_category_ids"=>["", "4", "5"], "password"=>"[FILTERED]", "login"=>"mkutya", "date_of_birth(2i)"=>"1", "active"=>"1", "member_since(1i)"=>"2005", "image_gallery_url"=>"http://picasaweb.google.com/cnemeth9", "date_of_birth(3i)"=>"1", "first_name"=>"Morzsa"}}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '0d9e98297c4fed929a4818b02ecab0276a31d046e2e5c8223b35c71857afecb3ce20100ba6aa8933c6992f989783d8a3402568952659eb34ed0c26686aaf66e8') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 23:13:38', `perishable_token` = 'a1CV-1L0EspESG-huLC7', `last_request_at` = '2010-10-17 23:13:38' WHERE `id` = 2[0m
+  [4;35;1mSQL (36.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mRaceDiscipline Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (1,2,3,4)) [0m
+  [4;36;1mrace_disciplines_users Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines_users`[0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT * FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 2 ) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mRole Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` IN (1,5,6)) [0m
+  [4;36;1mroles_users Columns (0.3ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 2 ) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mRaceCategory Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `race_categories`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (4,5)) [0m
+  [4;36;1mrace_categories_users Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `race_categories_users`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 2 ) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 23:13:38', `image_gallery_url` = 'http://picasaweb.google.com/cnemeth9', `perishable_token` = 'osMSMpRid_slp4_9UFm0', `usac_license` = 'xyz123', `performance_team_member` = 1 WHERE `id` = 2[0m
+  [4;36;1mSQL (32.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Completed in 226ms (DB: 76) | 302 Found [http://localhost/users/2]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 16:13:38) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '0d9e98297c4fed929a4818b02ecab0276a31d046e2e5c8223b35c71857afecb3ce20100ba6aa8933c6992f989783d8a3402568952659eb34ed0c26686aaf66e8') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 23:13:38', `perishable_token` = 'T2kxII_70PXVKnfRXoMS', `last_request_at` = '2010-10-17 23:13:38' WHERE `id` = 2[0m
+  [4;35;1mSQL (85.7ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (101.9ms)
+Rendered layouts/_topnav (3.1ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 246ms (View: 123, DB: 89) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-10-17 16:13:54) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"KfFkD5lJ+c+Vz1SR9SXKLiN45ZWDTPdBZNa4fWuc8Zs=", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = '0d9e98297c4fed929a4818b02ecab0276a31d046e2e5c8223b35c71857afecb3ce20100ba6aa8933c6992f989783d8a3402568952659eb34ed0c26686aaf66e8') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 23:13:54', `perishable_token` = 'fqHhXI0csOj3CALerxED', `last_request_at` = '2010-10-17 23:13:54' WHERE `id` = 2[0m
+  [4;35;1mSQL (39.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000home
+Completed in 76ms (DB: 42) | 302 Found [http://localhost/user_session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-17 16:13:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (118.0ms)
+Rendered layouts/_topnav (6.7ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 131ms (View: 127, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-10-17 16:13:57) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (17.8ms)
+Rendered layouts/_topnav (1.6ms)
+Rendered layouts/_bottomnav (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 139ms (View: 32, DB: 2) | 200 OK [http://localhost/user_session/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-10-17 16:14:07) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "login"=>"mkutya"}, "action"=>"create", "authenticity_token"=>"KfFkD5lJ+c+Vz1SR9SXKLiN45ZWDTPdBZNa4fWuc8Zs=", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'mkutya') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 23:14:07', `perishable_token` = 'eagC0tl3V2Z4p0zXR4sA', `last_login_at` = '2010-10-17 23:11:27', `last_login_ip` = '127.0.0.1', `current_login_at` = '2010-10-17 23:14:07', `login_count` = 2, `last_request_at` = '2010-10-17 23:14:07' WHERE `id` = 2[0m
+  [4;36;1mSQL (52.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/user_session/new
+Completed in 86ms (DB: 55) | 302 Found [http://localhost/user_session]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-10-17 16:14:07) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '2') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 23:14:07', `perishable_token` = '1AiQzvYhtqghyJTgVp_3', `last_request_at` = '2010-10-17 23:14:07' WHERE `id` = 2[0m
+  [4;35;1mSQL (55.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 165ms (DB: 58) | 302 Found [http://localhost/user_session/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 16:14:08) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '2') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 23:14:08', `perishable_token` = '10QcaVXcx3aGPOGB9Ak3', `last_request_at` = '2010-10-17 23:14:08' WHERE `id` = 2[0m
+  [4;36;1mSQL (47.3ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (14.9ms)
+Rendered layouts/_topnav (2.8ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 109ms (View: 26, DB: 50) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-10-17 16:14:12) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"KfFkD5lJ+c+Vz1SR9SXKLiN45ZWDTPdBZNa4fWuc8Zs=", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '2') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 23:14:12', `perishable_token` = '1fWS76noyHW7K9uQZej7', `last_request_at` = '2010-10-17 23:14:12' WHERE `id` = 2[0m
+  [4;36;1mSQL (30.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000home
+Completed in 74ms (DB: 33) | 302 Found [http://localhost/user_session]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-17 16:14:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (112.3ms)
+Rendered layouts/_topnav (6.9ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 126ms (View: 121, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-10-17 16:14:13) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (13.8ms)
+Rendered layouts/_topnav (2.0ms)
+Rendered layouts/_bottomnav (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 44ms (View: 22, DB: 2) | 200 OK [http://localhost/user_session/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-10-17 16:14:24) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "login"=>"cnemeth"}, "action"=>"create", "authenticity_token"=>"KfFkD5lJ+c+Vz1SR9SXKLiN45ZWDTPdBZNa4fWuc8Zs=", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'cnemeth') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 23:14:24', `perishable_token` = 'wg9GgoUzcb8l10dRuM0c', `last_login_at` = '2010-10-17 22:36:05', `current_login_at` = '2010-10-17 23:14:24', `login_count` = 8, `last_request_at` = '2010-10-17 23:14:24' WHERE `id` = 1[0m
+  [4;35;1mSQL (44.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/user_session/new
+Completed in 78ms (DB: 46) | 302 Found [http://localhost/user_session]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-10-17 16:14:24) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 23:14:24', `perishable_token` = 'HfUYV22tsrX66hEr7NYT', `last_request_at` = '2010-10-17 23:14:24' WHERE `id` = 1[0m
+  [4;36;1mSQL (47.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 76ms (DB: 49) | 302 Found [http://localhost/user_session/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 16:14:24) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 23:14:25', `perishable_token` = 'SuPJLRIMYUX0X93ZtGjX', `last_request_at` = '2010-10-17 23:14:25' WHERE `id` = 1[0m
+  [4;35;1mSQL (33.1ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (14.0ms)
+Rendered layouts/_topnav (3.0ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 175ms (View: 27, DB: 36) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-10-17 16:14:31) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"users"}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 23:14:31', `perishable_token` = 'Vm6joz3i01s_RgYEisga', `last_request_at` = '2010-10-17 23:14:31' WHERE `id` = 1[0m
+  [4;35;1mSQL (64.7ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` [0m
+  [4;35;1mRole Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mroles_users Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` [0m
+  [4;35;1mRaceDiscipline Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mrace_disciplines_users Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines_users`[0m
+  [4;35;1mRaceDiscipline Load (0.3ms)[0m   [0mSELECT * FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` [0m
+  [4;35;1mRaceCategory Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mrace_categories_users Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_categories_users`[0m
+  [4;35;1mRaceCategory Load (0.3ms)[0m   [0mSELECT * FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+Rendered users/_form (79.2ms)
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (9.7ms)
+Rendered layouts/_topnav (2.9ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 277ms (View: 93, DB: 82) | 200 OK [http://localhost/account/edit]
+  [4;35;1mSQL (0.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-10-17 16:14:48) [PUT]
+  Parameters: {"commit"=>"Update User", "action"=>"update", "_method"=>"put", "authenticity_token"=>"KfFkD5lJ+c+Vz1SR9SXKLiN45ZWDTPdBZNa4fWuc8Zs=", "id"=>"1", "controller"=>"users", "user"=>{"member_since(2i)"=>"7", "race_discipline_ids"=>["", "1"], "profile"=>"my profile", "member_since(3i)"=>"6", "password_confirmation"=>"[FILTERED]", "user_image_url"=>"rails.png", "role_ids"=>["", "16", "17"], "usac_license"=>"", "performance_team_member"=>"0", "gender"=>"Male", "password_salt"=>"[FILTERED]", "last_name"=>"Nemeth", "date_of_birth(1i)"=>"1959", "middle_initial"=>"S", "race_category_ids"=>[""], "password"=>"[FILTERED]", "login"=>"cnemeth", "date_of_birth(2i)"=>"4", "active"=>"1", "member_since(1i)"=>"2009", "image_gallery_url"=>"http://picasaweb.google.com/cnemeth9", "date_of_birth(3i)"=>"9", "first_name"=>"Csaba"}}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 23:14:49', `perishable_token` = 'XEGD1dVcWqLhsj7RpIOc', `last_request_at` = '2010-10-17 23:14:49' WHERE `id` = 1[0m
+  [4;35;1mSQL (35.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mRaceDiscipline Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;35;1mRaceDiscipline Load (0.2ms)[0m   [0mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` = 1) [0m
+  [4;36;1mrace_disciplines_users Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines_users`[0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT * FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `race_disciplines_users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO `race_disciplines_users` (`created_at`, `updated_at`, `user_id`, `race_discipline_id`) VALUES ('2010-10-14 17:35:27', '2010-10-14 17:35:27', 1, 1)[0m
+  [4;35;1mSQL (39.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mRole Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.8ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;36;1mroles_users Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `roles_users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO `roles_users` (`created_at`, `updated_at`, `role_id`, `user_id`) VALUES ('2010-10-14 17:35:28', '2010-10-14 17:35:28', 16, 1)[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mdescribe `roles_users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO `roles_users` (`created_at`, `updated_at`, `role_id`, `user_id`) VALUES ('2010-10-14 17:35:28', '2010-10-14 17:35:28', 17, 1)[0m
+  [4;35;1mSQL (44.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mrace_categories_users Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_categories_users`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 23:14:49', `perishable_token` = 'jsnodtpQOoy9KjiNT3U2' WHERE `id` = 1[0m
+  [4;36;1mSQL (39.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Completed in 260ms (DB: 172) | 302 Found [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 16:14:49) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 23:14:49', `perishable_token` = 'bcExcONTvcH9mUCMKPrM', `last_request_at` = '2010-10-17 23:14:49' WHERE `id` = 1[0m
+  [4;35;1mSQL (69.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (14.6ms)
+Rendered layouts/_topnav (3.0ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 215ms (View: 32, DB: 72) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-10-17 16:15:35) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"users"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 23:15:35', `perishable_token` = 'mAdrODV49D7A7yLyZaRe', `last_request_at` = '2010-10-17 23:15:35' WHERE `id` = 1[0m
+  [4;35;1mSQL (48.5ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` [0m
+  [4;35;1mRole Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mroles_users Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` [0m
+  [4;35;1mRaceDiscipline Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mrace_disciplines_users Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines_users`[0m
+  [4;35;1mRaceDiscipline Load (0.4ms)[0m   [0mSELECT * FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` [0m
+  [4;35;1mRaceCategory Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mrace_categories_users Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `race_categories_users`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+Rendered users/_form (153.5ms)
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.3ms)
+Rendered layouts/_header (9.8ms)
+Rendered layouts/_topnav (2.8ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 256ms (View: 169, DB: 55) | 200 OK [http://localhost/account/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 16:19:04) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 23:19:04', `perishable_token` = '3RoCYua1e5s345sxMUpq', `last_request_at` = '2010-10-17 23:19:04' WHERE `id` = 1[0m
+  [4;35;1mSQL (52.5ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+
+ActionView::TemplateError (undefined method `role' for #<User:0x7f801539d568>) on line #19 of app/views/users/show.html.erb:
+16:     <%=h @user.usac_license == '' ? "N/A" : @user.usac_license %></td></tr>
+17:   <tr><th>Login name </th><td><%=h @user.login %></td></tr>
+18:   <tr><th>Member profile</th><td><%=h @user.profile %></td></tr>
+19:   <tr><th>Member roles</th><td><%=h @user.role.name %></td></tr>
+20: </table>
+21: 
+22: 
+
+    app/views/users/show.html.erb:19
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (36.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 16:19:38) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 23:19:38', `perishable_token` = 'DVl9jJ_DZvI0Kbb5xDfV', `last_request_at` = '2010-10-17 23:19:38' WHERE `id` = 1[0m
+  [4;36;1mSQL (51.3ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` [0m
+  [4;36;1mRole Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (10.4ms)
+Rendered layouts/_topnav (3.2ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.6ms)
+Completed in 217ms (View: 39, DB: 55) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 16:21:13) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 23:21:13', `perishable_token` = 'Ceg2G4U1digCHhgCE_0M', `last_request_at` = '2010-10-17 23:21:13' WHERE `id` = 1[0m
+  [4;36;1mSQL (45.7ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+
+ActionView::TemplateError (undefined local variable or method `member_roles' for #<ActionView::Base:0x7f801523efa0>) on line #19 of app/views/users/show.html.erb:
+16:     <%=h @user.usac_license == '' ? "N/A" : @user.usac_license %></td></tr>
+17:   <tr><th>Login name </th><td><%=h @user.login %></td></tr>
+18:   <tr><th>Member profile</th><td><%=h @user.profile %></td></tr>
+19:   <tr><th>Member roles</th><td><%=h member_roles %></td></tr>
+20: </table>
+21: 
+22: 
+
+    app/views/users/show.html.erb:19
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (33.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 16:21:27) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 23:21:27', `perishable_token` = 'ncrd_sPI8wHT1KJTxK_l', `last_request_at` = '2010-10-17 23:21:27' WHERE `id` = 1[0m
+  [4;35;1mSQL (43.6ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` [0m
+  [4;35;1mRole Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (10.7ms)
+Rendered layouts/_topnav (2.8ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 202ms (View: 33, DB: 48) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 16:21:49) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 23:21:49', `perishable_token` = 'yMXRqdBo4tAnQDd-TGc5', `last_request_at` = '2010-10-17 23:21:49' WHERE `id` = 1[0m
+  [4;35;1mSQL (46.3ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` [0m
+  [4;35;1mRole Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (12.1ms)
+Rendered layouts/_topnav (3.2ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 205ms (View: 122, DB: 50) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 16:21:51) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 23:21:52', `perishable_token` = 'A9YW53BAreJ8We8s_THW', `last_request_at` = '2010-10-17 23:21:52' WHERE `id` = 1[0m
+  [4;35;1mSQL (40.7ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` [0m
+  [4;35;1mRole Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (91.8ms)
+Rendered layouts/_topnav (3.7ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 194ms (View: 117, DB: 44) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 16:23:29) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 23:23:29', `perishable_token` = 'BA548Cm1B8NkgJImqs4m', `last_request_at` = '2010-10-17 23:23:29' WHERE `id` = 1[0m
+  [4;35;1mSQL (46.6ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` [0m
+  [4;35;1mRole Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` [0m
+  [4;35;1mRaceDiscipline Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` [0m
+  [4;35;1mRaceCategory Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (97.6ms)
+Rendered layouts/_topnav (3.0ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 222ms (View: 135, DB: 52) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 16:24:51) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 23:24:51', `perishable_token` = 'beuYy12cNXkuIPEknYA3', `last_request_at` = '2010-10-17 23:24:51' WHERE `id` = 1[0m
+  [4;35;1mSQL (44.4ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mroles_users Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mrace_disciplines_users Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines_users`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;35;1mRaceDiscipline Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` [0m
+  [4;35;1mRaceCategory Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (12.5ms)
+Rendered layouts/_topnav (3.2ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 220ms (View: 137, DB: 50) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 16:25:08) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 23:25:08', `perishable_token` = 'vlKRbOxHwAyZScytO9uN', `last_request_at` = '2010-10-17 23:25:08' WHERE `id` = 1[0m
+  [4;35;1mSQL (57.2ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mroles_users Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mrace_disciplines_users Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `race_disciplines_users`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;35;1mRaceDiscipline Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mrace_categories_users Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `race_categories_users`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (12.1ms)
+Rendered layouts/_topnav (5.4ms)
+Rendered layouts/_bottomnav (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.6ms)
+Completed in 241ms (View: 143, DB: 64) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 16:25:36) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 23:25:36', `perishable_token` = 'xlrhcqQm_GCaQcr0Ae_A', `last_request_at` = '2010-10-17 23:25:36' WHERE `id` = 1[0m
+  [4;35;1mSQL (46.7ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mRaceCategory Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+
+ActionView::TemplateError (undefined method `names' for #<Class:0x7f8015181f18>) on line #21 of app/views/users/show.html.erb:
+18:   <tr><th>Member profile</th><td><%=h @user.profile %></td></tr>
+19:   <tr><th>Member roles</th><td><%=h @user.roles.name %></td></tr>
+20:   <tr><th>Race disciplines</th><td><%=h @user.race_disciplines.name %></td></tr>
+21:   <tr><th>Race categories</th><td><%=h @user.race_categories.names %></td></tr>
+22: </table>
+23: 
+24: <%= link_to 'Edit', edit_account_path %>
+
+    app/views/users/show.html.erb:21
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (40.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 16:26:02) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 23:26:02', `perishable_token` = 'AKLXrHofKdiBqnxffF4M', `last_request_at` = '2010-10-17 23:26:02' WHERE `id` = 1[0m
+  [4;36;1mSQL (47.2ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mroles_users Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mrace_disciplines_users Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines_users`[0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT * FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;36;1mRaceDiscipline Columns (0.3ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mRaceCategory Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `race_categories`[0m
+
+ActionView::TemplateError (undefined method `names' for #<Class:0x7f8015598020>) on line #21 of app/views/users/show.html.erb:
+18:   <tr><th>Member profile</th><td><%=h @user.profile %></td></tr>
+19:   <tr><th>Member roles</th><td><%=h @user.roles %></td></tr>
+20:   <tr><th>Race disciplines</th><td><%=h @user.race_disciplines %></td></tr>
+21:   <tr><th>Race categories</th><td><%=h @user.race_categories.names %></td></tr>
+22: </table>
+23: 
+24: <%= link_to 'Edit', edit_account_path %>
+
+    app/views/users/show.html.erb:21
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (38.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 16:26:08) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 23:26:08', `perishable_token` = 'RAkozPqwsFlPkGp9XRSu', `last_request_at` = '2010-10-17 23:26:08' WHERE `id` = 1[0m
+  [4;35;1mSQL (34.8ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mroles_users Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mrace_disciplines_users Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines_users`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;35;1mRaceDiscipline Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mRaceCategory Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+
+ActionView::TemplateError (undefined method `names' for #<Class:0x7f8015383fc8>) on line #21 of app/views/users/show.html.erb:
+18:   <tr><th>Member profile</th><td><%=h @user.profile %></td></tr>
+19:   <tr><th>Member roles</th><td><%=h @user.roles %></td></tr>
+20:   <tr><th>Race disciplines</th><td><%=h @user.race_disciplines %></td></tr>
+21:   <tr><th>Race categories</th><td><%=h @user.race_categories.names %></td></tr>
+22: </table>
+23: 
+24: <%= link_to 'Edit', edit_account_path %>
+
+    app/views/users/show.html.erb:21
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (37.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 16:26:21) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 23:26:21', `perishable_token` = 'WDzRTX2fgZtJbSu7dCca', `last_request_at` = '2010-10-17 23:26:21' WHERE `id` = 1[0m
+  [4;36;1mSQL (35.9ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mroles_users Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mrace_disciplines_users Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines_users`[0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT * FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;36;1mRaceDiscipline Columns (0.3ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;35;1mrace_categories_users Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_categories_users`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (10.1ms)
+Rendered layouts/_topnav (3.1ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 221ms (View: 51, DB: 42) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-10-17 16:26:47) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"users"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 23:26:47', `perishable_token` = '0gRiWYGBBX-jvLczrhZe', `last_request_at` = '2010-10-17 23:26:47' WHERE `id` = 1[0m
+  [4;36;1mSQL (47.5ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` [0m
+  [4;36;1mRole Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mroles_users Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRaceDiscipline Load (0.2ms)[0m   [0mSELECT * FROM `race_disciplines` [0m
+  [4;36;1mRaceDiscipline Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;35;1mrace_disciplines_users Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines_users`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` [0m
+  [4;36;1mRaceCategory Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `race_categories`[0m
+  [4;35;1mrace_categories_users Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `race_categories_users`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+Rendered users/_form (150.2ms)
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (10.8ms)
+Rendered layouts/_topnav (2.9ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 341ms (View: 173, DB: 54) | 200 OK [http://localhost/account/edit]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-10-17 16:26:59) [PUT]
+  Parameters: {"commit"=>"Update User", "action"=>"update", "_method"=>"put", "authenticity_token"=>"KfFkD5lJ+c+Vz1SR9SXKLiN45ZWDTPdBZNa4fWuc8Zs=", "id"=>"1", "controller"=>"users", "user"=>{"member_since(2i)"=>"7", "race_discipline_ids"=>[""], "profile"=>"my profile", "member_since(3i)"=>"6", "password_confirmation"=>"[FILTERED]", "user_image_url"=>"rails.png", "role_ids"=>["", "16", "17"], "usac_license"=>"", "performance_team_member"=>"0", "gender"=>"Male", "password_salt"=>"[FILTERED]", "last_name"=>"Nemeth", "date_of_birth(1i)"=>"1959", "middle_initial"=>"S", "race_category_ids"=>[""], "password"=>"[FILTERED]", "login"=>"cnemeth", "date_of_birth(2i)"=>"4", "active"=>"1", "member_since(1i)"=>"2009", "image_gallery_url"=>"http://picasaweb.google.com/cnemeth9", "date_of_birth(3i)"=>"9", "first_name"=>"Csaba"}}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 23:26:59', `perishable_token` = 'E3gis_MzEcxe0fzpzduK', `last_request_at` = '2010-10-17 23:26:59' WHERE `id` = 1[0m
+  [4;36;1mSQL (34.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mrace_disciplines_users Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines_users`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mRaceDiscipline Columns (0.3ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mDELETE FROM `race_disciplines_users` WHERE user_id = 1 AND race_discipline_id IN (1)[0m
+  [4;36;1mSQL (42.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mRole Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;35;1mroles_users Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mrace_categories_users Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_categories_users`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-17 23:26:59', `perishable_token` = '8QxWTdAwbmEk8tkj98Ah' WHERE `id` = 1[0m
+  [4;35;1mSQL (39.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Completed in 288ms (DB: 125) | 302 Found [http://localhost/users/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-17 16:26:59) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-17 23:26:59', `perishable_token` = 'NzJUqUGYRlSpDR_Qpx0d', `last_request_at` = '2010-10-17 23:26:59' WHERE `id` = 1[0m
+  [4;36;1mSQL (76.2ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mroles_users Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mrace_disciplines_users Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines_users`[0m
+  [4;35;1mRaceDiscipline Load (0.2ms)[0m   [0mSELECT * FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;36;1mrace_categories_users Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_categories_users`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (10.1ms)
+Rendered layouts/_topnav (3.2ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 161ms (View: 45, DB: 82) | 200 OK [http://localhost/account]

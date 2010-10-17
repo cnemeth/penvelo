@@ -17,6 +17,7 @@ class User < ActiveRecord::Base
   attr_accessible :member_since
   attr_accessible :login
   attr_accessible :password
+  attr_accessible :password_confirmation
   attr_accessible :password_salt
   attr_accessible :profile
   attr_accessible :role_ids

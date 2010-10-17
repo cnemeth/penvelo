@@ -1,0 +1,25 @@
+<h1>Member Profile for &lt;&lt;&nbsp;<%= @user.name.to_s %>&nbsp;&gt;&gt; </h1>
+<h2>&lt;&lt;&nbsp;Last login at:&nbsp; <%=h @user.last_login_at %>&nbsp;&gt;&gt;</h2>
+
+<table>
+ <tr><th><%=h link_to(image_tag(@user.user_image_url)) %></th><td></td></tr>
+  <tr><th>First name</th><td><%=h @user.first_name %></td></tr>
+  <tr><th>Initial</th><td><%=h @user.middle_initial %></td></tr>
+  <tr><th>Last name</th><td><%=h @user.last_name %></td></tr>
+  <tr><th>Date of birth</th><td><%=h @user.date_of_birth %></td></tr>
+  <tr><th>Gender</th><td><%=h @user.gender %></td></tr>
+  <tr><th>Member since</th><td><%=h @user.member_since %></td></tr>
+  <tr><th>Image gallery URL</th><td><%=h @user.image_gallery_url %></td></tr>
+  <tr><th>Performance team member</th><td>
+    <%=h @user.performance_team_member == false ? "No" : "Yes" %></td></tr>
+  <tr><th>USAC license</th><td>
+    <%=h @user.usac_license == '' ? "N/A" : @user.usac_license %></td></tr>
+  <tr><th>Login name </th><td><%=h @user.login %></td></tr>
+  <tr><th>Member profile</th><td><%=h @user.profile %></td></tr>
+  <tr><th>Member roles</th><td><%=h @user.roles %></td></tr>
+  <tr><th>Race disciplines</th><td><%=h @user.race_disciplines %></td></tr>
+  <tr><th>Race categories</th><td><%=h @user.race_categories %></td></tr>
+</table>
+
+<%= link_to 'Edit', edit_account_path %>
+
