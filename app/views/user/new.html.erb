@@ -1,0 +1,27 @@
+<h1>Register</h1>
+
+<% semantic_form_for(@user) do |f| %>
+  <%= f.error_messages %>
+   <% f.inputs do %>
+    <%= f.input :first_name, :label => 'First name' %>
+    <%= f.input :middle_initial, :label => 'Middle initial' %>
+    <%= f.input :last_name, :label => 'Last name' %>
+    <%= f.input :date_of_birth, :label => 'Date of birth', :start_year => 1900 %>
+    <%= f.input :gender, :label => 'Gender' %>
+    <%= f.input :user_image_url, :label => 'User image url' %>
+    <%= f.input :image_gallery_url, :label => 'Image gallery url' %>
+    <%= f.input :member_since, :label => 'Member since' %>
+    <%= f.input :active, :label => 'Active' %>
+    <%= f.input :performance_team_member, :label => 'Performance team member' %>
+    <%= f.input :usac_license, :label => 'USAC license' %>
+    <%= f.input :profile, :label => 'Profile' %>
+    <%= f.input :login, :label => 'Login' %>
+    <%= f.input :password, :label => 'Password' %>
+    <%= f.input :password_confirmation, :label => 'Confirm password' %>
+    <%= f.input :password_salt, :label => 'Password salt' %>
+
+
+    <%= f.buttons %>
+  <% end %>
+<% end %>
+

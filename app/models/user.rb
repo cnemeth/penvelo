@@ -40,35 +40,38 @@ class User < ActiveRecord::Base
                 ]
 end
 
+
 # == Schema Information
 #
 # Table name: users
 #
-#  id                  :integer(4)      not null, primary key
-#  first_name          :string(40)      not null
-#  middle_initial      :string(255)
-#  last_name           :string(40)      not null
-#  date_of_birth       :date
-#  gender              :string(255)     default("Male"), not null
-#  user_image_url      :string(255)
-#  image_gallery_url   :string(255)
-#  member_since        :date            not null
-#  usac_license        :string(20)
-#  profile             :text
-#  login               :string(255)     not null
-#  crypted_password    :string(255)     not null
-#  password_salt       :string(255)     not null
-#  persistence_token   :string(255)     not null
-#  single_access_token :string(255)     not null
-#  perishable_token    :string(255)     not null
-#  login_count         :integer(4)      default(0), not null
-#  failed_login_count  :integer(4)      default(0), not null
-#  last_request_at     :datetime
-#  last_login_at       :datetime
-#  current_login_at    :datetime
-#  last_login_ip       :string(255)
-#  current_login_ip    :string(255)
-#  created_at          :datetime
-#  updated_at          :datetime
+#  id                      :integer(4)      not null, primary key
+#  first_name              :string(40)      not null
+#  middle_initial          :string(255)
+#  last_name               :string(40)      not null
+#  date_of_birth           :date
+#  gender                  :string(255)     default("Male"), not null
+#  user_image_url          :string(255)
+#  image_gallery_url       :string(255)
+#  member_since            :date            not null
+#  active                  :boolean(1)      default(TRUE), not null
+#  performance_team_member :boolean(1)      default(FALSE)
+#  usac_license            :string(20)
+#  profile                 :text
+#  login                   :string(255)     not null
+#  crypted_password        :string(255)     not null
+#  password_salt           :string(255)     not null
+#  persistence_token       :string(255)     not null
+#  single_access_token     :string(255)     not null
+#  perishable_token        :string(255)     not null
+#  login_count             :integer(4)      default(0), not null
+#  failed_login_count      :integer(4)      default(0), not null
+#  last_request_at         :datetime
+#  last_login_at           :datetime
+#  current_login_at        :datetime
+#  last_login_ip           :string(255)
+#  current_login_ip        :string(255)
+#  created_at              :datetime
+#  updated_at              :datetime
 #
 

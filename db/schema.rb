@@ -247,24 +247,26 @@ ActiveRecord::Schema.define(:version => 20101014004449) do
   add_index "sponsors", ["sponsor_type_id"], :name => "index_sponsors_on_sponsor_type_id"
 
   create_table "users", :force => true do |t|
-    t.string   "first_name",          :limit => 40,                     :null => false
+    t.string   "first_name",              :limit => 40,                     :null => false
     t.string   "middle_initial"
-    t.string   "last_name",           :limit => 40,                     :null => false
+    t.string   "last_name",               :limit => 40,                     :null => false
     t.date     "date_of_birth"
-    t.string   "gender",                            :default => "Male", :null => false
+    t.string   "gender",                                :default => "Male", :null => false
     t.string   "user_image_url"
     t.string   "image_gallery_url"
-    t.date     "member_since",                                          :null => false
-    t.string   "usac_license",        :limit => 20
+    t.date     "member_since",                                              :null => false
+    t.boolean  "active",                                :default => true,   :null => false
+    t.boolean  "performance_team_member",               :default => false
+    t.string   "usac_license",            :limit => 20
     t.text     "profile"
-    t.string   "login",                                                 :null => false
-    t.string   "crypted_password",                                      :null => false
-    t.string   "password_salt",                                         :null => false
-    t.string   "persistence_token",                                     :null => false
-    t.string   "single_access_token",                                   :null => false
-    t.string   "perishable_token",                                      :null => false
-    t.integer  "login_count",                       :default => 0,      :null => false
-    t.integer  "failed_login_count",                :default => 0,      :null => false
+    t.string   "login",                                                     :null => false
+    t.string   "crypted_password",                                          :null => false
+    t.string   "password_salt",                                             :null => false
+    t.string   "persistence_token",                                         :null => false
+    t.string   "single_access_token",                                       :null => false
+    t.string   "perishable_token",                                          :null => false
+    t.integer  "login_count",                           :default => 0,      :null => false
+    t.integer  "failed_login_count",                    :default => 0,      :null => false
     t.datetime "last_request_at"
     t.datetime "last_login_at"
     t.datetime "current_login_at"

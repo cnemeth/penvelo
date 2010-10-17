@@ -9,8 +9,8 @@ class CreateUsers < ActiveRecord::Migration
       t.string :user_image_url
       t.string :image_gallery_url
       t.date :member_since, :null => false
-      t.bolean :active, :null => false, :default => true
-      t.bolean :performance_team_member, :default => false
+      t.boolean :active, :null => false, :default => true
+      t.boolean :performance_team_member, :default => false
       t.string :usac_license, :limit => 20
       t.text :profile
       t.string :login, :null => false
