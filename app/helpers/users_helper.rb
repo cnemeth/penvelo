@@ -14,29 +14,29 @@ module UsersHelper
 
   def member_roles(ids)
     role_ids = Role.find_all_by_id(ids)
-    roles = ""
+    roles = []
     role_ids.each do |r|
-      roles += r.name + ", "
+      roles.push( r.name )
     end
-    roles
+    roles.join(", ")
   end
 
   def member_race_disciplines(ids)
     race_discipline_ids = RaceDiscipline.find_all_by_id(ids)
-    race_disciplines = ""
+    race_disciplines = []
     race_discipline_ids.each do |r|
-      race_disciplines += r.name + ", "
+      race_disciplines.push(r.name)
     end
-    race_disciplines
+    race_disciplines.join(", ")
   end
 
   def member_race_categories(ids)
     race_category_ids = RaceCategory.find_all_by_id(ids)
-    race_categories = ""
+    race_categories = []
     race_category_ids.each do |r|
-      race_categories += r.name + ", "
+      race_categories.push(r.name)
     end
-    race_categories
+    race_categories.join(", ")
   end
 
 end
