@@ -16,9 +16,9 @@
     <%=h @user.usac_license == '' ? "N/A" : @user.usac_license %></td></tr>
   <tr><th>Login name </th><td><%=h @user.login %></td></tr>
   <tr><th>Member profile</th><td><%=h @user.profile %></td></tr>
-  <tr><th>Member roles</th><td><%=h @user.roles %></td></tr>
-  <tr><th>Race disciplines</th><td><%=h @user.race_disciplines %></td></tr>
-  <tr><th>Race categories</th><td><%=h @user.race_categories %></td></tr>
+  <tr><th>Member roles</th><td><%=h member_roles(@user.role_ids) %></td></tr>
+  <tr><th>Race disciplines</th><td><%=h member_race_disciplines(@user.race_discipline_ids) %></td></tr>
+  <tr><th>Race categories</th><td><%=h member_race_categories(@user.race_category_ids) %></td></tr>
 </table>
 
 <%= link_to 'Edit', edit_account_path %>
