@@ -8930,3 +8930,1234 @@ Rendered layouts/_bottomnav (0.5ms)
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
 Rendered layouts/_footer (0.4ms)
 Completed in 140ms (View: 54, DB: 48) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-18 09:53:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (30.8ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '2') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 16:53:04', `perishable_token` = '1DId0N_clxP-fuMwiWnF', `last_request_at` = '2010-10-18 16:53:04' WHERE `id` = 2[0m
+  [4;36;1mSQL (43.6ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (122.8ms)
+Rendered layouts/_bottomnav (2.7ms)
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (2.0ms)
+Completed in 170ms (View: 121, DB: 47) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 09:53:06) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '2') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 16:53:06', `perishable_token` = 'c9Ui9j9SDX50G9kpsiKH', `last_request_at` = '2010-10-18 16:53:06' WHERE `id` = 2[0m
+  [4;36;1mSQL (51.1ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 2 ) [0m
+  [4;36;1mRole Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` IN (1,5,6)) [0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 2 ) [0m
+  [4;35;1mRaceDiscipline Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (1,2,3,4)) [0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 2 ) [0m
+  [4;36;1mRaceCategory Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_categories`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (4,5)) [0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (10.4ms)
+Rendered layouts/_topnav (69.6ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.6ms)
+Completed in 208ms (View: 118, DB: 56) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-10-18 09:53:11) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"users"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '2') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 16:53:11', `perishable_token` = '5mtUJ406yAlrlqBrUVG8', `last_request_at` = '2010-10-18 16:53:11' WHERE `id` = 2[0m
+  [4;35;1mSQL (45.6ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` [0m
+  [4;35;1mRole Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mroles_users Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.5ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 2 ) [0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` [0m
+  [4;35;1mRaceDiscipline Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mrace_disciplines_users Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines_users`[0m
+  [4;35;1mRaceDiscipline Load (0.3ms)[0m   [0mSELECT * FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 2 ) [0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` [0m
+  [4;35;1mRaceCategory Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mrace_categories_users Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `race_categories_users`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 2 ) [0m
+Rendered users/_form (143.2ms)
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (10.4ms)
+Rendered layouts/_topnav (3.0ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 258ms (View: 169, DB: 54) | 200 OK [http://localhost/account/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-10-18 09:53:25) [PUT]
+  Parameters: {"commit"=>"Update User", "action"=>"update", "_method"=>"put", "authenticity_token"=>"KfFkD5lJ+c+Vz1SR9SXKLiN45ZWDTPdBZNa4fWuc8Zs=", "id"=>"2", "controller"=>"users", "user"=>{"member_since(2i)"=>"1", "race_discipline_ids"=>["", "1", "2", "4"], "profile"=>"member profile", "member_since(3i)"=>"19", "password_confirmation"=>"[FILTERED]", "user_image_url"=>"rails.png", "role_ids"=>["", "1", "5", "6"], "usac_license"=>"xyz123", "performance_team_member"=>"1", "gender"=>"Male", "password_salt"=>"[FILTERED]", "last_name"=>"Kutya", "date_of_birth(1i)"=>"1900", "middle_initial"=>"M", "race_category_ids"=>["", "4", "5"], "password"=>"[FILTERED]", "login"=>"mkutya", "date_of_birth(2i)"=>"1", "active"=>"1", "member_since(1i)"=>"2005", "image_gallery_url"=>"http://picasaweb.google.com/cnemeth9", "date_of_birth(3i)"=>"1", "first_name"=>"Morzsa"}}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '2') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 16:53:25', `perishable_token` = 'TyZBFSjzoRNg31GSKIwp', `last_request_at` = '2010-10-18 16:53:25' WHERE `id` = 2[0m
+  [4;35;1mSQL (42.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mRaceDiscipline Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;35;1mRaceDiscipline Load (0.2ms)[0m   [0mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (1,2,4)) [0m
+  [4;36;1mrace_disciplines_users Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines_users`[0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT * FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 2 ) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDELETE FROM `race_disciplines_users` WHERE user_id = 2 AND race_discipline_id IN (3)[0m
+  [4;36;1mSQL (43.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mRole Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` IN (1,5,6)) [0m
+  [4;35;1mroles_users Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 2 ) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mRaceCategory Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (4,5)) [0m
+  [4;35;1mrace_categories_users Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `race_categories_users`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 2 ) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 16:53:25', `perishable_token` = '9Y1QApcUFnnkdwRr4Ise' WHERE `id` = 2[0m
+  [4;35;1mSQL (35.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Completed in 287ms (DB: 129) | 302 Found [http://localhost/users/2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 09:53:25) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '2') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 16:53:25', `perishable_token` = 'yuHI9X-or2DmMBQO-_UI', `last_request_at` = '2010-10-18 16:53:25' WHERE `id` = 2[0m
+  [4;36;1mSQL (61.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 2 ) [0m
+  [4;36;1mRole Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` IN (1,5,6)) [0m
+  [4;36;1mRaceDiscipline Load (0.4ms)[0m   [0;1mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 2 ) [0m
+  [4;35;1mRaceDiscipline Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (1,2,4)) [0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 2 ) [0m
+  [4;36;1mRaceCategory Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_categories`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (4,5)) [0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (12.4ms)
+Rendered layouts/_topnav (2.9ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 219ms (View: 120, DB: 67) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:02:36) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '2') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 17:02:36', `perishable_token` = 'hJZ1MoIhrabI-x628_v5', `last_request_at` = '2010-10-18 17:02:36' WHERE `id` = 2[0m
+  [4;35;1mSQL (43.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 2 ) [0m
+  [4;35;1mRole Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` IN (1,5,6)) [0m
+  [4;35;1mRole Load (0.0ms)[0m   [0mSELECT * FROM `roles` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `roles` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `roles` [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `roles` [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `roles` [0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 2 ) [0m
+  [4;35;1mRaceDiscipline Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (1,2,4)) [0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 2 ) [0m
+  [4;36;1mRaceCategory Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `race_categories`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (4,5)) [0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (78.6ms)
+Rendered layouts/_topnav (2.8ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 204ms (View: 122, DB: 49) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:02:46) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '2') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (33.4ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 17:02:46', `perishable_token` = 'i_zWIxTB1qp0GZjxKBgR', `last_request_at` = '2010-10-18 17:02:46' WHERE `id` = 2[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 2 ) [0m
+  [4;35;1mRole Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` IN (1,5,6)) [0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 2 ) [0m
+  [4;36;1mRaceDiscipline Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (1,2,4)) [0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 2 ) [0m
+  [4;35;1mRaceCategory Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (4,5)) [0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (13.2ms)
+Rendered layouts/_topnav (4.6ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 270ms (View: 133, DB: 102) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-10-18 10:02:55) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"KfFkD5lJ+c+Vz1SR9SXKLiN45ZWDTPdBZNa4fWuc8Zs=", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '2') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 17:02:55', `perishable_token` = 'OJDDLsj3VjtgcD_Ee6Zr', `last_request_at` = '2010-10-18 17:02:55' WHERE `id` = 2[0m
+  [4;36;1mSQL (33.8ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000home
+Completed in 83ms (DB: 36) | 302 Found [http://localhost/user_session]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-18 10:02:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (105.0ms)
+Rendered layouts/_topnav (6.7ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 120ms (View: 114, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-10-18 10:02:57) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (18.0ms)
+Rendered layouts/_topnav (1.6ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 128ms (View: 31, DB: 3) | 200 OK [http://localhost/user_session/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-10-18 10:03:04) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "login"=>"cnemeth"}, "action"=>"create", "authenticity_token"=>"KfFkD5lJ+c+Vz1SR9SXKLiN45ZWDTPdBZNa4fWuc8Zs=", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(`users`.login) = 'cnemeth') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 17:03:05', `perishable_token` = 'UEHslBHijHXb2WKMp_DD', `last_login_at` = '2010-10-17 23:14:24', `current_login_at` = '2010-10-18 17:03:05', `login_count` = 9, `last_request_at` = '2010-10-18 17:03:05' WHERE `id` = 1[0m
+  [4;35;1mSQL (46.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/user_session/new
+Completed in 243ms (DB: 48) | 302 Found [http://localhost/user_session]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-10-18 10:03:05) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 17:03:05', `perishable_token` = 'cNVBm6zCwVU_W6cKiPl7', `last_request_at` = '2010-10-18 17:03:05' WHERE `id` = 1[0m
+  [4;36;1mSQL (54.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 87ms (DB: 57) | 302 Found [http://localhost/user_session/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:03:05) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 17:03:05', `perishable_token` = 'lCAoiG01StjTFLUyUw-1', `last_request_at` = '2010-10-18 17:03:05' WHERE `id` = 1[0m
+  [4;35;1mSQL (41.6ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;35;1mRaceDiscipline Load (0.3ms)[0m   [0mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;36;1mRaceDiscipline Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;35;1mRaceDiscipline Load (0.2ms)[0m   [0mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;35;1mRaceCategory Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mRaceCategory Load (0.2ms)[0m   [0;1mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (11.6ms)
+Rendered layouts/_topnav (3.2ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 224ms (View: 137, DB: 47) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-10-18 10:03:21) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"users"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 17:03:21', `perishable_token` = 'ILGOYC2KGjyaFDdajLBx', `last_request_at` = '2010-10-18 17:03:21' WHERE `id` = 1[0m
+  [4;36;1mSQL (46.3ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` [0m
+  [4;36;1mRole Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mroles_users Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT * FROM `race_disciplines` [0m
+  [4;36;1mRaceDiscipline Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;35;1mrace_disciplines_users Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines_users`[0m
+  [4;36;1mRaceDiscipline Load (0.2ms)[0m   [0;1mSELECT * FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` [0m
+  [4;36;1mRaceCategory Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `race_categories`[0m
+  [4;35;1mrace_categories_users Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `race_categories_users`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+Rendered users/_form (156.7ms)
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (10.4ms)
+Rendered layouts/_topnav (2.8ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 257ms (View: 171, DB: 54) | 200 OK [http://localhost/account/edit]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-10-18 10:03:45) [PUT]
+  Parameters: {"commit"=>"Update User", "action"=>"update", "_method"=>"put", "authenticity_token"=>"KfFkD5lJ+c+Vz1SR9SXKLiN45ZWDTPdBZNa4fWuc8Zs=", "id"=>"1", "controller"=>"users", "user"=>{"member_since(2i)"=>"7", "race_discipline_ids"=>[""], "profile"=>"my profile", "member_since(3i)"=>"6", "password_confirmation"=>"[FILTERED]", "user_image_url"=>"csaba_nemeth_2.png", "role_ids"=>["", "16", "17"], "usac_license"=>"", "performance_team_member"=>"0", "gender"=>"Male", "password_salt"=>"[FILTERED]", "last_name"=>"Nemeth", "date_of_birth(1i)"=>"1959", "middle_initial"=>"S", "race_category_ids"=>[""], "password"=>"[FILTERED]", "login"=>"cnemeth", "date_of_birth(2i)"=>"4", "active"=>"1", "member_since(1i)"=>"2009", "image_gallery_url"=>"http://picasaweb.google.com/cnemeth9", "date_of_birth(3i)"=>"9", "first_name"=>"Csaba"}}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 17:03:45', `perishable_token` = 'zSySB9n2iaQmlfnO4ua9', `last_request_at` = '2010-10-18 17:03:45' WHERE `id` = 1[0m
+  [4;36;1mSQL (46.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mrace_disciplines_users Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `race_disciplines_users`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mRole Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;35;1mroles_users Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mrace_categories_users Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_categories_users`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 17:03:45', `perishable_token` = 'gbtByhSr6cTbJaNIW7Jr', `user_image_url` = 'csaba_nemeth_2.png' WHERE `id` = 1[0m
+  [4;35;1mSQL (37.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Completed in 247ms (DB: 90) | 302 Found [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:03:46) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 17:03:46', `perishable_token` = 'YoYbWMtVKxvsXwduYvdd', `last_request_at` = '2010-10-18 17:03:46' WHERE `id` = 1[0m
+  [4;36;1mSQL (67.3ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;36;1mRaceDiscipline Load (0.4ms)[0m   [0;1mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;35;1mRaceDiscipline Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;36;1mRaceCategory Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_categories`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (10.9ms)
+Rendered layouts/_topnav (3.1ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 237ms (View: 133, DB: 73) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-10-18 10:03:59) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"users"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 17:04:00', `perishable_token` = 'faQsK-yuT2cVs2H6R35U', `last_request_at` = '2010-10-18 17:04:00' WHERE `id` = 1[0m
+  [4;35;1mSQL (39.6ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` [0m
+  [4;35;1mRole Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mroles_users Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` [0m
+  [4;35;1mRaceDiscipline Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mrace_disciplines_users Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines_users`[0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT * FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` [0m
+  [4;35;1mRaceCategory Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mrace_categories_users Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `race_categories_users`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+Rendered users/_form (160.9ms)
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (10.1ms)
+Rendered layouts/_topnav (3.1ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.6ms)
+Completed in 259ms (View: 177, DB: 46) | 200 OK [http://localhost/account/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-10-18 10:04:11) [PUT]
+  Parameters: {"commit"=>"Update User", "action"=>"update", "_method"=>"put", "authenticity_token"=>"KfFkD5lJ+c+Vz1SR9SXKLiN45ZWDTPdBZNa4fWuc8Zs=", "id"=>"1", "controller"=>"users", "user"=>{"member_since(2i)"=>"7", "race_discipline_ids"=>[""], "profile"=>"my profile", "member_since(3i)"=>"6", "password_confirmation"=>"[FILTERED]", "user_image_url"=>"csaba_nemeth.png", "role_ids"=>["", "16", "17"], "usac_license"=>"", "performance_team_member"=>"0", "gender"=>"Male", "password_salt"=>"[FILTERED]", "last_name"=>"Nemeth", "date_of_birth(1i)"=>"1959", "middle_initial"=>"S", "race_category_ids"=>[""], "password"=>"[FILTERED]", "login"=>"cnemeth", "date_of_birth(2i)"=>"4", "active"=>"1", "member_since(1i)"=>"2009", "image_gallery_url"=>"http://picasaweb.google.com/cnemeth9", "date_of_birth(3i)"=>"9", "first_name"=>"Csaba"}}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 17:04:11', `perishable_token` = 'DfC9gg1tPlNg-WKYnB_e', `last_request_at` = '2010-10-18 17:04:11' WHERE `id` = 1[0m
+  [4;35;1mSQL (42.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mrace_disciplines_users Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines_users`[0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT * FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mRole Columns (0.4ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;36;1mroles_users Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.5ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mrace_categories_users Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `race_categories_users`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 17:04:11', `perishable_token` = 'CUcKoFRSk8S6guBw6tj3', `user_image_url` = 'csaba_nemeth.png' WHERE `id` = 1[0m
+  [4;36;1mSQL (37.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/account
+Completed in 259ms (DB: 87) | 302 Found [http://localhost/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:04:11) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 17:04:11', `perishable_token` = 'w6xVA6rjhu3nYuQoms4h', `last_request_at` = '2010-10-18 17:04:11' WHERE `id` = 1[0m
+  [4;35;1mSQL (68.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;36;1mRaceDiscipline Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;35;1mRaceCategory Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (10.7ms)
+Rendered layouts/_topnav (2.9ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 240ms (View: 130, DB: 73) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:05:25) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 17:05:25', `perishable_token` = 'eNE5Ut-8W7GDKX9PRlyp', `last_request_at` = '2010-10-18 17:05:25' WHERE `id` = 1[0m
+  [4;36;1mSQL (58.7ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;35;1mRaceDiscipline Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;36;1mRaceCategory Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_categories`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (11.1ms)
+Rendered layouts/_topnav (3.0ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.4ms)
+Completed in 245ms (View: 148, DB: 64) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:05:43) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 17:05:43', `perishable_token` = 'cLoyVwHPTx41EpUgNqfy', `last_request_at` = '2010-10-18 17:05:43' WHERE `id` = 1[0m
+  [4;35;1mSQL (45.6ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;36;1mRaceDiscipline Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;35;1mRaceCategory Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (10.4ms)
+Rendered layouts/_topnav (3.1ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 220ms (View: 135, DB: 51) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:06:04) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 17:06:04', `perishable_token` = 'Jc2AZmMPi-uy04zOxboU', `last_request_at` = '2010-10-18 17:06:04' WHERE `id` = 1[0m
+  [4;36;1mSQL (43.8ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;35;1mRaceDiscipline Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;36;1mRaceCategory Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_categories`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (10.4ms)
+Rendered layouts/_topnav (3.3ms)
+Rendered layouts/_bottomnav (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.6ms)
+Completed in 218ms (View: 135, DB: 49) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:06:35) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 17:06:35', `perishable_token` = 'JGinvKRdgXZZg6ZcWAFE', `last_request_at` = '2010-10-18 17:06:35' WHERE `id` = 1[0m
+  [4;35;1mSQL (47.5ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;36;1mRaceDiscipline Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;35;1mRaceDiscipline Load (0.3ms)[0m   [0mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;35;1mRaceCategory Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (10.5ms)
+Rendered layouts/_topnav (3.9ms)
+Rendered layouts/_bottomnav (0.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 228ms (View: 136, DB: 53) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:06:37) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 17:06:37', `perishable_token` = '01vYugcpu4m1Nuromxv2', `last_request_at` = '2010-10-18 17:06:37' WHERE `id` = 1[0m
+  [4;36;1mSQL (78.5ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;35;1mRaceDiscipline Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;36;1mRaceCategory Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_categories`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (13.3ms)
+Rendered layouts/_topnav (3.3ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.6ms)
+Completed in 268ms (View: 150, DB: 84) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:07:30) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 17:07:30', `perishable_token` = 'SDhswLJbQHQnKJ8F5Tz-', `last_request_at` = '2010-10-18 17:07:30' WHERE `id` = 1[0m
+  [4;35;1mSQL (42.5ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;36;1mRaceDiscipline Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;35;1mRaceDiscipline Load (12.0ms)[0m   [0mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;35;1mRaceCategory Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (10.6ms)
+Rendered layouts/_topnav (3.1ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 216ms (View: 123, DB: 60) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:07:32) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 17:07:32', `perishable_token` = 'yw0C_MWjupH-sXwp1-pl', `last_request_at` = '2010-10-18 17:07:32' WHERE `id` = 1[0m
+  [4;36;1mSQL (75.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;35;1mRaceDiscipline Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;36;1mRaceCategory Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `race_categories`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (10.5ms)
+Rendered layouts/_topnav (3.6ms)
+Rendered layouts/_bottomnav (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 254ms (View: 138, DB: 80) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:07:49) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 17:07:49', `perishable_token` = 'jfGIbKgAkGpq23Egxr6r', `last_request_at` = '2010-10-18 17:07:49' WHERE `id` = 1[0m
+  [4;35;1mSQL (42.4ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;36;1mRaceDiscipline Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;35;1mRaceCategory Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (10.7ms)
+Rendered layouts/_topnav (3.2ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 213ms (View: 127, DB: 48) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:08:00) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 17:08:00', `perishable_token` = 'nTwji7Mg7T6GaymM9p4L', `last_request_at` = '2010-10-18 17:08:00' WHERE `id` = 1[0m
+  [4;36;1mSQL (37.2ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;35;1mRaceDiscipline Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;36;1mRaceCategory Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `race_categories`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (10.4ms)
+Rendered layouts/_topnav (2.9ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 205ms (View: 128, DB: 42) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:08:16) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 17:08:16', `perishable_token` = 'yBsRu2Uiod7SA6_-3yct', `last_request_at` = '2010-10-18 17:08:16' WHERE `id` = 1[0m
+  [4;35;1mSQL (44.9ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;36;1mRaceDiscipline Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;35;1mRaceCategory Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (12.6ms)
+Rendered layouts/_topnav (3.3ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 230ms (View: 147, DB: 50) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:08:17) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 17:08:17', `perishable_token` = 'v8iRIjp0AQFCJH5S93g5', `last_request_at` = '2010-10-18 17:08:17' WHERE `id` = 1[0m
+  [4;36;1mSQL (84.8ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;35;1mRaceDiscipline Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;36;1mRaceCategory Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `race_categories`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (12.6ms)
+Rendered layouts/_topnav (2.9ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 264ms (View: 140, DB: 90) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:08:46) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 17:08:46', `perishable_token` = '0MPmKjEicwwL0_yC1wN2', `last_request_at` = '2010-10-18 17:08:46' WHERE `id` = 1[0m
+  [4;35;1mSQL (127.8ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;36;1mRaceDiscipline Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;35;1mRaceCategory Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (11.7ms)
+Rendered layouts/_topnav (4.4ms)
+Rendered layouts/_bottomnav (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.6ms)
+Completed in 302ms (View: 134, DB: 133) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:08:47) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 17:08:47', `perishable_token` = 'Gf1PVPuR5iqquqqdfM3M', `last_request_at` = '2010-10-18 17:08:47' WHERE `id` = 1[0m
+  [4;36;1mSQL (72.7ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;35;1mRaceDiscipline Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;36;1mRaceCategory Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_categories`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (11.5ms)
+Rendered layouts/_topnav (3.0ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 246ms (View: 136, DB: 78) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:09:25) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 17:09:25', `perishable_token` = 'aWrcIe8ysNcVyxVaRmHX', `last_request_at` = '2010-10-18 17:09:25' WHERE `id` = 1[0m
+  [4;35;1mSQL (43.5ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;36;1mRaceDiscipline Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;35;1mRaceCategory Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mRaceCategory Load (11.8ms)[0m   [0;1mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (11.4ms)
+Rendered layouts/_topnav (3.2ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 211ms (View: 118, DB: 60) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:10:29) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 17:10:29', `perishable_token` = 't-2z2jVgeQF0YqHmKJTy', `last_request_at` = '2010-10-18 17:10:29' WHERE `id` = 1[0m
+  [4;36;1mSQL (43.5ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;35;1mRaceDiscipline Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;36;1mRaceCategory Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_categories`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (95.6ms)
+Rendered layouts/_topnav (3.3ms)
+Rendered layouts/_bottomnav (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.6ms)
+Completed in 216ms (View: 133, DB: 49) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:11:21) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 17:11:21', `perishable_token` = 'HPCPvE5ARjKLLPW2Htwf', `last_request_at` = '2010-10-18 17:11:21' WHERE `id` = 1[0m
+  [4;35;1mSQL (47.8ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;36;1mRaceDiscipline Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;35;1mRaceCategory Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (98.8ms)
+Rendered layouts/_topnav (3.2ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 224ms (View: 138, DB: 53) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:11:22) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 17:11:22', `perishable_token` = 'Ysx2FjmPbIKda4lRhP2E', `last_request_at` = '2010-10-18 17:11:22' WHERE `id` = 1[0m
+  [4;36;1mSQL (78.2ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;35;1mRaceDiscipline Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;36;1mRaceCategory Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_categories`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (93.5ms)
+Rendered layouts/_topnav (3.1ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 251ms (View: 133, DB: 84) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:11:38) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 17:11:38', `perishable_token` = 'ZeKHZg57v4UlQPuDHOl8', `last_request_at` = '2010-10-18 17:11:38' WHERE `id` = 1[0m
+  [4;35;1mSQL (39.5ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;35;1mRaceDiscipline Load (0.2ms)[0m   [0mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;36;1mRaceDiscipline Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;35;1mRaceCategory Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (98.1ms)
+Rendered layouts/_topnav (3.1ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.6ms)
+Completed in 230ms (View: 145, DB: 45) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:12:09) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 17:12:09', `perishable_token` = 'D0AjCpmoq9VIG3VTYyMd', `last_request_at` = '2010-10-18 17:12:09' WHERE `id` = 1[0m
+  [4;36;1mSQL (41.7ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;35;1mRaceDiscipline Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;36;1mRaceCategory Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `race_categories`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (98.1ms)
+Rendered layouts/_topnav (3.2ms)
+Rendered layouts/_bottomnav (0.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.6ms)
+Completed in 218ms (View: 136, DB: 47) | 200 OK [http://localhost/account]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:15:27) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 17:15:27', `perishable_token` = '9YCyCWp4p8V5ycjwzz1k', `last_request_at` = '2010-10-18 17:15:27' WHERE `id` = 1[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;36;1mRaceDiscipline Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;35;1mRaceDiscipline Load (0.1ms)[0m   [0mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;35;1mRaceCategory Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `race_categories`[0m
+  [4;36;1mRaceCategory Load (0.1ms)[0m   [0;1mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (97.8ms)
+Rendered layouts/_topnav (3.0ms)
+Rendered layouts/_bottomnav (0.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.6ms)
+Completed in 226ms (View: 136, DB: 55) | 200 OK [http://localhost/account]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 10:15:35) [GET]
+
+ActionController::RoutingError (No route matches "/club_privacy" with {:method=>:get}):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-18 10:15:40) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (120.0ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 17:15:40', `perishable_token` = 'DoiCfGG7dsNoPszxK8f1', `last_request_at` = '2010-10-18 17:15:40' WHERE `id` = 1[0m
+  [4;36;1mSQL (47.5ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (72.3ms)
+Rendered layouts/_bottomnav (1.4ms)
+  [4;35;1mClub Load (0.8ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (5.9ms)
+Completed in 207ms (View: 153, DB: 52) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 10:15:45) [GET]
+
+ActionController::RoutingError (No route matches "/club_about" with {:method=>:get}):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-10-18 10:15:53) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 17:15:53', `perishable_token` = 'RG2hCaRb3G72uPRedetC', `last_request_at` = '2010-10-18 17:15:53' WHERE `id` = 1[0m
+  [4;36;1mSQL (37.1ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT `roles`.id FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` IN (16,17)) [0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT `race_disciplines`.id FROM `race_disciplines` INNER JOIN `race_disciplines_users` ON `race_disciplines`.id = `race_disciplines_users`.race_discipline_id WHERE (`race_disciplines_users`.user_id = 1 ) [0m
+  [4;35;1mRaceDiscipline Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `race_disciplines`[0m
+  [4;36;1mRaceDiscipline Load (0.1ms)[0m   [0;1mSELECT * FROM `race_disciplines` WHERE (`race_disciplines`.`id` IN (NULL)) [0m
+  [4;35;1mRaceCategory Load (0.2ms)[0m   [0mSELECT `race_categories`.id FROM `race_categories` INNER JOIN `race_categories_users` ON `race_categories`.id = `race_categories_users`.race_category_id WHERE (`race_categories_users`.user_id = 1 ) [0m
+  [4;36;1mRaceCategory Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `race_categories`[0m
+  [4;35;1mRaceCategory Load (0.1ms)[0m   [0mSELECT * FROM `race_categories` WHERE (`race_categories`.`id` IN (NULL)) [0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (10.3ms)
+Rendered layouts/_topnav (2.9ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.5ms)
+Completed in 214ms (View: 136, DB: 43) | 200 OK [http://localhost/account]

@@ -136,7 +136,7 @@ body {
 }
 
 #main_content{
-	border-left:	solid 3px #f93;
+	border-left:	solid 3px #de1800;
 	width:	69%;
 	margin:	0;
 	padding:	0 0 0 1%;
@@ -259,14 +259,16 @@ a:focus, a:hover
 /* =Main Nav
 -----------------------------------------------------------------------------*/
 
-#menu {
+#menu, #bottombar {
+
 	width:				100%;
 	float:				left;
-	/*border-top:		  3px solid #333;*/
-	border-bottom:	3px solid #333;
+	border-top:		  3px solid #de1800;
+	border-bottom:	3px solid #de1800;
+	/*background-color:   #de1800;*/
 }
 
-#menu ul {
+#menu ul, #bottombar ul {
 	margin: 0;
 	padding: 0;
 	float: left;
@@ -275,34 +277,34 @@ a:focus, a:hover
 	text-transform: uppercase;
 }
 
-#menu ul li {
+#menu ul li, #bottombar ul li {
   float: left;
-  background:  url(../images/tab-right.png) no-repeat top right;
+  /*background:  url(../images/tab-right.png) no-repeat top right;*/
 }
 
-#menu li a{
+#menu li a, #bottombar li a{
 	display:	block;
 	padding:	0 2em;
-	line-height:	2.5em;
-	background:	url(../images/tab-left.png) no-repeat top left;
+	line-height:	1.5em;
+	/*background:	url(../images/tab-left.png) no-repeat top left;*/
 	text-decoration:	none;
-	color:	#fff;
+	color:	#000;
 	float:	left;
 }
 
-#menu ul a:hover{
+#menu ul a:hover, #bottombar ul a:hover{
 	color:	#333;
 }
 
 
 /* =Sub Nav
 -----------------------------------------------------------------------------*/
-
+/*
 #bottombar{
 	background-color:	#fff;
 	width:				100%;
 	float:				left;
-/*			padding:			0px -5px 0px 5px;*/
+			padding:			0px -5px 0px 5px;
 	margin:				0;
 	text-align:			left;
 	font-size:			0.75em;
@@ -329,7 +331,7 @@ div#bottombar ul li {
 	float: left;
 }
 
-
+*/
 /* =Main Content
 -----------------------------------------------------------------------------*/
 
