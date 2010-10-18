@@ -66,7 +66,8 @@ body {
 }
 
 #header {
-	background-color:	#fff;
+/*    color:  #fff;
+	background-color:	#333;*/
 	width:				100%;
 	height:	250px;
 	text-align:			left;
@@ -265,7 +266,7 @@ a:focus, a:hover
 	float:				left;
 	border-top:		  3px solid #de1800;
 	border-bottom:	3px solid #de1800;
-	/*background-color:   #de1800;*/
+/*	background-color:   #de1800;*/
 }
 
 #menu ul, #bottombar ul {
@@ -299,6 +300,7 @@ a:focus, a:hover
 
 /* =Sub Nav
 -----------------------------------------------------------------------------*/
+
 /*
 #bottombar{
 	background-color:	#fff;

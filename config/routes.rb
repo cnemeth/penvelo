@@ -10,6 +10,10 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :roles
 
+  map.namespace :common do |common|
+    common.resources :clubs
+  end
+
 
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
