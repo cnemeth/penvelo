@@ -1,2 +1,43 @@
-<h1>Admin::Clubs#index</h1>
-<p>Find me in app/views/admin/clubs/index.html.erb</p>
+<h1>Club Profile</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Headline</th>
+    <th>Logo url</th>
+    <th>Mission statement</th>
+    <th>Description</th>
+    <th>Location</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Url</th>
+    <th>Year</th>
+    <th>Legal notice</th>
+    <th>Privacy notice</th>
+    <th>Copyright notice</th>
+    <th>Webmaster email</th>
+  </tr>
+
+<% @clubs.each do |club| %>
+  <tr>
+    <td><%=h club.name %></td>
+    <td><%=h truncate(club.headline.gsub(/<.*?>/,''), :length => 20) %></td>
+    <td><%=h club.logo_url %></td>
+    <td><%=h truncate(club.mission.gsub(/<.*?>/,''), :length => 20) %></td>
+    <td><%=h truncate(club.description.gsub(/<.*?>/,''), :length => 20) %></td>
+    <td><%=h club.location %></td>
+    <td><%=h club.phone %></td>
+    <td><%=h club.email %></td>
+    <td><%=h club.url %></td>
+    <td><%=h club.year %></td>
+    <td><%=h truncate(club.legal.gsub(/<.*?>/,''), :length => 20) %></td>
+    <td><%=h truncate(club.privacy.gsub(/<.*?>/,''), :length => 20) %></td>
+    <td><%=h truncate(club.copyright.gsub(/<.*?>/,''), :length => 20)  %></td>
+    <td><%=h club.webmaster_email %></td>
+    <td><%= link_to 'Show', admin_club_path(club) %></td>
+    <td><%= link_to 'Edit', edit_admin_club_path(club) %></td>
+
+  </tr>
+<% end %>
+</table>
+

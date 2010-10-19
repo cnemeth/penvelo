@@ -1,2 +1,76 @@
-<h1>Admin::Clubs#show</h1>
-<p>Find me in app/views/admin/clubs/show.html.erb</p>
+<h1>Club Profile</h1>
+
+<p>
+  <b>Name:</b>
+  <%=h @club.name %>
+</p>
+
+<p>
+  <b>Headline:</b>
+  <%=h @club.headline %>
+</p>
+
+<p>
+  <b>Logo url:</b>
+  <%=h @club.logo_url %>
+</p>
+
+<p>
+  <b>Mission statement:</b>
+  <%=h @club.mission %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @club.description %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%=h @club.location %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @club.phone %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @club.email %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h @club.url %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%=h @club.year %>
+</p>
+
+<p>
+  <b>Legal notice:</b>
+  <%=h @club.legal %>
+</p>
+
+<p>
+  <b>Privacy notice:</b>
+  <%=h @club.privacy %>
+</p>
+
+<p>
+  <b>Copyright notice:</b>
+  <%=h @club.copyright %>
+</p>
+
+<p>
+  <b>Webmaster email:</b>
+  <%=h @club.webmaster_email %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_club_path(@club) %> |
+<%= link_to 'Back', admin_clubs_path %>
+

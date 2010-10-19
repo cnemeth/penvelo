@@ -1,6 +1,6 @@
 class Admin::ClubsController < ApplicationController
 
-  #layout 'admin'
+  layout 'admin'
 
   # GET /admin/clubs
   # GET /admin/clubs.xml
@@ -26,14 +26,14 @@ class Admin::ClubsController < ApplicationController
 
   # GET /admin/clubs/new
   # GET /admin/clubs/new.xml
-  def new
-    @club = Club.new
+#  def new
+#    @club = Club.new
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @club }
-    end
-  end
+#    respond_to do |format|
+#      format.html # new.html.erb
+#      format.xml  { render :xml => @club }
+#    end
+#  end
 
   # GET /admin/clubs/1/edit
   def edit
@@ -42,19 +42,19 @@ class Admin::ClubsController < ApplicationController
 
   # POST /admin/clubs
   # POST /admin/clubs.xml
-  def create
-    @club = Club.new(params[:club])
+  #def create
+  #  @club = Club.new(params[:club])
 
-    respond_to do |format|
-      if @club.save
-        format.html { redirect_to(@club, :notice => 'Club was successfully created.') }
-        format.xml  { render :xml => @club, :status => :created, :location => @club }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @club.errors, :status => :unprocessable_entity }
-      end
-    end
-  end
+#    respond_to do |format|
+#      if @club.save
+#        format.html { redirect_to(@club, :notice => 'Club was successfully created.') }
+#        format.xml  { render :xml => @club, :status => :created, :location => @club }
+#      else
+#        format.html { render :action => "new" }
+#        format.xml  { render :xml => @club.errors, :status => :unprocessable_entity }
+#      end
+#    end
+#  end
 
   # PUT /admin/clubs/1
   # PUT /admin/clubs/1.xml
@@ -63,7 +63,7 @@ class Admin::ClubsController < ApplicationController
 
     respond_to do |format|
       if @club.update_attributes(params[:club])
-        format.html { redirect_to(@club, :notice => 'Club was successfully updated.') }
+        format.html { redirect_to(admin_club_url, :notice => 'Club was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -74,15 +74,15 @@ class Admin::ClubsController < ApplicationController
 
   # DELETE /admin/clubs/1
   # DELETE /admin/clubs/1.xml
-  def destroy
-    @club = Club.find(params[:id])
-    @club.destroy
+#  def destroy
+#    @club = Club.find(params[:id])
+#    @club.destroy
 
-    respond_to do |format|
-      format.html { redirect_to(clubs_url) }
-      format.xml  { head :ok }
-    end
-  end
+#    respond_to do |format|
+#      format.html { redirect_to(clubs_url) }
+#      format.xml  { head :ok }
+#    end
+#  end
 
 end
 

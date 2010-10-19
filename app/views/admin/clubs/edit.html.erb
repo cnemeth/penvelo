@@ -1,2 +1,28 @@
-<h1>Admin::Clubs#edit</h1>
-<p>Find me in app/views/admin/clubs/edit.html.erb</p>
+<h1>Edit Club Profile</h1>
+
+<% semantic_form_for([:admin, @club]) do |f| %>
+  <%= f.error_messages %>
+
+  <% f.inputs do %>
+  <%= f.input :name, :label => 'Name' %>
+  <%= f.input :headline, :label => 'Headline' %>
+  <%= f.input :logo_url, :label => 'Logo url' %>
+  <%= f.input :mission, :label => 'Mission statement' %>
+  <%= f.input :description, :label => 'Description' %>
+  <%= f.input :location, :label => 'Location' %>
+  <%= f.input :phone, :label => 'Phone' %>
+  <%= f.input :email, :label => 'Email' %>
+  <%= f.input :url, :label => 'URL' %>
+  <%= f.input :year, :label => 'Year' %>
+  <%= f.input :legal, :label => 'Legal notice' %>
+  <%= f.input :privacy, :label => 'Privacy notice' %>
+  <%= f.input :copyright, :label => 'Copyright notice' %>
+  <%= f.input :webmaster_email, :label => 'Webmaster email' %>
+<% end %>
+
+  <%= f.buttons %>
+<% end %>
+
+<%= link_to 'Show', admin_club_path %> |
+<%= link_to 'Back', admin_clubs_path %>
+

@@ -13,7 +13,7 @@ ActionController::Routing::Routes.draw do |map|
   map.namespace :common do |common|
     common.resources  :clubs
     common.resources  :sponsors
-    common.resources   :newses
+    common.resources  :newses
     common.resources  :races
     common.resources  :rides
     common.resources  :members
@@ -30,6 +30,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
 
+  map.admin_home "admin/index", :controller => "admin/home", :action => "index"
   map.root :controller => "home", :action => "index"
 end
 
