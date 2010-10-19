@@ -22,6 +22,10 @@ ActionController::Routing::Routes.draw do |map|
     common.resources  :privacies
   end
 
+  map.namespace :admin do |admin|
+    admin.resources :clubs
+  end
+
 
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
