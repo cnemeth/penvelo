@@ -13,7 +13,7 @@ ActionController::Routing::Routes.draw do |map|
   map.namespace :common do |common|
     common.resources  :clubs
     common.resources  :sponsors
-    common.resource   :news
+    common.resources   :newses
     common.resources  :races
     common.resources  :rides
     common.resources  :members
