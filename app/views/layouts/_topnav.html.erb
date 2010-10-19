@@ -1,12 +1,12 @@
 <ul>
 	<li><%= link_to "Home", root_url %></li>
-	<li><%= link_to "About Club", common_clubs_path %></li>
-	<li><%= link_to "Sponsors", :controller => 'club_sponsors', :action => 'index' %></li>
-	<li><%= link_to "News", :controller => 'club_news', :action => 'index' %></li>
-	<li><%= link_to "Races", :controller => 'club_races', :action => 'index' %></li>
-	<li><%= link_to "Rides", :controller => 'club_rides', :action => 'index' %></li>
-	<li><%= link_to "Members", :controller => 'club_members', :action => 'index' %></li>
-	<li><%= link_to "Gallery", :controller => 'club_galleries', :action => 'index' %></li>
+	<li><%= link_to "About", common_clubs_path %></li>
+	<li><%= link_to "Sponsors", common_sponsors_path %></li>
+	<li><%= link_to "News", common_news_path %></li>
+	<li><%= link_to "Races", common_races_path %></li>
+	<li><%= link_to "Rides", common_rides_path %></li>
+	<li><%= link_to "Members", common_members_path %></li>
+	<li><%= link_to "Galleries", common_galleries_path %></li>
   <div id="login">
     <% if !current_user %>
       <%= link_to "Register", new_account_path %> |

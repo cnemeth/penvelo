@@ -10853,3 +10853,1559 @@ Rendered layouts/_bottomnav (1.5ms)
   [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
 Rendered layouts/_footer (1.4ms)
 Completed in 180ms (View: 143, DB: 34) | 200 OK [http://localhost/common/clubs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 15:44:17) [GET]
+
+ActionController::RoutingError (No route matches "/common/club_sponsors" with {:method=>:get}):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-18 15:44:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (107.9ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 22:44:23', `perishable_token` = 'k9JxvvgiSNjonEpiy7xw', `last_request_at` = '2010-10-18 22:44:23' WHERE `id` = 1[0m
+  [4;35;1mSQL (37.8ms)[0m   [0mCOMMIT[0m
+Rendered layouts/_topnav (60.4ms)
+Rendered layouts/_bottomnav (1.1ms)
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.7ms)
+Completed in 177ms (View: 133, DB: 42) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::ClubsController#index (for 127.0.0.1 at 2010-10-18 15:44:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/clubs"}
+Rendering template within layouts/application
+Rendering common/clubs/index
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.2ms)
+Rendered layouts/_header (111.6ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 22:44:24', `perishable_token` = '6feVCRyUuS7Z9dw_n47g', `last_request_at` = '2010-10-18 22:44:24' WHERE `id` = 1[0m
+  [4;35;1mSQL (53.8ms)[0m   [0mCOMMIT[0m
+Rendered layouts/_topnav (76.8ms)
+Rendered layouts/_bottomnav (1.3ms)
+  [4;36;1mClub Load (0.6ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.3ms)
+Completed in 197ms (View: 137, DB: 58) | 200 OK [http://localhost/common/clubs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 15:44:27) [GET]
+
+ActionController::RoutingError (No route matches "/common/club_sponsors" with {:method=>:get}):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-18 15:44:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (103.0ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 22:44:55', `perishable_token` = 'RmP4iStaGljn46jLYWWY', `last_request_at` = '2010-10-18 22:44:55' WHERE `id` = 1[0m
+  [4;35;1mSQL (45.8ms)[0m   [0mCOMMIT[0m
+Rendered layouts/_topnav (80.6ms)
+Rendered layouts/_bottomnav (2.9ms)
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (2.5ms)
+Completed in 195ms (View: 143, DB: 50) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::ClubsController#index (for 127.0.0.1 at 2010-10-18 15:44:57) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/clubs"}
+Rendering template within layouts/application
+Rendering common/clubs/index
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (118.5ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 22:44:58', `perishable_token` = 'BXXL_2afhJ311MLBXoID', `last_request_at` = '2010-10-18 22:44:58' WHERE `id` = 1[0m
+  [4;35;1mSQL (55.5ms)[0m   [0mCOMMIT[0m
+Rendered layouts/_topnav (84.5ms)
+Rendered layouts/_bottomnav (2.6ms)
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.9ms)
+Completed in 212ms (View: 151, DB: 59) | 200 OK [http://localhost/common/clubs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 15:44:59) [GET]
+
+ActionController::RoutingError (No route matches "/common/club_sponsors" with {:method=>:get}):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 15:46:12) [GET]
+
+ActionController::RoutingError (No route matches "/common/club_sponsors" with {:method=>:get}):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::ClubsController#index (for 127.0.0.1 at 2010-10-18 15:46:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/clubs"}
+Rendering template within layouts/application
+Rendering common/clubs/index
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (39.0ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 22:46:15', `perishable_token` = 'FZsKhSPMkmQhGXTiwlgm', `last_request_at` = '2010-10-18 22:46:15' WHERE `id` = 1[0m
+  [4;35;1mSQL (47.9ms)[0m   [0mCOMMIT[0m
+Rendered layouts/_topnav (78.8ms)
+Rendered layouts/_bottomnav (2.3ms)
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.3ms)
+Completed in 202ms (View: 148, DB: 52) | 200 OK [http://localhost/common/clubs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-18 15:46:18) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (114.1ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 22:46:18', `perishable_token` = '9sSMKFzx6wlL7T57lJaI', `last_request_at` = '2010-10-18 22:46:18' WHERE `id` = 1[0m
+  [4;35;1mSQL (61.6ms)[0m   [0mCOMMIT[0m
+Rendered layouts/_topnav (90.8ms)
+Rendered layouts/_bottomnav (1.2ms)
+  [4;36;1mClub Load (0.7ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.3ms)
+Completed in 212ms (View: 145, DB: 66) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::ClubsController#index (for 127.0.0.1 at 2010-10-18 15:46:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/clubs"}
+Rendering template within layouts/application
+Rendering common/clubs/index
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (122.2ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 22:46:19', `perishable_token` = 'CUxrir05-eEd9KrHOmMr', `last_request_at` = '2010-10-18 22:46:19' WHERE `id` = 1[0m
+  [4;35;1mSQL (72.3ms)[0m   [0mCOMMIT[0m
+Rendered layouts/_topnav (95.6ms)
+Rendered layouts/_bottomnav (1.0ms)
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.2ms)
+Completed in 227ms (View: 149, DB: 76) | 200 OK [http://localhost/common/clubs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::SponsorsController#index (for 127.0.0.1 at 2010-10-18 15:46:20) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/sponsors"}
+Rendering template within layouts/application
+Rendering common/sponsors/index
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (116.4ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 22:46:20', `perishable_token` = 'WEZgOTooioCPlCmviCn_', `last_request_at` = '2010-10-18 22:46:20' WHERE `id` = 1[0m
+  [4;35;1mSQL (54.3ms)[0m   [0mCOMMIT[0m
+Rendered layouts/_topnav (75.0ms)
+Rendered layouts/_bottomnav (0.6ms)
+  [4;36;1mClub Load (0.3ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.3ms)
+Completed in 204ms (View: 144, DB: 58) | 200 OK [http://localhost/common/sponsors]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::SponsorsController#index (for 127.0.0.1 at 2010-10-18 15:46:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/sponsors"}
+Rendering template within layouts/application
+Rendering common/sponsors/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (115.8ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 22:46:45', `perishable_token` = '9IC7cLKwQtx_Wf2eoRr_', `last_request_at` = '2010-10-18 22:46:45' WHERE `id` = 1[0m
+  [4;35;1mSQL (33.9ms)[0m   [0mCOMMIT[0m
+Rendered layouts/_topnav (55.5ms)
+Rendered layouts/_bottomnav (0.6ms)
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.9ms)
+Completed in 183ms (View: 143, DB: 38) | 200 OK [http://localhost/common/sponsors]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::ClubsController#index (for 127.0.0.1 at 2010-10-18 15:46:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/clubs"}
+Rendering template within layouts/application
+Rendering common/clubs/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (119.8ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.9ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 22:46:46', `perishable_token` = '83y5a4tVC5afKd435Nud', `last_request_at` = '2010-10-18 22:46:46' WHERE `id` = 1[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mCOMMIT[0m
+Rendered layouts/_topnav (73.1ms)
+Rendered layouts/_bottomnav (1.9ms)
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.7ms)
+Completed in 204ms (View: 147, DB: 55) | 200 OK [http://localhost/common/clubs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::SponsorsController#index (for 127.0.0.1 at 2010-10-18 15:46:48) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/sponsors"}
+Rendering template within layouts/application
+Rendering common/sponsors/index
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (41.2ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 22:46:48', `perishable_token` = '6tefV8nkBNCxjugPHr8q', `last_request_at` = '2010-10-18 22:46:48' WHERE `id` = 1[0m
+  [4;35;1mSQL (35.7ms)[0m   [0mCOMMIT[0m
+Rendered layouts/_topnav (57.3ms)
+Rendered layouts/_bottomnav (0.7ms)
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.1ms)
+Completed in 183ms (View: 142, DB: 39) | 200 OK [http://localhost/common/sponsors]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-18 15:46:50) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (36.1ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 22:46:50', `perishable_token` = 'PzUjZH9124zEtk7YxQqA', `last_request_at` = '2010-10-18 22:46:50' WHERE `id` = 1[0m
+  [4;35;1mSQL (44.7ms)[0m   [0mCOMMIT[0m
+Rendered layouts/_topnav (66.1ms)
+Rendered layouts/_bottomnav (1.0ms)
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (2.5ms)
+Completed in 113ms (View: 62, DB: 49) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-18 15:57:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (41.4ms)
+
+ActionView::TemplateError (common_news_url failed to generate from {:action=>"show", :controller=>"common/news"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["common", "news", :id] - are they all satisfied?) on line #5 of app/views/layouts/_topnav.html.erb:
+2: 	<li><%= link_to "Home", root_url %></li>
+3: 	<li><%= link_to "About", common_clubs_path %></li>
+4: 	<li><%= link_to "Sponsors", common_sponsors_path %></li>
+5: 	<li><%= link_to "News", common_news_path %></li>
+6: 	<li><%= link_to "Races", common_races_path %></li>
+7: 	<li><%= link_to "Rides", common_rides_path %></li>
+8: 	<li><%= link_to "Members", common_members_path %></li>
+
+    (eval):17:in `common_news_path'
+    app/views/layouts/_topnav.html.erb:5
+    app/views/layouts/application.html.erb:29
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (131.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 15:57:14) [GET]
+
+ActionController::RoutingError (No route matches "/common/club_news" with {:method=>:get}):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::SponsorsController#index (for 127.0.0.1 at 2010-10-18 15:57:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/sponsors"}
+Rendering template within layouts/application
+Rendering common/sponsors/index
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (128.0ms)
+
+ActionView::TemplateError (common_news_url failed to generate from {:action=>"show", :controller=>"common/news"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["common", "news", :id] - are they all satisfied?) on line #5 of app/views/layouts/_topnav.html.erb:
+2: 	<li><%= link_to "Home", root_url %></li>
+3: 	<li><%= link_to "About", common_clubs_path %></li>
+4: 	<li><%= link_to "Sponsors", common_sponsors_path %></li>
+5: 	<li><%= link_to "News", common_news_path %></li>
+6: 	<li><%= link_to "Races", common_races_path %></li>
+7: 	<li><%= link_to "Rides", common_rides_path %></li>
+8: 	<li><%= link_to "Members", common_members_path %></li>
+
+    (eval):17:in `common_news_path'
+    app/views/layouts/_topnav.html.erb:5
+    app/views/layouts/application.html.erb:29
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (51.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::ClubsController#index (for 127.0.0.1 at 2010-10-18 15:58:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/clubs"}
+Rendering template within layouts/application
+Rendering common/clubs/index
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (120.0ms)
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 22:58:53', `perishable_token` = 'OPSAsuaCTZl9BEWPPv8W', `last_request_at` = '2010-10-18 22:58:53' WHERE `id` = 1[0m
+  [4;35;1mSQL (42.7ms)[0m   [0mCOMMIT[0m
+Rendered layouts/_topnav (61.5ms)
+
+ActionView::TemplateError (common_legal_url failed to generate from {:action=>"show", :controller=>"common/legal"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["common", "legal", :id] - are they all satisfied?) on line #2 of app/views/layouts/_bottomnav.html.erb:
+1: <ul>
+2: 	<li><%= link_to "Legal", common_legal_path %></li>
+3: 	<li><%= link_to "Privacy", common_privacy_path %></li>
+4: </ul>
+
+    (eval):17:in `common_legal_path'
+    app/views/layouts/_bottomnav.html.erb:2
+    app/views/layouts/application.html.erb:45
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (145.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::ClubsController#index (for 127.0.0.1 at 2010-10-18 15:59:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/clubs"}
+Rendering template within layouts/application
+Rendering common/clubs/index
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (133.6ms)
+
+ActionView::TemplateError (undefined local variable or method `common_races_path' for #<ActionView::Base:0x7f2e624a8228>) on line #6 of app/views/layouts/_topnav.html.erb:
+3: 	<li><%= link_to "About", common_clubs_path %></li>
+4: 	<li><%= link_to "Sponsors", common_sponsors_path %></li>
+5: 	<li><%= link_to "News", common_news_path %></li>
+6: 	<li><%= link_to "Races", common_races_path %></li>
+7: 	<li><%= link_to "Rides", common_rides_path %></li>
+8: 	<li><%= link_to "Members", common_members_path %></li>
+9: 	<li><%= link_to "Gallery", common_galleries_path %></li>
+
+    app/views/layouts/_topnav.html.erb:6
+    app/views/layouts/application.html.erb:29
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (131.4ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::ClubsController#index (for 127.0.0.1 at 2010-10-18 16:00:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/clubs"}
+Rendering template within layouts/application
+Rendering common/clubs/index
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (37.7ms)
+
+ActionView::TemplateError (undefined local variable or method `common_races_path' for #<ActionView::Base:0x7f2e62aad768>) on line #6 of app/views/layouts/_topnav.html.erb:
+3: 	<li><%= link_to "About", common_clubs_path %></li>
+4: 	<li><%= link_to "Sponsors", common_sponsors_path %></li>
+5: 	<li><%= link_to "News", common_news_path %></li>
+6: 	<li><%= link_to "Races", common_races_path %></li>
+7: 	<li><%= link_to "Rides", common_rides_path %></li>
+8: 	<li><%= link_to "Members", common_members_path %></li>
+9: 	<li><%= link_to "Gallery", common_galleries_path %></li>
+
+    app/views/layouts/_topnav.html.erb:6
+    app/views/layouts/application.html.erb:29
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (51.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::ClubsController#index (for 127.0.0.1 at 2010-10-18 16:00:39) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/clubs"}
+Rendering template within layouts/application
+Rendering common/clubs/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (120.6ms)
+
+ActionView::TemplateError (undefined local variable or method `common_races_path' for #<ActionView::Base:0x7f2e628172d8>) on line #6 of app/views/layouts/_topnav.html.erb:
+3: 	<li><%= link_to "About", common_clubs_path %></li>
+4: 	<li><%= link_to "Sponsors", common_sponsors_path %></li>
+5: 	<li><%= link_to "News", common_news_path %></li>
+6: 	<li><%= link_to "Races", common_races_path %></li>
+7: 	<li><%= link_to "Rides", common_rides_path %></li>
+8: 	<li><%= link_to "Members", common_members_path %></li>
+9: 	<li><%= link_to "Gallery", common_galleries_path %></li>
+
+    app/views/layouts/_topnav.html.erb:6
+    app/views/layouts/application.html.erb:29
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (43.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-18 16:00:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (134.2ms)
+
+ActionView::TemplateError (undefined local variable or method `common_races_path' for #<ActionView::Base:0x7f2e6268f500>) on line #6 of app/views/layouts/_topnav.html.erb:
+3: 	<li><%= link_to "About", common_clubs_path %></li>
+4: 	<li><%= link_to "Sponsors", common_sponsors_path %></li>
+5: 	<li><%= link_to "News", common_news_path %></li>
+6: 	<li><%= link_to "Races", common_races_path %></li>
+7: 	<li><%= link_to "Rides", common_rides_path %></li>
+8: 	<li><%= link_to "Members", common_members_path %></li>
+9: 	<li><%= link_to "Gallery", common_galleries_path %></li>
+
+    app/views/layouts/_topnav.html.erb:6
+    app/views/layouts/application.html.erb:29
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (126.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-18 16:01:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (128.6ms)
+
+ActionView::TemplateError (undefined local variable or method `common_rides_path' for #<ActionView::Base:0x7f2e62505c20>) on line #7 of app/views/layouts/_topnav.html.erb:
+4: 	<li><%= link_to "Sponsors", common_sponsors_path %></li>
+5: 	<li><%= link_to "News", common_news_path %></li>
+6: 	<li><%= link_to "Races", common_races_path %></li>
+7: 	<li><%= link_to "Rides", common_rides_path %></li>
+8: 	<li><%= link_to "Members", common_members_path %></li>
+9: 	<li><%= link_to "Gallery", common_galleries_path %></li>
+10:   <div id="login">
+
+    app/views/layouts/_topnav.html.erb:7
+    app/views/layouts/application.html.erb:29
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (128.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-18 16:01:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (126.8ms)
+
+ActionView::TemplateError (undefined local variable or method `common_members_path' for #<ActionView::Base:0x7f2e624ec090>) on line #8 of app/views/layouts/_topnav.html.erb:
+5: 	<li><%= link_to "News", common_news_path %></li>
+6: 	<li><%= link_to "Races", common_races_path %></li>
+7: 	<li><%= link_to "Rides", common_rides_path %></li>
+8: 	<li><%= link_to "Members", common_members_path %></li>
+9: 	<li><%= link_to "Gallery", common_galleries_path %></li>
+10:   <div id="login">
+11:     <% if !current_user %>
+
+    app/views/layouts/_topnav.html.erb:8
+    app/views/layouts/application.html.erb:29
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (127.6ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::SponsorsController#index (for 127.0.0.1 at 2010-10-18 16:04:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/sponsors"}
+Rendering template within layouts/application
+Rendering common/sponsors/index
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (44.5ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 23:04:09', `perishable_token` = '6I4uwGzQ_Dgtk3I8YURD', `last_request_at` = '2010-10-18 23:04:09' WHERE `id` = 1[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (70.9ms)
+Rendered layouts/_bottomnav (2.0ms)
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (3.2ms)
+Completed in 138ms (View: 79, DB: 54) | 200 OK [http://localhost/common/sponsors]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-18 16:04:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (7.1ms)
+Rendered layouts/_header (115.1ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 23:04:11', `perishable_token` = '6vKOwajD18LBt7TWcxBT', `last_request_at` = '2010-10-18 23:04:11' WHERE `id` = 1[0m
+  [4;36;1mSQL (66.1ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (88.9ms)
+Rendered layouts/_bottomnav (0.3ms)
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (2.5ms)
+Completed in 214ms (View: 142, DB: 70) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::ClubsController#index (for 127.0.0.1 at 2010-10-18 16:04:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/clubs"}
+Rendering template within layouts/application
+Rendering common/clubs/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (127.1ms)
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 23:04:12', `perishable_token` = 'RZRJ1bY82uQmluRAVK3i', `last_request_at` = '2010-10-18 23:04:12' WHERE `id` = 1[0m
+  [4;36;1mSQL (45.3ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (67.0ms)
+Rendered layouts/_bottomnav (0.2ms)
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.7ms)
+Completed in 203ms (View: 149, DB: 51) | 200 OK [http://localhost/common/clubs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::SponsorsController#index (for 127.0.0.1 at 2010-10-18 16:04:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/sponsors"}
+Rendering template within layouts/application
+Rendering common/sponsors/index
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (126.1ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 23:04:14', `perishable_token` = '6lxAjjjqJ5dXcBOMMp_h', `last_request_at` = '2010-10-18 23:04:14' WHERE `id` = 1[0m
+  [4;36;1mSQL (34.2ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (52.3ms)
+Rendered layouts/_bottomnav (0.3ms)
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.9ms)
+Completed in 188ms (View: 147, DB: 38) | 200 OK [http://localhost/common/sponsors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::NewsController#show (for 127.0.0.1 at 2010-10-18 16:04:15) [GET]
+  Parameters: {"action"=>"show", "controller"=>"common/news"}
+
+ActionController::UnknownAction (No action responded to show. Actions: index):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::RacesController#index (for 127.0.0.1 at 2010-10-18 16:04:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/races"}
+Rendering template within layouts/application
+Rendering common/races/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (39.9ms)
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 23:04:22', `perishable_token` = 'YqlEyl7Zw2JV6ZmWK8z9', `last_request_at` = '2010-10-18 23:04:22' WHERE `id` = 1[0m
+  [4;36;1mSQL (30.3ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (52.0ms)
+Rendered layouts/_bottomnav (0.3ms)
+  [4;35;1mClub Load (0.6ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.4ms)
+Completed in 107ms (View: 69, DB: 34) | 200 OK [http://localhost/common/races]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::NewsController#show (for 127.0.0.1 at 2010-10-18 16:04:24) [GET]
+  Parameters: {"action"=>"show", "controller"=>"common/news"}
+
+ActionController::UnknownAction (No action responded to show. Actions: index):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-18 16:05:31) [GET]
+  Parameters: {"action"=>"show", "controller"=>"common/privacies"}
+
+NameError (uninitialized constant Common::PrivaciesController):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (29.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-18 16:05:42) [GET]
+  Parameters: {"action"=>"show", "controller"=>"common/legals"}
+
+NameError (uninitialized constant Common::LegalsController):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (121.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-18 16:14:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (33.3ms)
+
+ActionView::TemplateError (common_news_url failed to generate from {:action=>"show", :controller=>"common/news"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["common", "news", :id] - are they all satisfied?) on line #5 of app/views/layouts/_topnav.html.erb:
+2: 	<li><%= link_to "Home", root_url %></li>
+3: 	<li><%= link_to "About", common_clubs_path %></li>
+4: 	<li><%= link_to "Sponsors", common_sponsors_path %></li>
+5: 	<li><%= link_to "News", common_news_path %></li>
+6: 	<li><%= link_to "Races", common_races_path %></li>
+7: 	<li><%= link_to "Rides", common_rides_path %></li>
+8: 	<li><%= link_to "Members", common_members_path %></li>
+
+    (eval):17:in `common_news_path'
+    app/views/layouts/_topnav.html.erb:5
+    app/views/layouts/application.html.erb:29
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (110.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-18 16:14:13) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (92.9ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-18 23:14:13', `perishable_token` = '3HuzBZOzfDcJYS2Rp9EK', `last_request_at` = '2010-10-18 23:14:13' WHERE `id` = 1[0m
+  [4;35;1mSQL (40.9ms)[0m   [0mCOMMIT[0m
+Rendered layouts/_topnav (59.3ms)
+
+ActionView::TemplateError (common_legal_url failed to generate from {:action=>"show", :controller=>"common/legal"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["common", "legal", :id] - are they all satisfied?) on line #2 of app/views/layouts/_bottomnav.html.erb:
+1: <ul>
+2: 	<li><%= link_to "Legal", common_legal_path %></li>
+3: 	<li><%= link_to "Privacy", common_privacy_path %></li>
+4: </ul>
+
+    (eval):17:in `common_legal_path'
+    app/views/layouts/_bottomnav.html.erb:2
+    app/views/layouts/application.html.erb:45
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (44.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-18 16:14:30) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (95.7ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 23:14:30', `perishable_token` = '9IYn4aORgyELXtvFngDp', `last_request_at` = '2010-10-18 23:14:30' WHERE `id` = 1[0m
+  [4;36;1mSQL (48.7ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (68.4ms)
+Rendered layouts/_bottomnav (0.6ms)
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.7ms)
+Completed in 171ms (View: 118, DB: 52) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::RacesController#index (for 127.0.0.1 at 2010-10-18 16:14:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/races"}
+Rendering template within layouts/application
+Rendering common/races/index
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (34.7ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 23:14:32', `perishable_token` = '2IHZHNiaOJb5xMzl3TOl', `last_request_at` = '2010-10-18 23:14:32' WHERE `id` = 1[0m
+  [4;36;1mSQL (35.8ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (55.5ms)
+Rendered layouts/_bottomnav (0.6ms)
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.7ms)
+Completed in 100ms (View: 58, DB: 39) | 200 OK [http://localhost/common/races]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::RidesController#index (for 127.0.0.1 at 2010-10-18 16:14:33) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/rides"}
+Rendering template within layouts/application
+Rendering common/rides/index
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (30.4ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 23:14:33', `perishable_token` = 'DW7BxJgSv4dpo-t1lnvY', `last_request_at` = '2010-10-18 23:14:33' WHERE `id` = 1[0m
+  [4;36;1mSQL (53.0ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (134.5ms)
+Rendered layouts/_bottomnav (0.7ms)
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.9ms)
+Completed in 178ms (View: 119, DB: 57) | 200 OK [http://localhost/common/rides]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::MembersController#index (for 127.0.0.1 at 2010-10-18 16:14:34) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/members"}
+Rendering template within layouts/application
+Rendering common/members/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (102.2ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 23:14:35', `perishable_token` = 'LshH25xbwxyZMo5hFQfe', `last_request_at` = '2010-10-18 23:14:35' WHERE `id` = 1[0m
+  [4;36;1mSQL (71.4ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (94.1ms)
+Rendered layouts/_bottomnav (0.7ms)
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.8ms)
+Completed in 209ms (View: 132, DB: 75) | 200 OK [http://localhost/common/members]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::GalleriesController#index (for 127.0.0.1 at 2010-10-18 16:14:36) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/galleries"}
+Rendering template within layouts/application
+Rendering common/galleries/index
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (101.0ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 23:14:36', `perishable_token` = 'nc3X-bkCo03PWHuz5Ymd', `last_request_at` = '2010-10-18 23:14:36' WHERE `id` = 1[0m
+  [4;36;1mSQL (59.3ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (80.6ms)
+Rendered layouts/_bottomnav (0.7ms)
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.8ms)
+Completed in 194ms (View: 129, DB: 63) | 200 OK [http://localhost/common/galleries]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-18 16:14:39) [GET]
+  Parameters: {"action"=>"show", "controller"=>"common/privacies"}
+
+NameError (uninitialized constant Common::PrivaciesController):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (22.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::GalleriesController#index (for 127.0.0.1 at 2010-10-18 16:15:26) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/galleries"}
+Rendering template within layouts/application
+Rendering common/galleries/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (33.8ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 23:15:26', `perishable_token` = 'bwDtmiJTsaQwMUkjMaX-', `last_request_at` = '2010-10-18 23:15:26' WHERE `id` = 1[0m
+  [4;36;1mSQL (64.4ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (153.6ms)
+Rendered layouts/_bottomnav (0.3ms)
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.9ms)
+Completed in 197ms (View: 127, DB: 68) | 200 OK [http://localhost/common/galleries]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-18 16:15:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (5.7ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (97.6ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 23:15:29', `perishable_token` = 'QiYtKJlobR1ZaxgxQsuG', `last_request_at` = '2010-10-18 23:15:29' WHERE `id` = 1[0m
+  [4;36;1mSQL (85.9ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (110.6ms)
+Rendered layouts/_bottomnav (0.2ms)
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.9ms)
+Completed in 215ms (View: 118, DB: 95) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::ClubsController#index (for 127.0.0.1 at 2010-10-18 16:15:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/clubs"}
+Rendering template within layouts/application
+Rendering common/clubs/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (98.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 23:15:31', `perishable_token` = '01FCs4a1Y2tZXANx2Zix', `last_request_at` = '2010-10-18 23:15:31' WHERE `id` = 1[0m
+  [4;36;1mSQL (59.7ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (80.8ms)
+Rendered layouts/_bottomnav (0.6ms)
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (2.8ms)
+Completed in 189ms (View: 124, DB: 63) | 200 OK [http://localhost/common/clubs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::SponsorsController#index (for 127.0.0.1 at 2010-10-18 16:15:33) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/sponsors"}
+Rendering template within layouts/application
+Rendering common/sponsors/index
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (104.2ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 23:15:33', `perishable_token` = 'WPkV4PPlyuZE5P2Fp6rp', `last_request_at` = '2010-10-18 23:15:33' WHERE `id` = 1[0m
+  [4;36;1mSQL (47.7ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (68.4ms)
+Rendered layouts/_bottomnav (0.6ms)
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.0ms)
+Completed in 181ms (View: 128, DB: 51) | 200 OK [http://localhost/common/sponsors]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::NewsController#show (for 127.0.0.1 at 2010-10-18 16:15:34) [GET]
+  Parameters: {"action"=>"show", "controller"=>"common/news"}
+
+ActionController::UnknownAction (No action responded to show. Actions: index):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::RacesController#index (for 127.0.0.1 at 2010-10-18 16:15:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/races"}
+Rendering template within layouts/application
+Rendering common/races/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.3ms)
+Rendered layouts/_header (32.8ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 23:15:42', `perishable_token` = 'CT2IGPWjTUlnPUmiJ4ZV', `last_request_at` = '2010-10-18 23:15:42' WHERE `id` = 1[0m
+  [4;36;1mSQL (38.4ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (58.5ms)
+Rendered layouts/_bottomnav (0.6ms)
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.7ms)
+Completed in 101ms (View: 56, DB: 42) | 200 OK [http://localhost/common/races]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::RidesController#index (for 127.0.0.1 at 2010-10-18 16:15:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/rides"}
+Rendering template within layouts/application
+Rendering common/rides/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (33.0ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 23:15:44', `perishable_token` = 'NwJMCNH4QQuqzSAADlxK', `last_request_at` = '2010-10-18 23:15:44' WHERE `id` = 1[0m
+  [4;36;1mSQL (61.1ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (149.2ms)
+Rendered layouts/_bottomnav (0.3ms)
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.9ms)
+Completed in 190ms (View: 123, DB: 64) | 200 OK [http://localhost/common/rides]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::MembersController#index (for 127.0.0.1 at 2010-10-18 16:15:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/members"}
+Rendering template within layouts/application
+Rendering common/members/index
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (29.3ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 23:15:45', `perishable_token` = 'Sce8n0uP9g7IrG0VLHN-', `last_request_at` = '2010-10-18 23:15:45' WHERE `id` = 1[0m
+  [4;36;1mSQL (38.5ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (123.5ms)
+Rendered layouts/_bottomnav (0.3ms)
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.8ms)
+Completed in 159ms (View: 116, DB: 42) | 200 OK [http://localhost/common/members]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::GalleriesController#index (for 127.0.0.1 at 2010-10-18 16:15:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/galleries"}
+Rendering template within layouts/application
+Rendering common/galleries/index
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (99.2ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 23:15:46', `perishable_token` = 'dpLFJy6ovYPgxM5Lov_1', `last_request_at` = '2010-10-18 23:15:46' WHERE `id` = 1[0m
+  [4;36;1mSQL (41.3ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (61.3ms)
+Rendered layouts/_bottomnav (0.4ms)
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.1ms)
+Completed in 168ms (View: 121, DB: 45) | 200 OK [http://localhost/common/galleries]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-18 16:15:48) [GET]
+  Parameters: {"action"=>"show", "controller"=>"common/privacies"}
+
+NameError (uninitialized constant Common::PrivaciesController):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (22.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-18 16:15:55) [GET]
+  Parameters: {"action"=>"show", "controller"=>"common/legals"}
+
+NameError (uninitialized constant Common::LegalsController):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (23.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-10-18 16:56:07) [GET]
+
+ActionController::RoutingError (No route matches "/common/legal" with {:method=>:get}):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::GalleriesController#index (for 127.0.0.1 at 2010-10-18 16:56:10) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/galleries"}
+Rendering template within layouts/application
+Rendering common/galleries/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.3ms)
+Rendered layouts/_header (98.7ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 23:56:10', `perishable_token` = 'vaarVH-F2RaS97VeIJ4d', `last_request_at` = '2010-10-18 23:56:10' WHERE `id` = 1[0m
+  [4;36;1mSQL (56.7ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (77.6ms)
+Rendered layouts/_bottomnav (1.7ms)
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.4ms)
+Completed in 196ms (View: 134, DB: 60) | 200 OK [http://localhost/common/galleries]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::LegalsController#index (for 127.0.0.1 at 2010-10-18 16:56:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/legals"}
+Rendering template within layouts/application
+Rendering common/legals/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (101.2ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 23:56:12', `perishable_token` = 'R5Iv12QgGrVY57mFHixn', `last_request_at` = '2010-10-18 23:56:12' WHERE `id` = 1[0m
+  [4;36;1mSQL (56.7ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (76.9ms)
+Rendered layouts/_bottomnav (0.6ms)
+  [4;35;1mClub Load (0.1ms)[0m   [0mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.4ms)
+Completed in 190ms (View: 128, DB: 60) | 200 OK [http://localhost/common/legals]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-10-18 16:56:16) [GET]
+  Parameters: {"action"=>"show", "controller"=>"common/privacies"}
+
+NameError (uninitialized constant Common::PrivaciesController):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (93.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::LegalsController#index (for 127.0.0.1 at 2010-10-18 16:56:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/legals"}
+Rendering template within layouts/application
+Rendering common/legals/index
+  [4;36;1mUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mClub Load (0.2ms)[0m   [0mSELECT * FROM `clubs` [0m
+  [4;36;1mClub Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (30.4ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.2ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-10-18 23:56:45', `perishable_token` = '4Ajb2xdVCQN3siDU3gGt', `last_request_at` = '2010-10-18 23:56:45' WHERE `id` = 1[0m
+  [4;36;1mSQL (30.4ms)[0m   [0;1mCOMMIT[0m
+Rendered layouts/_topnav (109.2ms)
+
+ActionView::TemplateError (common_privacy_url failed to generate from {:action=>"show", :controller=>"common/privacy"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["common", "privacy", :id] - are they all satisfied?) on line #3 of app/views/layouts/_bottomnav.html.erb:
+1: <ul>
+2: 	<li><%= link_to "Legal", common_legals_path %></li>
+3: 	<li><%= link_to "Privacy", common_privacy_path %></li>
+4: </ul>
+
+    (eval):17:in `common_privacy_path'
+    app/views/layouts/_bottomnav.html.erb:3
+    app/views/layouts/application.html.erb:45
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (42.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::LegalsController#index (for 127.0.0.1 at 2010-10-18 17:01:10) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/legals"}
+Rendering template within layouts/application
+Rendering common/legals/index
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (97.1ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-19 00:01:11', `perishable_token` = 'mgQ6RTFXqxUNGK2R25f0', `last_request_at` = '2010-10-19 00:01:11' WHERE `id` = 1[0m
+  [4;35;1mSQL (53.5ms)[0m   [0mCOMMIT[0m
+Rendered layouts/_topnav (74.3ms)
+Rendered layouts/_bottomnav (1.8ms)
+  [4;36;1mClub Load (0.1ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (0.7ms)
+Completed in 190ms (View: 132, DB: 57) | 200 OK [http://localhost/common/legals]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Common::PrivaciesController#index (for 127.0.0.1 at 2010-10-18 17:01:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"common/privacies"}
+Rendering template within layouts/application
+Rendering common/privacies/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (98.3ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.2ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-19 00:01:14', `perishable_token` = 'CMy3IYtxGIEwpwAIuAps', `last_request_at` = '2010-10-19 00:01:14' WHERE `id` = 1[0m
+  [4;35;1mSQL (45.6ms)[0m   [0mCOMMIT[0m
+Rendered layouts/_topnav (65.2ms)
+Rendered layouts/_bottomnav (0.6ms)
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.6ms)
+Completed in 175ms (View: 124, DB: 49) | 200 OK [http://localhost/common/privacies]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-18 17:01:16) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+  [4;35;1mClub Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `clubs`[0m
+Rendered layouts/_sponsors (0.1ms)
+Rendered layouts/_header (31.1ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-10-19 00:01:16', `perishable_token` = 'WDbp0VHClvehNedur87k', `last_request_at` = '2010-10-19 00:01:16' WHERE `id` = 1[0m
+  [4;35;1mSQL (77.9ms)[0m   [0mCOMMIT[0m
+Rendered layouts/_topnav (97.3ms)
+Rendered layouts/_bottomnav (0.7ms)
+  [4;36;1mClub Load (0.2ms)[0m   [0;1mSELECT * FROM `clubs` [0m
+Rendered layouts/_footer (1.6ms)
+Completed in 138ms (View: 54, DB: 81) | 200 OK [http://localhost/]

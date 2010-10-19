@@ -11,7 +11,15 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :roles
 
   map.namespace :common do |common|
-    common.resources :clubs
+    common.resources  :clubs
+    common.resources  :sponsors
+    common.resource   :news
+    common.resources  :races
+    common.resources  :rides
+    common.resources  :members
+    common.resources  :galleries
+    common.resources  :legals
+    common.resources  :privacies
   end
 
 
