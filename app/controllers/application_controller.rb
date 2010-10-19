@@ -11,6 +11,8 @@ class ApplicationController < ActionController::Base
 
   helper_method :current_user_session, :current_user
 
+  rescue_from 'Acl9::AccessDenied', :with => :access_denied
+
 private
   def current_user_session
     return @current_user_session if defined?(@current_user_session)
@@ -47,6 +49,10 @@ private
   def redirect_back_or_default(default)
     redirect_to(session[:return_to] || default)
     session[:return_to] = nil
+  end
+
+  def access_denied
+    render :file => File.join(RAILS_ROOT, 'public', '403.html'), :status => 403
   end
 end
 

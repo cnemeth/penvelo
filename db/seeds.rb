@@ -1031,12 +1031,12 @@ Role.create(
   :authorizable_id => 1)
 Role.create(
   :name => 'board member',
-  :authorizable_type => 'non admin',
-  :authorizable_id => 0)
+  :authorizable_type => 'board member',
+  :authorizable_id => 3)
 Role.create(
   :name => 'sponsor',
-  :authorizable_type => 'non admin',
-  :authorizable_id => 0)
+  :authorizable_type => 'sponsor',
+  :authorizable_id => 4)
 Role.create(
   :name => 'director, uniforms',
   :authorizable_type => 'director',
@@ -1072,11 +1072,11 @@ Role.create(
 Role.create(
   :name => 'webmaster',
   :authorizable_type => 'site admin',
-  :authorizable_id => 1)
+  :authorizable_id => 0)
 Role.create(
   :name => 'club member',
-  :authorizable_type => 'non admin',
-  :authorizable_id => 3)
+  :authorizable_type => 'club member',
+  :authorizable_id => 5)
 
 ##############################################
 ## ImType
