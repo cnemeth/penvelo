@@ -1,5 +1,8 @@
 class User < ActiveRecord::Base
 
+  # for acl9 role-based authentication
+  ROLES = %w(site_admin admin director board_member sponsor club_member).freeze
+
   acts_as_authentic
   acts_as_authorization_subject  :association_name => :roles
 
@@ -39,6 +42,11 @@ class User < ActiveRecord::Base
                   %w[ middle_initial initials ],
                   %w[ last_name last ]
                 ]
+
+  def role
+    ROLES.detect { |role| self.has_role?(role) }
+  end
+
 end
 
 

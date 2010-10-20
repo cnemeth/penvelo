@@ -1,5 +1,13 @@
 class Admin::ClubsController < ApplicationController
 
+  before_filter :load_clubs, :only => [:index, :edit, :update, :show]
+  # acl9 access control block
+  access_control do
+    allow all, :to => [:index]
+    allow logged_in, :to => [:index, :show]
+    allow :site_admin
+  end
+
   layout 'admin'
 
   # GET /admin/clubs
@@ -83,6 +91,12 @@ class Admin::ClubsController < ApplicationController
 #      format.xml  { head :ok }
 #    end
 #  end
+
+private
+
+  def load_clubs
+    @clubs = Club.all
+  end
 
 end
 

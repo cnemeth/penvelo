@@ -1031,7 +1031,7 @@ Role.create(
   :authorizable_id => 1)
 Role.create(
   :name => 'board member',
-  :authorizable_type => 'board member',
+  :authorizable_type => 'board_member',
   :authorizable_id => 3)
 Role.create(
   :name => 'sponsor',
@@ -1071,11 +1071,11 @@ Role.create(
   :authorizable_id => 2)
 Role.create(
   :name => 'webmaster',
-  :authorizable_type => 'site admin',
+  :authorizable_type => 'site_admin',
   :authorizable_id => 0)
 Role.create(
   :name => 'club member',
-  :authorizable_type => 'club member',
+  :authorizable_type => 'club_member',
   :authorizable_id => 5)
 
 ##############################################
