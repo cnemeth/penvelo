@@ -20,7 +20,9 @@
       <%= f.input :password_confirmation, :label => 'Confirm password' %>
       <%= f.input :password_salt, :label => 'Password salt' %>
 
+    <%- show_to(:site_admin, :executive) do -%>
       <%= f.input :roles, :label => 'Roles', :as => :check_boxes, :collection => roles %>
+    <% end -%>
 
       <%= f.input :race_disciplines, :label => 'Race disciplines', :as => :check_boxes, :collection => race_disciplines %>
 
