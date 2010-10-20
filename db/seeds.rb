@@ -995,6 +995,52 @@ RaceCategory.create(
   :name => '5')
 
 ##############################################
+## class Position
+##############################################
+# == Schema Information
+#
+# Table name: positions
+#
+#  id         :integer(4)      not null, primary key
+#  name       :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#
+Position.delete_all
+Position.create(
+  :name => 'president')
+Position.create(
+  :name => 'vice president')
+Position.create(
+  :name => 'treasurer')
+Position.create(
+  :name => 'secretary')
+Position.create(
+  :name => 'board chairman')
+Position.create(
+  :name => 'board member')
+Position.create(
+  :name => 'sponsor')
+Position.create(
+  :name => 'director, uniforms')
+Position.create(
+  :name => 'director, sponsorship')
+Position.create(
+  :name => 'director, membership')
+Position.create(
+  :name => 'director, athletics')
+Position.create(
+  :name => %{director, women's team})
+Position.create(
+  :name => 'director, century and recreational rides')
+Position.create(
+  :name => 'director, race, Burlingame Criterium')
+Position.create(
+  :name => 'director, race, San Bruno Hill Climb')
+Position.create(
+  :name => 'webmaster')
+
+##############################################
 ## class Role
 ##############################################
 # == Schema Information
@@ -1010,27 +1056,19 @@ RaceCategory.create(
 #
 Role.delete_all
 Role.create(
-  :name => 'president',
-  :authorizable_type => 'admin',
+  :name => 'site_admin',
+  :authorizable_type => 'site_admin',
+  :authorizable_id => 0)
+Role.create(
+  :name => 'executive',
+  :authorizable_type => 'executive',
   :authorizable_id => 1)
 Role.create(
-  :name => 'vice president',
-  :authorizable_type => 'admin',
-  :authorizable_id => 1)
+  :name => 'director',
+  :authorizable_type => 'director',
+  :authorizable_id => 2)
 Role.create(
-  :name => 'treasurer',
-  :authorizable_type => 'admin',
-  :authorizable_id => 1)
-Role.create(
-  :name => 'secretary',
-  :authorizable_type => 'admin',
-  :authorizable_id => 1)
-Role.create(
-  :name => 'board chairman',
-  :authorizable_type => 'admin',
-  :authorizable_id => 1)
-Role.create(
-  :name => 'board member',
+  :name => 'board_member',
   :authorizable_type => 'board_member',
   :authorizable_id => 3)
 Role.create(
@@ -1038,44 +1076,8 @@ Role.create(
   :authorizable_type => 'sponsor',
   :authorizable_id => 4)
 Role.create(
-  :name => 'director, uniforms',
-  :authorizable_type => 'director',
-  :authorizable_id => 2)
-Role.create(
-  :name => 'director, sponsorship',
-  :authorizable_type => 'director',
-  :authorizable_id => 2)
-Role.create(
-  :name => 'director, membership',
-  :authorizable_type => 'admin',
-  :authorizable_id => 2)
-Role.create(
-  :name => 'director, athletics',
-  :authorizable_type => 'director',
-  :authorizable_id => 2)
-Role.create(
-  :name => %{director, women's team},
-  :authorizable_type => 'director',
-  :authorizable_id => 2)
-Role.create(
-  :name => 'director, century and recreational rides',
-  :authorizable_type => 'director',
-  :authorizable_id => 2)
-Role.create(
-  :name => 'director, race, Burlingame Criterium',
-  :authorizable_type => 'director',
-  :authorizable_id => 2)
-Role.create(
-  :name => 'director, race, San Bruno Hill Climb',
-  :authorizable_type => 'director',
-  :authorizable_id => 2)
-Role.create(
-  :name => 'webmaster',
-  :authorizable_type => 'site_admin',
-  :authorizable_id => 0)
-Role.create(
-  :name => 'club member',
-  :authorizable_type => 'club_member',
+  :name => 'ptm',
+  :authorizable_type => 'ptm',
   :authorizable_id => 5)
 
 ##############################################

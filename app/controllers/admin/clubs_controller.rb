@@ -5,7 +5,7 @@ class Admin::ClubsController < ApplicationController
   access_control do
     allow all, :to => [:index]
     allow logged_in, :to => [:index, :show]
-    allow :site_admin
+    allow :site_admin, :executive, :director
   end
 
   layout 'admin'
