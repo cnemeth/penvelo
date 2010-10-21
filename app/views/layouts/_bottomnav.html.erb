@@ -1,5 +1,10 @@
 <ul>
 	<li><%= link_to "Legal", common_legals_path %></li>
 	<li><%= link_to "Privacy", common_privacies_path %></li>
+	<div id="admin_home_link">
+	<% show_to :site_admin do %>
+      <%= link_to "<< Admin Home>>", admin_home_path %>
+  <% end %>
+  </div>
 </ul>
 
