@@ -2,6 +2,8 @@ class Position < ActiveRecord::Base
 
   acts_as_authorization_object
 
+  has_and_belongs_to_many :users
+
 end
 
 # == Schema Information

@@ -1,7 +1,7 @@
 module UsersHelper
 
-  def roles
-    Role.all.collect {|role|[role.name, role.id]}
+  def positions
+    Position.all.collect {|position|[position.name, position.id]}
   end
 
   def race_disciplines
@@ -19,6 +19,15 @@ module UsersHelper
       roles.push( r.name )
     end
     roles.join(", ")
+  end
+
+  def member_positions(ids)
+    position_ids = Position.find_all_by_id(ids)
+    positions = []
+    position_ids.each do |p|
+      positions.push( p.name )
+    end
+    positions.join(", ")
   end
 
   def member_race_disciplines(ids)

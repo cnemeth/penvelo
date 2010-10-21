@@ -24,6 +24,7 @@ class User < ActiveRecord::Base
   attr_accessible :password_salt
   attr_accessible :profile
   attr_accessible :role_ids
+  attr_accessible :position_ids
   attr_accessible :race_discipline_ids
   attr_accessible :race_category_ids
 
@@ -31,6 +32,7 @@ class User < ActiveRecord::Base
   has_many :race_results
 
   has_and_belongs_to_many :roles
+  has_and_belongs_to_many :positions
   has_and_belongs_to_many :race_disciplines
   has_and_belongs_to_many :race_categories
 

@@ -1,7 +1,7 @@
 class Admin::UsersController < ApplicationController
 
   # acl9 access control
-  before_filter :load_users, :only => [:index, :show, :destroy]
+  #before_filter :load_users, :only => [:index, :show, :destroy]
   access_control do
     allow :site_admin
   end
