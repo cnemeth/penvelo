@@ -1058,27 +1058,31 @@ Role.delete_all
 Role.create(
   :name => 'site_admin',
   :authorizable_type => 'site_admin',
-  :authorizable_id => 0)
+  :authorizable_id => 1)
 Role.create(
   :name => 'executive',
   :authorizable_type => 'executive',
-  :authorizable_id => 1)
+  :authorizable_id => 2)
 Role.create(
   :name => 'director',
   :authorizable_type => 'director',
-  :authorizable_id => 2)
+  :authorizable_id => 3)
 Role.create(
   :name => 'board_member',
   :authorizable_type => 'board_member',
-  :authorizable_id => 3)
+  :authorizable_id => 4)
 Role.create(
   :name => 'sponsor',
   :authorizable_type => 'sponsor',
-  :authorizable_id => 4)
-Role.create(
-  :name => 'ptm',
-  :authorizable_type => 'ptm',
   :authorizable_id => 5)
+Role.create(
+  :name => 'performance_team_member',
+  :authorizable_type => 'performance_team_member',
+  :authorizable_id => 6)
+Role.create(
+  :name => 'basic_member',
+  :authorizable_type => 'basic_member',
+  :authorizable_id => 7)
 
 ##############################################
 ## ImType

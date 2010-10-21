@@ -1,10 +1,10 @@
 class Admin::ClubsController < ApplicationController
 
+  # acl9 access control
   before_filter :load_clubs, :only => [:index, :edit, :update, :show]
-  # acl9 access control block
   access_control do
-    allow all, :to => [:index]
-    allow logged_in, :to => [:index, :show]
+    #allow all, :to => [:index]
+    #allow logged_in, :to => [:index, :show]
     allow :site_admin, :executive, :director
   end
 
