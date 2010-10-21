@@ -4,7 +4,7 @@
 <div id="header_1">
 
 	<div id="club_logo">
-		<%= image_tag(club.logo_url) %>
+		<%= link_to(image_tag(club.logo_url), root_url) %>
 	</div>
 
 	<div id="club_dates"><em>Est. <%= club.year %></em></div>
