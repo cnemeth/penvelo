@@ -36,7 +36,7 @@ class Admin::UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-
+    #raise @user.inspect
     respond_to do |format|
       if @user.update_attributes(params[:user])
         format.html { redirect_to(admin_users_url, :notice => 'User profile was successfully updated.') }

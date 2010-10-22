@@ -1,7 +1,4 @@
 
-<% semantic_form_for(@user) do |f| %>
-  <%= f.error_messages %>
-  <% f.inputs do %>
 
       <%= f.input :first_name, :label => 'First name' %>
       <%= f.input :middle_initial, :label => 'Middle initial' %>
@@ -27,9 +24,4 @@
       <%= f.input :race_disciplines, :label => 'Race disciplines', :as => :check_boxes, :collection => race_disciplines %>
 
       <%= f.input :race_categories, :label => 'Race categories', :as => :check_boxes, :collection => race_categories %>
-
-
-      <%= f.buttons %>
-  <% end %>
-<% end %>
 
