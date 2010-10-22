@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>ID</th>
     <th>First Name</th>
     <th>Middle Initial</th>
     <th>Last Name</th>
@@ -16,6 +17,8 @@
     <th>USAC License</th>
     <th>Profile</th>
 
+
+
     <th>Login Count</th>
     <th>Failed Login Count</th>
     <th>Last Login At</th>
@@ -26,6 +29,7 @@
 
 <% @users.each do |user| %>
   <tr>
+    <td><%=h user.id %></td>
     <td><%=h user.first_name %></td>
     <td><%=h user.middle_initial %></td>
     <td><%=h user.last_name %></td>

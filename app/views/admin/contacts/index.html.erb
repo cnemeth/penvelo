@@ -1,0 +1,46 @@
+<h1>Listing Club Member Contacts</h1>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>User ID</th>
+    <th>Street</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip</th>
+    <th>Country</th>
+    <th>Primary phone</th>
+    <th>Secondary phone</th>
+    <th>IM handle</th>
+    <th>IM type</th>
+    <th>Created At</th>
+    <th>Updated At</th>
+  </tr>
+
+<% @contacts.each do |contact| %>
+  <tr>
+    <td><%=h contact.id %></td>
+    <td><%=h contact.user_id %></td>
+    <td><%=h contact.street %></td>
+    <td><%=h contact.city %></td>
+    <td><%=h contact.state %></td>
+    <td><%=h contact.zip %></td>
+    <td><%=h contact.country %></td>
+    <td><%=h contact.primary_phone %></td>
+    <td><%=h contact.secondary_phone %></td>
+    <td><%=h contact.im_handle %></td>
+    <td><%=h contact.im_type_id %></td>
+    <td><%=h contact.created_at %></td>
+    <td><%=h contact.updated_at %></td>
+
+    <td><%= link_to 'Show', admin_contact_path(contact) %></td>
+    <td><%= link_to 'Edit', edit_admin_contact_path(contact.id) %></td>
+    <td><%= link_to "Delete", admin_contact_path(contact), :confirm => 'Are you sure?',:method => :delete  %></td>
+  </tr>
+<% end %>
+</table>
+
+<p>
+  <%= link_to 'Create New User Contact', new_admin_contact_path %>
+</p>
+

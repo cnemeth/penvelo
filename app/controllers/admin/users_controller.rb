@@ -48,7 +48,7 @@ class Admin::UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to(admin_users_url :notice => 'User profile was successfully created.') }
+        format.html { redirect_to(admin_user_path(@user), :notice => 'User profile was successfully created.') }
         format.xml  { render :xml => @user, :status => :created, :location => @user }
       else
         format.html { render :action => "new" }
@@ -69,7 +69,7 @@ class Admin::UsersController < ApplicationController
     #raise @user.inspect
     respond_to do |format|
       if @user.update_attributes(params[:user])
-        format.html { redirect_to(admin_users_url, :notice => 'User profile was successfully updated.') }
+        format.html { redirect_to(admin_user_path, :notice => 'User profile was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

@@ -1,0 +1,77 @@
+<h1>Contact info for <%= user_by_name %></h1>
+
+<p>
+  <b>ID:</b>
+  <%=h @contact.id %>
+</p>
+
+<p>
+  <b>Street:</b>
+  <%=h @contact.street %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%=h @contact.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%=h @contact.state %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%=h @contact.zip %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%=h @contact.country %>
+</p>
+
+<p>
+  <b>Primary phone:</b>
+  <%=h @contact.primary_phone %>
+</p>
+
+<p>
+  <b>Secondary phone:</b>
+  <%=h @contact.secondary_phone %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @contact.email %>
+</p>
+
+<p>
+  <b>Im:</b>
+  <%=h @contact.im_handle %>
+</p>
+
+<p>
+  <b>Member ID:</b>
+  <%=h @contact.user_id %>
+</p>
+
+<p>
+  <b>Im type:</b>
+  <%=h @contact.im_type_id %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%=h @contact.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%=h @contact.updated_at %>
+</p>
+
+<p>
+  <%= link_to 'Back', admin_contacts_path %> |
+  <%= link_to 'Edit', edit_admin_contact_path(@contact) %>
+</p>
+
