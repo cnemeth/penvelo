@@ -1,0 +1,12 @@
+<% f.inputs :for => :contacts do |j| %>
+  <%= j.input :street, :label => 'Street' %>
+  <%= j.input :city, :label => 'City' %>
+  <%= j.input :state, :label => 'State', :as => :select, :collection => us_states_list, :include_blank => false %>
+  <%= j.input :zip, :label => 'Zip' %>
+  <%= j.input :country, :label => 'Country', :as => :select, :collection => countries_list, :include_blank => false %>
+  <%= j.input :primary_phone, :label => 'Primary phone' %>
+  <%= j.input :secondary_phone, :label => 'Secondary phone' %>
+  <%= j.input :email, :label => 'Email' %>
+  <%= j.input :im_handle, :label => 'Im handle' %>
+<% end %>
+

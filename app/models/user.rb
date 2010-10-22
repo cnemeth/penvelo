@@ -28,13 +28,18 @@ class User < ActiveRecord::Base
   attr_accessible :race_discipline_ids
   attr_accessible :race_category_ids
 
-  has_many :contacts
+  has_many :contacts, :dependent => :destroy
+  # for building nested formtastic form
+  accepts_nested_attributes_for :contacts
+
   has_many :race_results
 
   has_and_belongs_to_many :roles
   has_and_belongs_to_many :positions
   has_and_belongs_to_many :race_disciplines
   has_and_belongs_to_many :race_categories
+
+
 
   composed_of :name,
               :class_name => "Name",

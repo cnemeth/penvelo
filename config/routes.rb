@@ -8,6 +8,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :user_session
   map.resource :controller => "user_sessions", :action => "new"
 
+  map.resources :contacts
   map.resources :roles
 
   map.namespace :common do |common|
