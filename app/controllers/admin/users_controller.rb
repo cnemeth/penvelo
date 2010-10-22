@@ -1,7 +1,7 @@
 class Admin::UsersController < ApplicationController
 
   # acl9 access control
-  #before_filter :load_users, :only => [:index, :show, :destroy]
+  before_filter :load_users, :only => [:index, :show, :edit, :update, :destroy]
   access_control do
     allow :site_admin
   end
@@ -30,6 +30,24 @@ class Admin::UsersController < ApplicationController
     end
   end
 
+  def edit
+    @user = User.find(params[:id])
+  end
+
+  def update
+    @user = User.find(params[:id])
+
+    respond_to do |format|
+      if @user.update_attributes(params[:user])
+        format.html { redirect_to(admin_users_url, :notice => 'User profile was successfully updated.') }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
   # DELETE /admin/users/1
   # DELETE /admin/users/1.xml
   def destroy
@@ -47,6 +65,10 @@ private
   def load_users
     @users = User.all
   end
+
+
+
+
 
 end
 
