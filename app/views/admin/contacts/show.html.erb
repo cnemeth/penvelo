@@ -1,74 +1,20 @@
 <h1>Contact info for <%= user_by_name %></h1>
 
-<p>
-  <b>ID:</b>
-  <%=h @contact.id %>
-</p>
-
-<p>
-  <b>Street:</b>
-  <%=h @contact.street %>
-</p>
-
-<p>
-  <b>City:</b>
-  <%=h @contact.city %>
-</p>
-
-<p>
-  <b>State:</b>
-  <%=h @contact.state %>
-</p>
-
-<p>
-  <b>Zip:</b>
-  <%=h @contact.zip %>
-</p>
-
-<p>
-  <b>Country:</b>
-  <%=h @contact.country %>
-</p>
-
-<p>
-  <b>Primary phone:</b>
-  <%=h @contact.primary_phone %>
-</p>
-
-<p>
-  <b>Secondary phone:</b>
-  <%=h @contact.secondary_phone %>
-</p>
-
-<p>
-  <b>Email:</b>
-  <%=h @contact.email %>
-</p>
-
-<p>
-  <b>Im:</b>
-  <%=h @contact.im_handle %>
-</p>
-
-<p>
-  <b>Member ID:</b>
-  <%=h @contact.user_id %>
-</p>
-
-<p>
-  <b>Im type:</b>
-  <%=h @contact.im_type_id %>
-</p>
-
-<p>
-  <b>Created at:</b>
-  <%=h @contact.created_at %>
-</p>
-
-<p>
-  <b>Updated at:</b>
-  <%=h @contact.updated_at %>
-</p>
+<table>
+<tr><th>ID:</th><td><%=h @contact.id %></td></tr>
+<tr><th>User ID:</th><td><%=h @contact.user_id %></td></tr>
+<tr><th>Street:</th><td><%=h @contact.street %></td></tr>
+<tr><th>City:</th><td><%=h @contact.city %></td></tr>
+<tr><th>Sate:</th><td><%=h @contact.state %></td></tr>
+<tr><th>Zip:</th><td><%=h @contact.zip %></td></tr>
+<tr><th>Country:</th><td><%=h @contact.country %></td></tr>
+<tr><th>Primary phone:</th><td><%=h @contact.primary_phone %></td></tr>
+<tr><th>Secondary phone:</th><td><%=h @contact.secondary_phone %></td></tr>
+<tr><th>IM handle:</th><td><%=h @contact.im_handle %></td></tr>
+<tr><th>IM type:</th><td><%=h @contact.im_type_id %></td></tr>
+<tr><th>Created at:</th><td><%=h @contact.created_at %></td></tr>
+<tr><th>Updated at:</th><td><%=h @contact.updated_at %></td></tr>
+</table>
 
 <p>
   <%= link_to 'Back', admin_contacts_path %> |

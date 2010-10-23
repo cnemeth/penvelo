@@ -1,4 +1,9 @@
 module ContactsHelper
+
+  def im_types
+    ImType.all.collect {|im_type|[im_type.name, im_type.id]}
+  end
+
   def us_states_list
     [
     ['...select from list ...'],

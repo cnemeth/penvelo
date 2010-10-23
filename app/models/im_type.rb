@@ -2,6 +2,8 @@ class ImType < ActiveRecord::Base
 
   acts_as_authorization_object
 
+  attr_accessible :name
+
   has_many :contacts
 
 end

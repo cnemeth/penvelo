@@ -1,0 +1,28 @@
+<h1>Listing Im Types</h1>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Created At</th>
+    <th>Updated At</th>
+  </tr>
+
+<% @im_types.each do |im_type| %>
+  <tr>
+    <td><%=h im_type.id %></td>
+    <td><%=h im_type.name %></td>
+    <td><%=h im_type.created_at %></td>
+    <td><%=h im_type.updated_at %></td>
+
+    <td><%= link_to 'Show', admin_im_type_path(im_type) %></td>
+    <td><%= link_to 'Edit', edit_admin_im_type_path(im_type) %></td>
+    <td><%= link_to "Delete", admin_im_type_path(im_type), :confirm => 'Are you sure?',:method => :delete  %></td>
+  </tr>
+<% end %>
+</table>
+
+<p>
+  <%= link_to 'Create New IM Type', new_admin_im_type_path %>
+</p>
+

@@ -1,61 +1,20 @@
 <h1>Member Profile</h1>
 
-<p>
-  <b>Name:</b>
-  <%=h @user.name %>
-</p>
-
-<p>
-  <b>Login name:</b>
-  <%=h @user.login %>
-</p>
-
-<p>
-  <b>Date of birth:</b>
-  <%=h @user.date_of_birth %>
-</p>
-
-<p>
-  <b>Gender:</b>
-  <%=h @user.gender %>
-</p>
-
-<p>
-  <b>Member's Image URL:</b>
-  <%=h @user.user_image_url %>
-</p>
-
-<p>
-  <b>Member's Image Gallery URL:</b>
-  <%=h @user.image_gallery_url %>
-</p>
-
-<p>
-  <b>Performance team member:</b>
-  <%=h @user.performance_team_member %>
-</p>
-
-<p>
-  <b>Usac license:</b>
-  <%=h @user.usac_license %>
-</p>
-
-<p>
-  <b>Active:</b>
-  <%=h @user.active %>
-</p>
-
-<p>
-  <b>Member since:</b>
-  <%=h @user.member_since %>
-</p>
-
-
-
-<p>
-  <b>Profile:</b>
-  <%=h @user.profile %>
-</p>
+<table>
+  <title>User profile</title>
+  <tr><th>ID</th><td><%=h @user.id %></td></tr>
+  <tr><th>Name</th><td><%=h @user.name %></td></tr>
+  <tr><th>Login name</th><td><%=h @user.login %></td></tr>
+  <tr><th>Date of birth</th><td><%=h @user.date_of_birth %></td></tr>
+  <tr><th>Gender</th><td><%=h @user.gender %></td></tr>
+  <tr><th>Member's Image URL</th><td><%=h @user.user_image_url %></td></tr>
+  <tr><th>Member's Image Gallery URL</th><td><%=h @user.image_gallery_url %></td></tr>
+  <tr><th>Performance team member</th><td><%=h @user.performance_team_member %></td></tr>
+  <tr><th>Usac license</th><td><%=h @user.usac_license %></td></tr>
+  <tr><th>Active</th><td><%=h @user.active %></td></tr>
+  <tr><th>Member since</th><td><%=h @user.member_since %></td></tr>
+  <tr><th>Profile</th><td><%=h @user.profile %></td></tr>
+</table>
 
 <p>
 <%= link_to 'Back', admin_users_path %> |

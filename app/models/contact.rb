@@ -2,6 +2,18 @@ class Contact < ActiveRecord::Base
 
   acts_as_authorization_object
 
+  attr_accessible :street
+  attr_accessible :city
+  attr_accessible :state
+  attr_accessible :zip
+  attr_accessible :country
+  attr_accessible :primary_phone
+  attr_accessible :secondary_phone
+  attr_accessible :email
+  attr_accessible :im_handle
+  attr_accessible :im_type_id
+  attr_accessible :user_id
+
   belongs_to :im_type
   belongs_to :user
 end
