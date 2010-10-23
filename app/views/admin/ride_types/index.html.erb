@@ -1,0 +1,28 @@
+<h1>Listing Ride Types</h1>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Created At</th>
+    <th>Updated At</th>
+  </tr>
+
+<% @ride_types.each do |ride_type| %>
+  <tr>
+    <td><%=h ride_type.id %></td>
+    <td><%=h ride_type.name %></td>
+    <td><%=h ride_type.created_at %></td>
+    <td><%=h ride_type.updated_at %></td>
+
+    <td><%= link_to 'Show', admin_ride_type_path(ride_type) %></td>
+    <td><%= link_to 'Edit', edit_admin_ride_type_path(ride_type) %></td>
+    <td><%= link_to "Delete", admin_ride_type_path(ride_type), :confirm => 'Are you sure?',:method => :delete  %></td>
+  </tr>
+<% end %>
+</table>
+
+<p>
+  <%= link_to 'Create New Ride Type', new_admin_ride_type_path %>
+</p>
+
