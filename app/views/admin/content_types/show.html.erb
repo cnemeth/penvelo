@@ -1,0 +1,14 @@
+<h1>Content Type</h1>
+
+<table>
+<tr><th>ID:</th><td><%=h @content_type.id %></td></tr>
+<tr><th>User ID:</th><td><%=h @content_type.name %></td></tr>
+<tr><th>Created at:</th><td><%=h @content_type.created_at %></td></tr>
+<tr><th>Updated at:</th><td><%=h @content_type.updated_at %></td></tr>
+</table>
+
+<p>
+  <%= link_to 'Back', admin_content_types_path %> |
+  <%= link_to 'Edit', edit_admin_content_type_path(@content_type) %>
+</p>
+
