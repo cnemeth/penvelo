@@ -33,6 +33,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :content_types
     admin.resources :sponsor_types
     admin.resources :ride_types
+    admin.resources :feedback_types
   end
 
 

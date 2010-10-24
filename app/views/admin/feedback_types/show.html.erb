@@ -1,0 +1,14 @@
+<h1>Feedback Type</h1>
+
+<table>
+<tr><th>ID:</th><td><%=h @feedback_type.id %></td></tr>
+<tr><th>User ID:</th><td><%=h @feedback_type.name %></td></tr>
+<tr><th>Created at:</th><td><%=h @feedback_type.created_at %></td></tr>
+<tr><th>Updated at:</th><td><%=h @feedback_type.updated_at %></td></tr>
+</table>
+
+<p>
+  <%= link_to 'Back', admin_feedback_types_path %> |
+  <%= link_to 'Edit', edit_admin_feedback_type_path(@feedback_type) %>
+</p>
+
