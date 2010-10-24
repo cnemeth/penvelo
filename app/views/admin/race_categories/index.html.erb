@@ -1,0 +1,28 @@
+<h1>Listing Race Categories</h1>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Created At</th>
+    <th>Updated At</th>
+  </tr>
+
+<% @race_categories.each do |race_category| %>
+  <tr>
+    <td><%=h race_category.id %></td>
+    <td><%=h race_category.name %></td>
+    <td><%=h race_category.created_at %></td>
+    <td><%=h race_category.updated_at %></td>
+
+    <td><%= link_to 'Show', admin_race_category_path(race_category) %></td>
+    <td><%= link_to 'Edit', edit_admin_race_category_path(race_category) %></td>
+    <td><%= link_to "Delete", admin_race_category_path(race_category), :confirm => 'Are you sure?',:method => :delete  %></td>
+  </tr>
+<% end %>
+</table>
+
+<p>
+  <%= link_to 'Create New Race Category', new_admin_race_category_path %>
+</p>
+

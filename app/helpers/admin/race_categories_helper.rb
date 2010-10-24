@@ -1,0 +1,2 @@
+module Admin::RaceCategoriesHelper
+end
