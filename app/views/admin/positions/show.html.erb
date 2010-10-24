@@ -1,0 +1,14 @@
+<h1>Position</h1>
+
+<table>
+<tr><th>ID:</th><td><%=h @position.id %></td></tr>
+<tr><th>User ID:</th><td><%=h @position.name %></td></tr>
+<tr><th>Created at:</th><td><%=h @position.created_at %></td></tr>
+<tr><th>Updated at:</th><td><%=h @position.updated_at %></td></tr>
+</table>
+
+<p>
+  <%= link_to 'Back', admin_positions_path %> |
+  <%= link_to 'Edit', edit_admin_position_path(@position) %>
+</p>
+

@@ -27,7 +27,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :clubs
     admin.resources :users
     admin.resources :roles
-    #admin.resources :positions
+    admin.resources :positions
     admin.resources :contacts
     admin.resources :im_types
     admin.resources :content_types
