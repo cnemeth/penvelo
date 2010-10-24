@@ -1,0 +1,14 @@
+<h1>Role</h1>
+
+<table>
+<tr><th>ID:</th><td><%=h @role.id %></td></tr>
+<tr><th>User ID:</th><td><%=h @role.name %></td></tr>
+<tr><th>Created at:</th><td><%=h @role.created_at %></td></tr>
+<tr><th>Updated at:</th><td><%=h @role.updated_at %></td></tr>
+</table>
+
+<p>
+  <%= link_to 'Back', admin_roles_path %> |
+  <%= link_to 'Edit', edit_admin_role_path(@role) %>
+</p>
+

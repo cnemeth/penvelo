@@ -65,13 +65,8 @@ body {
     border-top:   solid 3px #f93;
 }
 
-
-
-
 /* =Main Content
 -----------------------------------------------------------------------------*/
-
-
 
 
 /* =Secondary Content
@@ -99,13 +94,14 @@ th, td{
     padding:    0.5em;
 }
 
-
-
-
-
 /* =Misc 1
 -----------------------------------------------------------------------------*/
 
+#warning{
+    font-size: large;
+    font-style: bold;
+    color: #be1800;
+}
 
 
 /* =Misc 2

@@ -27,12 +27,14 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :clubs
     admin.resources :users
     admin.resources :roles
-    admin.resources :positions
+    #admin.resources :positions
     admin.resources :contacts
     admin.resources :im_types
     admin.resources :content_types
     admin.resources :sponsor_types
     admin.resources :ride_types
+    #admin.resources :rrace_disciplines
+    #admin.resources :rrace_categories
     admin.resources :feedback_types
   end
 
