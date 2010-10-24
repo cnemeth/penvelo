@@ -1,0 +1,28 @@
+<h1>Listing Race Disciplines</h1>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Created At</th>
+    <th>Updated At</th>
+  </tr>
+
+<% @race_disciplines.each do |race_discipline| %>
+  <tr>
+    <td><%=h race_discipline.id %></td>
+    <td><%=h race_discipline.name %></td>
+    <td><%=h race_discipline.created_at %></td>
+    <td><%=h race_discipline.updated_at %></td>
+
+    <td><%= link_to 'Show', admin_race_discipline_path(race_discipline) %></td>
+    <td><%= link_to 'Edit', edit_admin_race_discipline_path(race_discipline) %></td>
+    <td><%= link_to "Delete", admin_race_discipline_path(race_discipline), :confirm => 'Are you sure?',:method => :delete  %></td>
+  </tr>
+<% end %>
+</table>
+
+<p>
+  <%= link_to 'Create New Race Discipline', new_admin_race_discipline_path %>
+</p>
+

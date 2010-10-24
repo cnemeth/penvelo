@@ -1,0 +1,14 @@
+<h1>Race Discipline</h1>
+
+<table>
+<tr><th>ID:</th><td><%=h @race_discipline.id %></td></tr>
+<tr><th>User ID:</th><td><%=h @race_discipline.name %></td></tr>
+<tr><th>Created at:</th><td><%=h @race_discipline.created_at %></td></tr>
+<tr><th>Updated at:</th><td><%=h @race_discipline.updated_at %></td></tr>
+</table>
+
+<p>
+  <%= link_to 'Back', admin_race_disciplines_path %> |
+  <%= link_to 'Edit', edit_admin_race_discipline_path(@race_discipline) %>
+</p>
+
