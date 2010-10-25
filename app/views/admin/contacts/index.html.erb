@@ -1,9 +1,10 @@
-<h1>Listing Club Member Contacts</h1>
+<h1>Listing Club Member Contact Info</h1>
 
 <table>
   <tr>
     <th>Contact id</th>
-    <th>User id</th>
+    <th>Member id</th>
+    <th>Member name</th>
     <th>Street</th>
     <th>City</th>
     <th>State</th>
@@ -13,6 +14,7 @@
     <th>Secondary phone</th>
     <th>IM handle</th>
     <th>IM type id</th>
+    <th>IM type</th>
     <th>Created At</th>
     <th>Updated At</th>
   </tr>
@@ -21,6 +23,7 @@
   <tr>
     <td><%=h contact.id %></td>
     <td><%=h contact.user_id %></td>
+    <td><%=h User.find(contact.user_id).name %></td>
     <td><%=h contact.street %></td>
     <td><%=h contact.city %></td>
     <td><%=h contact.state %></td>
@@ -30,6 +33,7 @@
     <td><%=h contact.secondary_phone %></td>
     <td><%=h contact.im_handle %></td>
     <td><%=h contact.im_type_id %></td>
+    <td><%=h ImType.find(contact.im_type_id).name %></td>
     <td><%=h contact.created_at %></td>
     <td><%=h contact.updated_at %></td>
 
