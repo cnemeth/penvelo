@@ -1,8 +1,9 @@
 <h1>Contact info for <%= user_by_name %></h1>
 
 <table>
-<tr><th>ID:</th><td><%=h @contact.id %></td></tr>
+<tr><th>Contact ID:</th><td><%=h @contact.id %></td></tr>
 <tr><th>User ID:</th><td><%=h @contact.user_id %></td></tr>
+<tr><th>User name:</th><td><%=h User.find(@contact.user_id).name %></td></tr>
 <tr><th>Street:</th><td><%=h @contact.street %></td></tr>
 <tr><th>City:</th><td><%=h @contact.city %></td></tr>
 <tr><th>Sate:</th><td><%=h @contact.state %></td></tr>
@@ -11,7 +12,7 @@
 <tr><th>Primary phone:</th><td><%=h @contact.primary_phone %></td></tr>
 <tr><th>Secondary phone:</th><td><%=h @contact.secondary_phone %></td></tr>
 <tr><th>IM handle:</th><td><%=h @contact.im_handle %></td></tr>
-<tr><th>IM type:</th><td><%=h @contact.im_type_id %></td></tr>
+<tr><th>IM type:</th><td><%=h ImType.find(@contact.user_id).name %></td></tr>
 <tr><th>Created at:</th><td><%=h @contact.created_at %></td></tr>
 <tr><th>Updated at:</th><td><%=h @contact.updated_at %></td></tr>
 </table>

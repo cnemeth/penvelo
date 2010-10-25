@@ -1,5 +1,9 @@
 module ContactsHelper
 
+  def user_list
+    User.all.collect {|user|[user.name, user.id]}
+  end
+
   def im_types
     ImType.all.collect {|im_type|[im_type.name, im_type.id]}
   end
