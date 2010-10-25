@@ -26,9 +26,11 @@ ActionController::Routing::Routes.draw do |map|
   map.namespace :admin do |admin|
     admin.resources :clubs
     admin.resources :users
+    admin.resources :contacts
+    admin.resources :contents
+
     admin.resources :roles
     admin.resources :positions
-    admin.resources :contacts
     admin.resources :im_types
     admin.resources :content_types
     admin.resources :sponsor_types
