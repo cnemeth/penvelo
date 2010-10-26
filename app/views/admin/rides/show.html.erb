@@ -1,0 +1,24 @@
+<h1>Ride</h1>
+
+<table>
+<tr><th>ID</th><td><%=h @ride.id %></td></tr>
+<tr><th>Name</th><td><%=h @ride.name %></td></tr>
+<tr><th>Days</th><td><%=h @ride.days %></td></tr>
+<tr><th>Starts at</th><td><%=h @ride.start_point %></td></tr>
+<tr><th>Ends at</th><td><%=h @ride.end_point %></td></tr>
+<tr><th>Description</th><td><%=h @ride.description %></td></tr>
+<tr><th>Distance (miles)</th><td><%=h @ride.distance %></td></tr>
+<tr><th>Elevation gain (ft)</th><td><%=h @ride.elevation %></td></tr>
+<tr><th>Link to pdf</th><td><%=h @ride.link_to_pdf %></td></tr>
+<tr><th>Link to map</th><td><%=h @ride.link_to_map %></td></tr>
+<tr><th>Ride type</th><td><%=h @ride.ride_type.name %></td></tr>
+
+<tr><th>Created at:</th><td><%=h @ride.created_at %></td></tr>
+<tr><th>Updated at:</th><td><%=h @ride.updated_at %></td></tr>
+</table>
+
+<p>
+  <%= link_to 'Back', admin_rides_path %> |
+  <%= link_to 'Edit', edit_admin_ride_path(@ride) %>
+</p>
+

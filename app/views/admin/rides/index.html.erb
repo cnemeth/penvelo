@@ -1,0 +1,50 @@
+<h1>Listing Club Rides</h1>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Days</th>
+    <th>Location</th>
+    <th>Starts at</th>
+    <th>Ends at</th>
+    <th>Description</th>
+    <th>Distance (miles)</th>
+    <th>Elevation gain (ft)</th>
+    <th>Link to pdf</th>
+    <th>Link to map</th>
+    <th>Ride type</th>
+
+    <th>Created At</th>
+    <th>Updated At</th>
+  </tr>
+
+<% @rides.each do |ride| %>
+  <tr>
+    <td><%=h ride.id %></td>
+    <td><%=h ride.name %></td>
+    <td><%=h ride.days %></td>
+    <td><%=h ride.location %></td>
+    <td><%=h ride.start_point %></td>
+    <td><%=h ride.end_point %></td>
+    <td><%=h truncate(ride.description.gsub(/<.*?>/,''), :length => 40) %></td>
+    <td><%=h ride.distance %></td>
+    <td><%=h ride.elevation %></td>
+    <td><%=h ride.link_to_pdf %></td>
+    <td><%=h ride.link_to_map %></td>
+    <td><%=h ride.ride_type.name %></td>
+
+    <td><%=h ride.created_at %></td>
+    <td><%=h ride.updated_at %></td>
+
+    <td><%= link_to 'Show', admin_ride_path(ride) %></td>
+    <td><%= link_to 'Edit', edit_admin_ride_path(ride) %></td>
+    <td><%= link_to "Delete", admin_ride_path(ride), :confirm => 'Are you sure?',:method => :delete  %></td>
+  </tr>
+<% end %>
+</table>
+
+<p>
+  <%= link_to 'Create New Ride', new_admin_ride_path %>
+</p>
+
