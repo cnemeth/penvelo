@@ -1,0 +1,28 @@
+<h1>Sponsor</h1>
+
+<table>
+<tr><th>ID:</th><td><%=h @sponsor.id %></td></tr>
+<tr><th>Name:</th><td><%=h @sponsor.name %></td></tr>
+<tr><th>Phone</th><td><%=h @sponsor.phone %></td></tr>
+<tr><th>Email</th><td><%=h @sponsor.email %></td></tr>
+<tr><th>URL</th><td><%=h @sponsor.url %></td></tr>
+<tr><th>Logo URL</th><td><%=h @sponsor.logo_url %></td></tr>
+<tr><th>Contact name</th><td><%=h @sponsor.contact_name %></td></tr>
+<tr><th>Contact phone</th><td><%=h @sponsor.contact_phone %></td></tr>
+<tr><th>Contact email</th><td><%=h @sponsor.contact_email %></td></tr>
+<tr><th>Rank</th><td><%=h @sponsor.rank %></td></tr>
+<tr><th>Active</th><td><%=h @sponsor.active %></td></tr>
+<tr><th>Active since</th><td><%=h @sponsor.active_since %></td></tr>
+<tr><th>Slogan</th><td><%=h @sponsor.slogan %></td></tr>
+<tr><th>description</th><td><%=h @sponsor.description %></td></tr>
+<tr><th>Sponsor type</th><td><%=h SponsorType.find(@sponsor.sponsor_type_id).name %></td></tr>
+
+<tr><th>Created at:</th><td><%=h @sponsor.created_at %></td></tr>
+<tr><th>Updated at:</th><td><%=h @sponsor.updated_at %></td></tr>
+</table>
+
+<p>
+  <%= link_to 'Back', admin_sponsors_path %> |
+  <%= link_to 'Edit', edit_admin_sponsor_path(@sponsor) %>
+</p>
+

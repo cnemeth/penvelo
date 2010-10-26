@@ -1,0 +1,56 @@
+<h1>Listing Sponsors</h1>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>URL</th>
+    <th>Logo URL</th>
+    <th>Contact name</th>
+    <th>Contact phone</th>
+    <th>Contact email</th>
+    <th>Rank</th>
+    <th>Active</th>
+    <th>Active since</th>
+    <th>Slogan</th>
+    <th>description</th>
+    <th>Sponsor type</th>
+
+    <th>Created At</th>
+    <th>Updated At</th>
+  </tr>
+
+<% @sponsors.each do |sponsor| %>
+  <tr>
+    <td><%=h sponsor.id %></td>
+    <td><%=h sponsor.name %></td>
+    <td><%=h sponsor.phone %></td>
+    <td><%=h sponsor.email %></td>
+    <td><%=h sponsor.url %></td>
+    <td><%=h sponsor.logo_url %></td>
+    <td><%=h sponsor.contact_name %></td>
+    <td><%=h sponsor.contact_phone %></td>
+    <td><%=h sponsor.contact_email %></td>
+    <td><%=h sponsor.rank %></td>
+    <td><%=h sponsor.active %></td>
+    <td><%=h sponsor.active_since %></td>
+    <td><%=h truncate(sponsor.slogan.gsub(/<.*?>/,''), :length => 20) %></td>
+    <td><%=h truncate(sponsor.description.gsub(/<.*?>/,''), :length => 20) %></td>
+    <td><%=h SponsorType.find(sponsor.sponsor_type_id).name %></td>
+
+    <td><%=h sponsor.created_at %></td>
+    <td><%=h sponsor.updated_at %></td>
+
+    <td><%= link_to 'Show', admin_sponsor_path(sponsor) %></td>
+    <td><%= link_to 'Edit', edit_admin_sponsor_path(sponsor) %></td>
+    <td><%= link_to "Delete", admin_sponsor_path(sponsor), :confirm => 'Are you sure?',:method => :delete  %></td>
+  </tr>
+<% end %>
+</table>
+
+<p>
+  <%= link_to 'Create New Sponsor', new_admin_sponsor_path %>
+</p>
+

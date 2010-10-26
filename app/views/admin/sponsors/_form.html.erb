@@ -1,0 +1,23 @@
+<% semantic_form_for([:admin, @sponsor]) do |f| %>
+  <%= f.error_messages %>
+  <% f.inputs do %>
+
+      <%= f.input :name, :label => 'Name' %>
+      <%= f.input :phone, :label => 'Phone' %>
+      <%= f.input :email, :label => 'Email' %>
+      <%= f.input :url, :label => 'URL' %>
+      <%= f.input :logo_url, :label => 'Logo URL' %>
+      <%= f.input :contact_name, :label => 'Contact name' %>
+      <%= f.input :contact_phone, :label => 'Contact phone' %>
+      <%= f.input :contact_email, :label => 'Contact email' %>
+      <%= f.input :rank, :label => 'Rank' %>
+      <%= f.input :active, :label => 'Active' %>
+      <%= f.input :active_since, :label => 'Active since' %>
+      <%= f.input :slogan, :label => 'Slogan' %>
+      <%= f.input :description, :label => 'Description' %>
+      <%= f.input :sponsor_type, :label => 'Sponsor type', :as => :select, :collection => sponsor_types, :include_blank => false %>
+
+  <% end %>
+  <%= f.submit "Submit" %>
+<% end %>
+
