@@ -6,7 +6,7 @@
       <%= f.input :middle_initial, :label => 'Middle initial' %>
       <%= f.input :last_name, :label => 'Last name' %>
 
-      <% f.semantic_fields_for :contact do |j| %>
+      <% f.semantic_fields_for :contacts do |j| %>
         <%= j.input :street, :label => 'Street' %>
         <%= j.input :city, :label => 'City' %>
         <%= j.input :state, :label => 'State', :as => :select, :collection => us_states_list, :include_blank => false %>
@@ -16,6 +16,7 @@
         <%= j.input :secondary_phone, :label => 'Secondary phone' %>
         <%= j.input :email, :label => 'Email' %>
         <%= j.input :im_handle, :label => 'Im handle' %>
+        <%= j.input :im_type, :label => 'Im type', :as => :select, :collection => im_types, :include_blank => false %>
       <% end %>
 
       <%= f.input :date_of_birth, :label => 'Date of birth', :start_year => 1900 %>
