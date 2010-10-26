@@ -1,0 +1,16 @@
+<h1>Sponsor Discount</h1>
+
+<table>
+<tr><th>Discount ID:</th><td><%=h @sponsor_discount.id %></td></tr>
+<tr><th>Discount:</th><td><%=h @sponsor_discount.discount %></td></tr>
+<tr><th>Sponsor:</th><td><%=h @sponsor_discount.sponsor.name %></td></tr>
+
+<tr><th>Created at:</th><td><%=h @sponsor_discount.created_at %></td></tr>
+<tr><th>Updated at:</th><td><%=h @sponsor_discount.updated_at %></td></tr>
+</table>
+
+<p>
+  <%= link_to 'Back', admin_sponsor_discounts_path %> |
+  <%= link_to 'Edit', edit_admin_sponsor_discount_path(@sponsor_discount) %>
+</p>
+

@@ -29,6 +29,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :contacts
     admin.resources :contents
     admin.resources :sponsors
+    admin.resources :sponsor_discounts
 
     admin.resources :roles
     admin.resources :positions
