@@ -1,0 +1,26 @@
+<h1>Race</h1>
+
+<table>
+<tr><th>ID</th><td><%=h @race.id %></td></tr>
+<tr><th>Name</th><td><%=h @race.name %></td></tr>
+<tr><th>Date</th><td><%=h @race.date %></td></tr>
+<tr><th>Time</th><td><%=h @race.time != nil ? @race.time.strftime("%I:%M") : "00:00" %></td></tr>
+<tr><th>Location</th><td><%=h @race.place %></td></tr>
+<tr><th>Organizer</th><td><%=h @race.organizer %></td></tr>
+<tr><th>Starts at</th><td><%=h @race.start_location %></td></tr>
+<tr><th>Ends at</th><td><%=h @race.finish_location %></td></tr>
+<tr><th>Description</th><td><%=h @race.description %></td></tr>
+<tr><th>Link to website</th><td><%=h @race.link_to_website %></td></tr>
+<tr><th>Link to registration</th><td><%=h @race.link_to_registration %></td></tr>
+<tr><th>Race type</th><td><%=h @race.race_discipline.name %></td></tr>
+
+
+<tr><th>Created at</th><td><%=h @race.created_at %></td></tr>
+<tr><th>Updated at</th><td><%=h @race.updated_at %></td></tr>
+</table>
+
+<p>
+  <%= link_to 'Back', admin_races_path %> |
+  <%= link_to 'Edit', edit_admin_race_path(@race) %>
+</p>
+

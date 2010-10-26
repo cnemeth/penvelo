@@ -1,0 +1,50 @@
+<h1>Listing Races</h1>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Location</th>
+    <th>Organizer</th>
+    <th>Starts at</th>
+    <th>Ends at</th>
+    <th>Description</th>
+    <th>Link to website</th>
+    <th>Link to registration</th>
+    <th>Race type</th>
+
+    <th>Created At</th>
+    <th>Updated At</th>
+  </tr>
+
+<% @races.each do |race| %>
+  <tr>
+    <td><%=h race.id %></td>
+    <td><%=h race.name %></td>
+    <td><%=h race.date %></td>
+    <td><%=h race.time != nil ? race.time.strftime("%I:%M") : "00:00" %></td>
+    <td><%=h race.place %></td>
+    <td><%=h race.organizer %></td>
+    <td><%=h race.start_location %></td>
+    <td><%=h race.finish_location %></td>
+    <td><%=h truncate(race.description.gsub(/<.*?>/,''), :length => 40) %></td>
+    <td><%=h race.link_to_website %></td>
+    <td><%=h race.link_to_registration %></td>
+    <td><%=h race.race_discipline.name %></td>
+
+    <td><%=h race.created_at %></td>
+    <td><%=h race.updated_at %></td>
+
+    <td><%= link_to 'Show', admin_race_path(race) %></td>
+    <td><%= link_to 'Edit', edit_admin_race_path(race) %></td>
+    <td><%= link_to "Delete", admin_race_path(race), :confirm => 'Are you sure?',:method => :delete  %></td>
+  </tr>
+<% end %>
+</table>
+
+<p>
+  <%= link_to 'Create New Race', new_admin_race_path %>
+</p>
+

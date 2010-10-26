@@ -31,6 +31,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :sponsors
     admin.resources :sponsor_discounts
     admin.resources :rides
+    admin.resources :races
 
     admin.resources :roles
     admin.resources :positions
