@@ -6,6 +6,7 @@
     <th>Name</th>
     <th>Days</th>
     <th>Location</th>
+    <th>Start time</th>
     <th>Starts at</th>
     <th>Ends at</th>
     <th>Description</th>
@@ -25,6 +26,7 @@
     <td><%=h ride.name %></td>
     <td><%=h ride.days %></td>
     <td><%=h ride.location %></td>
+    <td><%=h ride.time.strftime("%I:%M") %></td>
     <td><%=h ride.start_point %></td>
     <td><%=h ride.end_point %></td>
     <td><%=h truncate(ride.description.gsub(/<.*?>/,''), :length => 40) %></td>

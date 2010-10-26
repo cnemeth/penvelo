@@ -6,6 +6,7 @@
 <tr><th>Days</th><td><%=h @ride.days %></td></tr>
 <tr><th>Starts at</th><td><%=h @ride.start_point %></td></tr>
 <tr><th>Ends at</th><td><%=h @ride.end_point %></td></tr>
+<tr><th>Start time</th><td><%=h @ride.time.strftime("%I:%M") %></td></tr>
 <tr><th>Description</th><td><%=h @ride.description %></td></tr>
 <tr><th>Distance (miles)</th><td><%=h @ride.distance %></td></tr>
 <tr><th>Elevation gain (ft)</th><td><%=h @ride.elevation %></td></tr>
