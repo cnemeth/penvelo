@@ -3,10 +3,11 @@ ActionController::Routing::Routes.draw do |map|
   map.login "login", :controller => "user_sessions", :action => "new"
   map.logout "logout", :controller => "user_sessions", :action => "destroy"
 
-  map.resource :account, :controller => "users"
+  map.resource  :account, :controller => "users"
   map.resources :users
-  map.resource :user_session
-  map.resource :controller => "user_sessions", :action => "new"
+  map.resource  :user_session
+  map.resources :password_resets
+  map.resource  :controller => "user_sessions", :action => "new"
 
   map.resources :contacts
   map.resources :roles
@@ -48,8 +49,8 @@ ActionController::Routing::Routes.draw do |map|
   end
 
 
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
+  #map.connect ':controller/:action/:id'
+  #map.connect ':controller/:action/:id.:format'
 
   map.admin_home "admin/index", :controller => "admin/home", :action => "index"
   map.root :controller => "home", :action => "index"
