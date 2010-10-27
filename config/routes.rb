@@ -21,6 +21,7 @@ ActionController::Routing::Routes.draw do |map|
     common.resources  :galleries
     common.resources  :legals
     common.resources  :privacies
+    common.resources  :feedbacks
   end
 
   map.namespace :admin do |admin|
@@ -33,6 +34,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :rides
     admin.resources :races
     admin.resources :race_results
+    admin.resources :feedbacks
 
     admin.resources :roles
     admin.resources :positions

@@ -1,0 +1,16 @@
+<h1>Feedback</h1>
+
+<table>
+<tr><th>ID:</th><td><%=h @feedback.id %></td></tr>
+<tr><th>Feedback:</th><td><%=h @feedback.feedback %></td></tr>
+<tr><th>Feedback type:</th><td><%=h @feedback.feedback_type.name %></td></tr>
+
+<tr><th>Created at:</th><td><%=h @feedback.created_at %></td></tr>
+<tr><th>Updated at:</th><td><%=h @feedback.updated_at %></td></tr>
+</table>
+
+<p>
+  <%= link_to 'Back', admin_feedbacks_path %> |
+  <%= link_to 'Edit', edit_admin_feedback_path(@feedback) %>
+</p>
+
