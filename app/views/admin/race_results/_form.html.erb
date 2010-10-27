@@ -1,0 +1,16 @@
+<% semantic_form_for([:admin, @race_result]) do |f| %>
+  <%= f.error_messages %>
+  <% f.inputs do %>
+
+      <%= f.input :race, :label => 'Name' %>
+      <%= f.input :date, :label => 'Date' %>
+      <%= f.input :placement, :label => 'Placement' %>
+      <%= f.input :field_size, :label => 'Field size' %>
+      <%= f.input :race_discipline, :label => 'Race discipline', :as => :select, :collection => race_disciplines, :include_blank => false %>
+      <%= f.input :race_category, :label => 'Race category', :as => :select, :collection => race_categories, :include_blank => false %>
+      <%= f.input :user, :label => 'Racer', :as => :select, :collection => users, :include_blank => false %>
+
+  <% end %>
+  <%= f.submit "Submit" %>
+<% end %>
+

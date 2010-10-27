@@ -1,0 +1,21 @@
+<h1>Race Result</h1>
+
+<table>
+<tr><th>ID</th><td><%=h @race_result.id %></td></tr>
+<tr><th>Race</th><td><%=h @race_result.race %></td></tr>
+<tr><th>Date</th><td><%=h @race_result.date %></td></tr>
+<tr><th>Placement</th><td><%=h @race_result.placement %></td></tr>
+<tr><th>Field size</th><td><%=h @race_result.field_size %></td></tr>
+<tr><th>Race discipline</th><td><%=h @race_result.race_discipline.name %></td></tr>
+<tr><th>Race category</th><td><%=h @race_result.race_category.name %></td></tr>
+<tr><th>Member</th><td><%=h @race_result.user.name %></td></tr>
+
+<tr><th>Created at</th><td><%=h @race_result.created_at %></td></tr>
+<tr><th>Updated at</th><td><%=h @race_result.updated_at %></td></tr>
+</table>
+
+<p>
+  <%= link_to 'Back', admin_race_results_path %> |
+  <%= link_to 'Edit', edit_admin_race_result_path(@race_result) %>
+</p>
+

@@ -1,0 +1,42 @@
+<h1>Listing Race Results</h1>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Race</th>
+    <th>Date</th>
+    <th>Placement</th>
+    <th>Field size</th>
+    <th>Race discipline</th>
+    <th>Race category</th>
+    <th>Member</th>
+
+    <th>Created At</th>
+    <th>Updated At</th>
+  </tr>
+
+<% @race_results.each do |race_result| %>
+  <tr>
+    <td><%=h race_result.id %></td>
+    <td><%=h race_result.race %></td>
+    <td><%=h race_result.date %></td>
+    <td><%=h race_result.placement %></td>
+    <td><%=h race_result.field_size %></td>
+    <td><%=h race_result.race_discipline.name %></td>
+    <td><%=h race_result.race_category.name %></td>
+    <td><%=h race_result.user.name %></td>
+
+    <td><%=h race_result.created_at %></td>
+    <td><%=h race_result.updated_at %></td>
+
+    <td><%= link_to 'Show', admin_race_result_path(race_result) %></td>
+    <td><%= link_to 'Edit', edit_admin_race_result_path(race_result) %></td>
+    <td><%= link_to "Delete", admin_race_result_path(race_result), :confirm => 'Are you sure?',:method => :delete  %></td>
+  </tr>
+<% end %>
+</table>
+
+<p>
+  <%= link_to 'Create New Race Result', new_admin_race_result_path %>
+</p>
+
