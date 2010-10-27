@@ -3,6 +3,7 @@ class Admin::FeedbacksController < ApplicationController
   # acl9 access control
   before_filter :load_feedbacks, :only => [:index, :show, :new, :create, :edit, :update, :destroy]
   access_control do
+    allow logged_in
     allow :site_admin
   end
 
