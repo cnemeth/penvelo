@@ -384,6 +384,15 @@ th, td{
 /* =Misc 1
 -----------------------------------------------------------------------------*/
 
+/* START:notice */
+#notice {
+  border: 2px solid red;
+  padding: 1em;
+  margin: 2em 0;
+  background-color: #f0f0f0;
+  font: bold larger sans-serif;
+}
+/* END:notice */
 
 
 /* =Misc 2

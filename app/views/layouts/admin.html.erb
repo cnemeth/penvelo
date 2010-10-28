@@ -32,6 +32,9 @@
       </div>
 
 			<div id="main_content">
+			  <% if flash[:notice] -%>
+          <div id="notice"><%= flash[:notice] %></div>
+        <% end -%>
 				<%= yield :layout %>
 			</div>
 		</div>

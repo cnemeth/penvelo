@@ -6,8 +6,6 @@
   <tr><th>First name</th><td><%=h @user.first_name %></td></tr>
   <tr><th>Initial</th><td><%=h @user.middle_initial %></td></tr>
   <tr><th>Last name</th><td><%=h @user.last_name %></td></tr>
-
-
   <tr><th>Date of birth</th><td><%=h @user.date_of_birth %></td></tr>
   <tr><th>Gender</th><td><%=h @user.gender %></td></tr>
   <tr><th>Member since</th><td><%=h @user.member_since %></td></tr>
@@ -22,6 +20,19 @@
   <tr><th>Member positions</th><td><%=h member_positions(@user.position_ids) %></td></tr>
   <tr><th>Race/Ride disciplines</th><td><%=h member_race_disciplines(@user.race_discipline_ids) %></td></tr>
   <tr><th>Race categories</th><td><%=h member_race_categories(@user.race_category_ids) %></td></tr>
+
+  <tr><th><h2>Contact info</h2></th><td></td></tr>
+  <% contact = Contact.find_by_user_id(@user.id) %>
+  <tr><th>Street</th><td><%=h contact.street %></td></tr>
+  <tr><th>City</th><td><%=h contact.city %></td></tr>
+  <tr><th>Sate</th><td><%=h contact.state %></td></tr>
+  <tr><th>Zip</th><td><%=h contact.zip %></td></tr>
+  <tr><th>Country</th><td><%=h contact.country %></td></tr>
+  <tr><th>Primary phone</th><td><%=h contact.primary_phone %></td></tr>
+  <tr><th>Secondary phone</th><td><%=h contact.secondary_phone %></td></tr>
+  <tr><th>Email</th><td><%=h contact.email %></td></tr>
+  <tr><th>IM handle</th><td><%=h contact.im_handle %></td></tr>
+  <tr><th>IM type</th><td><%=h ImType.find(contact.im_type_id).name %></td></tr>
 </table>
 
 <%= link_to 'Edit', edit_account_path %>

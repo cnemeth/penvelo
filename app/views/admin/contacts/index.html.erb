@@ -12,6 +12,7 @@
     <th>Country</th>
     <th>Primary phone</th>
     <th>Secondary phone</th>
+    <th>Email</th>
     <th>IM handle</th>
     <th>IM type id</th>
     <th>IM type</th>
@@ -31,6 +32,7 @@
     <td><%=h contact.country %></td>
     <td><%=h contact.primary_phone %></td>
     <td><%=h contact.secondary_phone %></td>
+    <td><%=h contact.email %></td>
     <td><%=h contact.im_handle %></td>
     <td><%=h contact.im_type_id %></td>
     <td><%=h ImType.find(contact.im_type_id).name %></td>

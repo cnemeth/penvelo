@@ -2,7 +2,7 @@
   <%= f.error_messages %>
   <% f.inputs do %>
 
-      <%= f.input :user, :label => 'User', :as => :select, :collection => user_list, :include_blank => false %>
+      <%= f.input :user, :label => 'User' %>
       <%= f.input :street, :label => 'Street' %>
       <%= f.input :city, :label => 'City' %>
       <%= f.input :state, :label => 'State', :as => :select, :collection => us_states_list, :include_blank => false %>
