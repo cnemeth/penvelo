@@ -48,5 +48,11 @@ module UsersHelper
     race_categories.join(", ")
   end
 
+  def age(user)
+    birthday = user.date_of_birth
+    now = Time.now.utc.to_date
+    now.year - birthday.year - (birthday.to_date.change(:year => now.year) > now ? 1 : 0)
+  end
+
 end
 

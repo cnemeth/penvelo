@@ -1,13 +1,7 @@
 class ContactsController < ApplicationController
 
-  # acl9 access control
-  before_filter :load_contacts, :only => [:index, :show, :new, :create, :edit, :update, :destroy]
-  access_control do
-    allo logged_in
-    allow :site_admin
-  end
-
-  layout 'admin'
+  before_filter :require_user, :only => [:show, :new, :create, :edit, :update]
+  before_filter :set_user
 
   # GET /contacts
   # GET /contacts.xml
@@ -81,21 +75,11 @@ class ContactsController < ApplicationController
     end
   end
 
-  # DELETE /contacts/1
-  # DELETE /contacts/1.xml
-  def destroy
-    @contact = Contact.find(params[:id])
-    @contact.destroy
 
-    respond_to do |format|
-      format.html { redirect_to(contacts_url) }
-      format.xml  { head :ok }
-    end
-  end
 private
 
-  def load_contacts
-    @contacts = Contact.all
+  def set_user
+    @user = current_user
   end
 
 end

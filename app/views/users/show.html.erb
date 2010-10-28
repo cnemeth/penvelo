@@ -23,16 +23,31 @@
 
   <tr><th><h2>Contact info</h2></th><td></td></tr>
   <% contact = Contact.find_by_user_id(@user.id) %>
-  <tr><th>Street</th><td><%=h contact.street %></td></tr>
-  <tr><th>City</th><td><%=h contact.city %></td></tr>
-  <tr><th>Sate</th><td><%=h contact.state %></td></tr>
-  <tr><th>Zip</th><td><%=h contact.zip %></td></tr>
-  <tr><th>Country</th><td><%=h contact.country %></td></tr>
-  <tr><th>Primary phone</th><td><%=h contact.primary_phone %></td></tr>
-  <tr><th>Secondary phone</th><td><%=h contact.secondary_phone %></td></tr>
-  <tr><th>Email</th><td><%=h contact.email %></td></tr>
-  <tr><th>IM handle</th><td><%=h contact.im_handle %></td></tr>
-  <tr><th>IM type</th><td><%=h ImType.find(contact.im_type_id).name %></td></tr>
+  <% if contact -%>
+
+    <tr><th>Street</th><td><%=h contact.street %></td></tr>
+    <tr><th>City</th><td><%=h contact.city %></td></tr>
+    <tr><th>Sate</th><td><%=h contact.state %></td></tr>
+    <tr><th>Zip</th><td><%=h contact.zip %></td></tr>
+    <tr><th>Country</th><td><%=h contact.country %></td></tr>
+    <tr><th>Primary phone</th><td><%=h contact.primary_phone %></td></tr>
+    <tr><th>Secondary phone</th><td><%=h contact.secondary_phone %></td></tr>
+    <tr><th>Email</th><td><%=h contact.email %></td></tr>
+    <tr><th>IM handle</th><td><%=h contact.im_handle %></td></tr>
+    <tr><th>IM type</th><td><%=h ImType.find(contact.im_type_id).name %></td></tr>
+  <% else %>
+    <tr><th>Street</th><td>...</td></tr>
+    <tr><th>City</th><td>...</td></tr>
+    <tr><th>Sate</th><td>...</td></tr>
+    <tr><th>Zip</th><td>...</td></tr>
+    <tr><th>Country</th><td>...</td></tr>
+    <tr><th>Primary phone</th><td>...</td></tr>
+    <tr><th>Secondary phone</th><td>...</td></tr>
+    <tr><th>Email</th><td>...</td></tr>
+    <tr><th>IM handle</th><td>...</td></tr>
+    <tr><th>IM type</th><td>...</td></tr>
+  <% end -%>
+
 </table>
 
 <%= link_to 'Edit', edit_account_path %>

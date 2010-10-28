@@ -1,2 +1,24 @@
-<h1>Common::Members#index</h1>
-<p>Find me in app/views/common/members/index.html.erb</p>
+<h1>Active Club Members</h1>
+
+<% @users.each do |user| %>
+
+  <table width="100%">
+    <tr>
+      <th width="20%"><%= image_tag(user.user_image_url, :size => '125x150') %></th>
+    <td>
+      <table width="100%">
+        <tr><th width="20%">Name</th><td><%=h user.name %></td> </tr>
+        <tr><th width="20%">Age</th><td><%=h age(user) unless user.date_of_birth == nil %></td></tr>
+        <tr><th width="20%">Gender</th><td><%=h user.gender %></td></tr>
+        <tr><th width="20%">user Since</th><td><%=h user.member_since %></td></tr>
+        <tr><th width="20%">Image gallery URL</th><td><%=h user.image_gallery_url ? user.image_gallery_url : "" %></td></tr>
+        <tr><th width="20%">Performance team member</th><td><%=h user.performance_team_member %></td></tr>
+        <tr><th width="20%">USAC license</th><td><%=h user.usac_license ? user.usac_license : "" %></td></tr>
+        <tr><th width="20%">Profile</th><td><%=h user.profile %></td></tr>
+      </table>
+      </td>
+     </tr>
+  </table>
+
+<% end %>
+
