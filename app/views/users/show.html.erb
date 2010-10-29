@@ -21,10 +21,8 @@
   <tr><th>Race/Ride disciplines</th><td><%=h member_race_disciplines(@user.race_discipline_ids) %></td></tr>
   <tr><th>Race categories</th><td><%=h member_race_categories(@user.race_category_ids) %></td></tr>
 
-  <tr><th><h2>Contact info</h2></th><td></td></tr>
   <% contact = Contact.find_by_user_id(@user.id) %>
   <% if contact -%>
-
     <tr><th>Street</th><td><%=h contact.street %></td></tr>
     <tr><th>City</th><td><%=h contact.city %></td></tr>
     <tr><th>Sate</th><td><%=h contact.state %></td></tr>

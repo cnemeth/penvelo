@@ -4,33 +4,32 @@
 <ul>
   <li><%= link_to "Admin Home", admin_home_url %></li>
 </ul>
-<h2>Club Profile</h2>
+<h2>Club</h2>
 <ul>
-	<li><%= link_to "Club", admin_clubs_path %></li>
-<h2>Club Members</h2>
+	<li><%= link_to "Club  Profile", admin_clubs_path %></li>
+<h2>Members</h2>
 <ul>
 	<li><%= link_to "Member profiles", admin_users_path %></li>
 	<li><%= link_to "Contact Info", :controller => 'contacts', :action => 'index' %></li>
 </ul>
 
-<h2>Club News and Events</h2>
+<h2>News and Events</h2>
 <ul>
 	<li><%= link_to "Contents (news, events, etc.)", :controller => 'contents', :action => 'index' %></li>
 
-<h2>Club Sponsors</h2>
+<h2>Sponsors</h2>
 <ul>
 	<li><%= link_to "Club Sponsors", :controller => 'sponsors', :action => 'index' %></li>
 	<li><%= link_to "Sponsors Discounts", :controller => 'sponsor_discounts', :action => 'index' %></li>
 
 </ul>
-<h2>Club Races and Rides</h2>
+<h2>Races and Rides</h2>
 <ul>
 	<li><%= link_to "Club Rides", :controller => 'rides', :action => 'index' %></li>
 
 	<li><%= link_to "Club Races", :controller => 'races', :action => 'index' %></li>
 
 	<li><%= link_to "Race Results", :controller => 'race_results', :action => 'index' %></li>
-  <br />
 
 </ul>
 

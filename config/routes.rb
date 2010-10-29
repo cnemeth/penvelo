@@ -45,10 +45,6 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :feedback_types
   end
 
-
-  #map.connect ':controller/:action/:id'
-  #map.connect ':controller/:action/:id.:format'
-
   map.admin_home "admin/index", :controller => "admin/home", :action => "index"
   map.root :controller => "home", :action => "index"
 end
