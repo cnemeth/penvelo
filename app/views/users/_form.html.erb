@@ -20,7 +20,7 @@
       <% end %>
 
       <%= f.input :date_of_birth, :label => 'Date of birth', :start_year => 1900 %>
-      <%= f.input :gender, :label => 'Gender' %>
+      <%= f.input :gender, :label => 'Gender', :as => :radio, :collection => [["Male"],["Female"]]   %>
       <%= f.input :user_image_url, :label => 'User image url' %>
       <%= f.input :image_gallery_url, :label => 'Image gallery url' %>
       <%= f.input :member_since, :label => 'Member since' %>

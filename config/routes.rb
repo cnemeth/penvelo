@@ -9,9 +9,6 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :password_resets
   map.resource  :controller => "user_sessions", :action => "new"
 
-  map.resources :contacts
-  map.resources :roles
-
   map.namespace :common do |common|
     common.resources  :clubs
     common.resources  :sponsors

@@ -3,7 +3,7 @@ class Admin::ContactsController < ApplicationController
   # acl9 access control
   before_filter :load_contacts, :only => [:index, :show, :new, :create, :edit, :update, :destroy]
   access_control do
-    allow :site_admin
+    allow :site_admin, :executive, :director, :board_member, :sponsor, :performance_team_member, :basic_member
   end
 
   layout 'admin'
