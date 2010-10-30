@@ -25,7 +25,7 @@ class User < ActiveRecord::Base
   attr_accessible :race_discipline_ids
   attr_accessible :race_category_ids
 
-  # for building nested formtastic form
+  # for building nested form
   has_many :contacts, :dependent => :destroy
   accepts_nested_attributes_for :contacts
 

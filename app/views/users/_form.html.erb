@@ -1,4 +1,4 @@
-<% semantic_form_for(@user) do |f| %>
+<% semantic_form_for @user do |f| %>
   <%= f.error_messages %>
   <% f.inputs do %>
 
@@ -6,17 +6,8 @@
       <%= f.input :middle_initial, :label => 'Middle initial' %>
       <%= f.input :last_name, :label => 'Last name' %>
 
-      <% f.semantic_fields_for :contacts do |j| %>
-        <%= j.input :street, :label => 'Street' %>
-        <%= j.input :city, :label => 'City' %>
-        <%= j.input :state, :label => 'State', :as => :select, :collection => us_states_list, :include_blank => false %>
-        <%= j.input :zip, :label => 'Zip' %>
-        <%= j.input :country, :label => 'Country', :as => :select, :collection => countries_list, :include_blank => false %>
-        <%= j.input :primary_phone, :label => 'Primary phone' %>
-        <%= j.input :secondary_phone, :label => 'Secondary phone' %>
-        <%= j.input :email, :label => 'Email' %>
-        <%= j.input :im_handle, :label => 'Im handle' %>
-        <%= j.input :im_type, :label => 'Im type', :as => :select, :collection => im_types, :include_blank => false %>
+      <% f.semantic_fields_for :contacts do |builder| %>
+        <%= render "contact_fields", :f => builder %>
       <% end %>
 
       <%= f.input :date_of_birth, :label => 'Date of birth', :start_year => 1900 %>
@@ -43,8 +34,7 @@
 
       <%= f.input :race_categories, :label => 'Race categories', :as => :check_boxes, :collection => race_categories %>
 
-
-      <%= f.buttons %>
   <% end %>
+  <%= f.buttons %>
 <% end %>
 

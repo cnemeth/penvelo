@@ -1,0 +1,11 @@
+<%= f.input :street, :label => 'Street' %>
+<%= f.input :city, :label => 'City' %>
+<%= f.input :state, :label => 'State', :as => :select, :collection => us_states_list, :include_blank => false %>
+<%= f.input :zip, :label => 'Zip' %>
+<%= f.input :country, :label => 'Country', :as => :select, :collection => countries_list, :include_blank => false %>
+<%= f.input :primary_phone, :label => 'Primary phone' %>
+<%= f.input :secondary_phone, :label => 'Secondary phone' %>
+<%= f.input :email, :label => 'Email' %>
+<%= f.input :im_handle, :label => 'Im handle' %>
+<%= f.input :im_type, :label => 'Im type', :as => :select, :collection => im_types, :include_blank => false %>
+
