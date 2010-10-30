@@ -31,7 +31,7 @@
     <tr><th>Secondary phone</th><td><%=h contact.secondary_phone %></td></tr>
     <tr><th>Email</th><td><%=h contact.email %></td></tr>
     <tr><th>IM handle</th><td><%=h contact.im_handle %></td></tr>
-    <tr><th>IM type</th><td><%=h ImType.find(contact.im_type_id).name %></td></tr>
+    <tr><th>IM type</th><td><%=h contact.im_type.name %></td></tr>
   <% end %>
 
 </table>
