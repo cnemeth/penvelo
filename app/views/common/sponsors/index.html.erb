@@ -1,2 +1,32 @@
-<h1>Common::Sponsors#index</h1>
-<p>Find me in app/views/common/sponsors/index.html.erb</p>
+<div id="sponsors">
+
+	<h1>Club Sponsors</h1>
+
+	<%=h discounts_url %>
+
+	<% sponsor_types %>
+	<% sponsor_types.each do | st | %>
+
+		<h2><%= st.name.capitalize %> Sponsors</h2>
+    <div id="item_body">
+		<% st.sponsors.each do |sponsor| %>
+
+		  <% next unless sponsor.active? %>
+			<p><%= image_tag(sponsor.logo_url) %></p>
+			<p><em><b><%= sponsor.slogan %></b></em></p>
+			<hr />
+			<%= sponsor.description %>
+			<ul>
+				<li><%= link_to("Click here to visit the sponsor's website.", sponsor.url,
+	:target => '_blank') %></li>
+				<li><%= link_to("Click here to view the discounts offered by this
+	sponsor.", discounts_url, :popup => ['SponsorDiscounts',
+	'width=400,height=400,scrollbars=yes']) %></li>
+			</ul>
+		<% end %>
+		</div>
+<!--		<p><img src="../images/pv_logo_separator.png" /></p>	-->
+	<% end %>
+
+</div>
+

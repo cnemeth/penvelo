@@ -190,11 +190,26 @@ body {
 	border: 	none;
 }
 
-#sponsors h2, #club_rides h2, #club_races h2{
+#sponsors h2, #club_rides h2, #club_races h2, #news h2{
 	font: 	italic large bold;
 	background-color: #c0c0c0;
 
 }
+
+#club_members{
+    padding:    1em;
+	background-color: #f93;
+}
+
+#club_members table{
+	border: 0;
+}
+
+#item_body{
+	min-height: 50px;
+}
+
+
 
 /* =Headings
 -----------------------------------------------------------------------------*/

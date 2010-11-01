@@ -5,7 +5,7 @@
 	<% ride_types.each do | rt | %>
 
 		<h2><%= rt.name.capitalize.pluralize %></h2>
-
+    <div id="item_body">
 		<% rt.rides.each do | r | %>
 
 			<h3><%= r.name %></h2>
@@ -24,7 +24,7 @@
 			<br />
 
 		<% end %>
-
+    </div>
 	<% end %>
 
 </div>
