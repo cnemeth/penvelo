@@ -1,2 +1,31 @@
-<h1>Common::Rides#index</h1>
-<p>Find me in app/views/common/rides/index.html.erb</p>
+<div id="club_rides">
+	<h1>Weekly Club Rides</h1>
+
+	<% ride_types %>
+	<% ride_types.each do | rt | %>
+
+		<h2><%= rt.name.capitalize.pluralize %></h2>
+
+		<% rt.rides.each do | r | %>
+
+			<h3><%= r.name %></h2>
+			<hr />
+			<table>
+				<tr><td><b>Start Point</b></td><td><%= r.start_point %></td>
+				<tr><td><b>End Point</b></td><td><%= r.end_point %></td>
+				<tr><td><b>Days</b></td><td><%= r.days %></td>
+				<tr><td><b>Start Time</b></td><td><%= r.time %></td>
+				<tr><td><b>Distance (miles)</b></td><td><%= r.distance %></td>
+				<tr><td><b>Elevation Change (ft)</b></td><td><%= r.elevation %></td>
+				<tr><td><b>PDF</b></td><td><%= r.link_to_pdf %></td>
+				<tr><td><b>Map</b></td><td><%= r.link_to_map %></td>
+				<tr><td><b>Description</b></td><td><%= r.description %></td>
+			</table>
+			<br />
+
+		<% end %>
+
+	<% end %>
+
+</div>
+

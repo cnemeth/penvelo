@@ -2,6 +2,7 @@ class RaceDiscipline < ActiveRecord::Base
 
   acts_as_authorization_object
 
+  has_many :races
   has_many :race_results
   has_and_belongs_to_many :users
 

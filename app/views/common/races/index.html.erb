@@ -1,2 +1,26 @@
-<h1>Common::Races#index</h1>
-<p>Find me in app/views/common/races/index.html.erb</p>
+<div id="club_races">
+	<h1>Club Sponsored Races</h1>
+
+	<% race_types %>
+	<% race_types.each do | rt | %>
+	  <h2><%= rt.name.capitalize %></h2>
+
+		<% rt.races.each do | r | %>
+			<h3><%= r.name %></h2>
+      <hr />
+			<ul>
+			  <li>Date:&nbsp;<%= r.date %>
+			  <li>Organizer:&nbsp;<%= r.organizer %></li>
+				<li>Location:&nbsp;<%= r.place %></li>
+				<li>Start:&nbsp;<%= r.start_location %></li>
+				<li>Finish:&nbsp;<%= r.finish_location %></li>
+			</ul>
+			<h3>Description</h3>
+			<p><%= r.description %></p>
+			<br />
+	    <h3>Link to Website:&nbsp;<%= link_to("Click here to visit the race website", r.link_to_website, :target => "_blank") %></h3>
+	    <h3>Link to Registration:&nbsp;<%= link_to("Click here to visit the race registration website", r.link_to_registration, :target => "_blank") %></h3>
+	  <% end %>
+	<% end %>
+</div>
+
