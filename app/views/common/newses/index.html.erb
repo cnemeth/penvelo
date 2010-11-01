@@ -1,2 +1,12 @@
-<h1>Common::Newses#index</h1>
-<p>Find me in app/views/common/newses/index.html.erb</p>
+<div id="news">
+  <h1>Club News</h1>
+	<% news_content %>
+	<% news_content.each do |content| %>
+
+		<h2><%= content.title %>&nbsp;&#9830;&nbsp;Posted on:<%= content.created_at %></h2>
+		<p><%= content.entry %></p>
+
+	<% end %>
+
+</div>
+
