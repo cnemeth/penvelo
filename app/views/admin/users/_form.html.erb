@@ -18,13 +18,9 @@
       <%= f.input :password, :label => 'Password' %>
       <%= f.input :password_confirmation, :label => 'Confirm password' %>
       <%= f.input :password_salt, :label => 'Password salt' %>
-
-    <%- show_to(:site_admin) do -%>
       <%= f.input :roles, :label => 'Roles', :as => :check_boxes, :collection => roles %>
-    <% end -%>
-
+      <%= f.input :positions, :label => 'Positions', :as => :check_boxes, :collection => positions %>
       <%= f.input :race_disciplines, :label => 'Race disciplines', :as => :check_boxes, :collection => race_disciplines %>
-
       <%= f.input :race_categories, :label => 'Race categories', :as => :check_boxes, :collection => race_categories %>
 <% end %>
   <%= f.submit "Submit" %>

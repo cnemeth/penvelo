@@ -13,6 +13,10 @@
   <tr><th>Usac license</th><td><%=h @user.usac_license %></td></tr>
   <tr><th>Active</th><td><%=h @user.active %></td></tr>
   <tr><th>Member since</th><td><%=h @user.member_since %></td></tr>
+  <tr><th>Role(s)</th><td><%=h member_roles(@user.role_ids) %></td></tr>
+  <tr><th>Member positions</th><td><%=h member_positions(@user.position_ids) %></td></tr>
+  <tr><th>Race/Ride disciplines</th><td><%=h member_race_disciplines(@user.race_discipline_ids) %></td></tr>
+  <tr><th>Race categories</th><td><%=h member_race_categories(@user.race_category_ids) %></td></tr>
   <tr><th>Profile</th><td><%=h @user.profile %></td></tr>
   <tr><th>Login Count</th><td><%=h @user.login_count %></td></tr>
   <tr><th>Failed Login Count</th><td><%=h @user.failed_login_count %></td></tr>
