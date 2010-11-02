@@ -24,10 +24,11 @@ class User < ActiveRecord::Base
   attr_accessible :position_ids
   attr_accessible :race_discipline_ids
   attr_accessible :race_category_ids
+  attr_accessible :contacts_attributes
 
   # for building nested form
-  has_many :contacts, :dependent => :destroy
-  accepts_nested_attributes_for :contacts
+  has_many :contacts, :class_name => 'Contact'
+  accepts_nested_attributes_for :contacts, :allow_destroy => true, :reject_if => :all_blank
 
   has_many :race_results
 

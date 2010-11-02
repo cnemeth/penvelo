@@ -191,9 +191,14 @@ body {
 }
 
 #sponsors h2, #club_rides h2, #club_races h2, #news h2{
-	font: 	italic large bold;
+	font: 	italic x-large bold;
 	background-color: #c0c0c0;
 
+}
+
+#sponsors h3{
+	font: 	italic large bold;
+	background-color: #f93;
 }
 
 #club_members{

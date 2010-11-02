@@ -12,17 +12,14 @@
 		<% st.sponsors.each do |sponsor| %>
 
 		  <% next unless sponsor.active? %>
+		  <h3><%= sponsor.name %></h3>
 			<p><%= image_tag(sponsor.logo_url) %></p>
 			<p><em><b><%= sponsor.slogan %></b></em></p>
 			<hr />
 			<%= sponsor.description %>
-			<ul>
-				<li><%= link_to("Click here to visit the sponsor's website.", sponsor.url,
-	:target => '_blank') %></li>
-				<li><%= link_to("Click here to view the discounts offered by this
-	sponsor.", discounts_url, :popup => ['SponsorDiscounts',
-	'width=400,height=400,scrollbars=yes']) %></li>
-			</ul>
+			<p><%= link_to("Click here to visit the sponsor's website.", sponsor.url,
+	:target => '_blank') %></p>
+
 		<% end %>
 		</div>
 <!--		<p><img src="../images/pv_logo_separator.png" /></p>	-->

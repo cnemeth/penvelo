@@ -1,0 +1,14 @@
+<div id="sponsor_discounts">
+	<h1>Discounts Offered to Club Members by Sponsors</h1>
+
+	<% sponsors.each do |sponsor| %>
+	  <% next unless sponsor.active? %>
+	  <h2><%= sponsor.name %></h2>
+
+    <% discounts = sponsor_discounts(sponsor) %>
+		<% discounts.each do |discount| %>
+		  <p><% discount.discount %></p>
+		<% end %>
+	<% end %>
+</div>
+

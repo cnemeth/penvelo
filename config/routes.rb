@@ -20,6 +20,7 @@ ActionController::Routing::Routes.draw do |map|
     common.resources  :legals
     common.resources  :privacies
     common.resources  :feedbacks
+    common.resources  :sponsor_discounts
   end
 
   map.namespace :admin do |admin|

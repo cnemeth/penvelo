@@ -2,6 +2,8 @@ class Sponsor < ActiveRecord::Base
 
   acts_as_authorization_object
 
+  attr_accessible :sponsor_discounts
+
   belongs_to :sponsor_type
   has_many :sonsor_discounts
 

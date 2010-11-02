@@ -21,7 +21,6 @@ class UsersController < ApplicationController
 
   def show
     @user = @current_user
-
   end
 
   def edit
@@ -29,7 +28,8 @@ class UsersController < ApplicationController
   end
 
   def update
-    @user = @current_user # makes our views "cleaner" and more consistent
+    @user = @current_user
+
     if @user.update_attributes(params[:user])
       flash[:notice] = "Account for user #{@user.name} was succesfuly updated!"
       redirect_to account_url
