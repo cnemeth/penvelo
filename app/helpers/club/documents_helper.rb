@@ -1,0 +1,2 @@
+module Club::DocumentsHelper
+end

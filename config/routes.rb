@@ -24,6 +24,10 @@ ActionController::Routing::Routes.draw do |map|
     common.resources  :sponsor_discounts
   end
 
+  map.namespace :club do |club|
+    club.resources :documents
+  end
+
   map.namespace :admin do |admin|
     admin.resources :clubs
     admin.resources :users
