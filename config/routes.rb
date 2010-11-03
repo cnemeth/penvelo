@@ -17,6 +17,7 @@ ActionController::Routing::Routes.draw do |map|
     common.resources  :rides
     common.resources  :members
     common.resources  :galleries
+    common.resources  :calendars
     common.resources  :legals
     common.resources  :privacies
     common.resources  :feedbacks
