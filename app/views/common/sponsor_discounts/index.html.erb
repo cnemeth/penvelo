@@ -1,14 +1,21 @@
 <div id="sponsor_discounts">
-	<h1>Discounts Offered to Club Members by Sponsors</h1>
+	<h1>Sponsors Discounts Offered to Club Members</h1>
 
-	<% sponsors.each do |sponsor| %>
-	  <% next unless sponsor.active? %>
-	  <h2><%= sponsor.name %></h2>
+	<table>
+  <tr>
+    <th>Sponsor</th>
+    <th>Discount</th>
+  </tr>
 
-    <% discounts = sponsor_discounts(sponsor) %>
-		<% discounts.each do |discount| %>
-		  <p><% discount.discount %></p>
-		<% end %>
-	<% end %>
+<% @sponsor_discounts.each do |f| %>
+  <tr>
+    <td><%=h f.sponsor.name %></td>
+    <td><%=h truncate(f.discount.gsub(/<.*?>/,''), :length => 40) %></td>
+
+    <td><%= link_to 'Show', common_sponsor_discount_path(f) %></td>
+
+  </tr>
+<% end %>
+</table>
 </div>
 

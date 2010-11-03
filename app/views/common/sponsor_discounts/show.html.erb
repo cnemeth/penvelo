@@ -1,2 +1,11 @@
-<h1>Common::SponsorDiscounts#show</h1>
-<p>Find me in app/views/common/sponsor_discounts/show.html.erb</p>
+<h1>Sponsor Discount</h1>
+
+<table>
+  <tr><th>Sponsor name:</th><td><%=h @sponsor_discount.sponsor.name %></td></tr>
+  <tr><th>Discount:</th><td><%=h @sponsor_discount.discount %></td></tr>
+</table>
+
+<p>
+  <%= link_to 'Back', common_sponsor_discounts_path %>
+</p>
+
