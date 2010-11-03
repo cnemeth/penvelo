@@ -8,10 +8,11 @@ class Club::DocumentsController < ApplicationController
   # GET /club/documents
   # GET /club/documents.xml
   def index
-    @documents = Dir.glob("public/docs/*")
+    @documents = Dir.glob("restricted/docs/*")
   end
 
   def download
+    send_file '/restricted/docs/*'
   end
 
 end

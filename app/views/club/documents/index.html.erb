@@ -2,7 +2,7 @@
 
 <% @documents.each do |doc| %>
   <ul>
-    <li><%= link_to(doc) %></li>
+    <li><%=h File.basename(doc) %></li>
   </ul>
 <% end %>
 
