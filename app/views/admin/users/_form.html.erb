@@ -1,7 +1,6 @@
 <% semantic_form_for([:admin, @user]) do |f| %>
   <%= f.error_messages %>
   <% f.inputs do %>
-
       <%= f.input :first_name, :label => 'First name' %>
       <%= f.input :middle_initial, :label => 'Middle initial' %>
       <%= f.input :last_name, :label => 'Last name' %>
@@ -22,7 +21,7 @@
       <%= f.input :positions, :label => 'Positions', :as => :check_boxes, :collection => positions %>
       <%= f.input :race_disciplines, :label => 'Race disciplines', :as => :check_boxes, :collection => race_disciplines %>
       <%= f.input :race_categories, :label => 'Race categories', :as => :check_boxes, :collection => race_categories %>
-<% end %>
+  <% end %>
   <%= f.submit "Submit" %>
 <% end %>
 

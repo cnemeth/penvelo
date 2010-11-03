@@ -25,6 +25,12 @@ class UsersController < ApplicationController
 
   def edit
     @user = @current_user
+
+    if @user.contacts.present?
+      @address = @user.contacts
+    else
+      @address = @user.contacts.build
+    end
   end
 
   def update
