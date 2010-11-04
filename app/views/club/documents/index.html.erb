@@ -1,8 +1,18 @@
 <h1>Club Documents and Forms</h1>
 
+<table>
+  <tr>
+    <th>Description</th>
+    <th>File name</th>
+  </tr>
+
 <% @documents.each do |doc| %>
-  <ul>
-    <li><%=h File.basename(doc) %></li>
-  </ul>
+  <% @current_document = doc %>
+  <tr>
+    <td><%=h link_to "Download" %></td>
+    <td><%=h File.basename(doc) %></td>
+
+  </tr>
 <% end %>
+</table>
 

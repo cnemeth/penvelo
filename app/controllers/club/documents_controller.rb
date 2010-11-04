@@ -5,14 +5,21 @@ class Club::DocumentsController < ApplicationController
     allow logged_in
   end
 
+  attr_writer :current_document
+
   # GET /club/documents
-  # GET /club/documents.xml
   def index
     @documents = Dir.glob("restricted/docs/*")
+
+    unless @current_document == nil
+      #download
+    end
   end
 
+private
+
   def download
-    send_file '/restricted/docs/*'
+    send_file @current_document.to_s
   end
 
 end
