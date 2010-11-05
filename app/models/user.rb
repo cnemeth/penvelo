@@ -26,6 +26,16 @@ class User < ActiveRecord::Base
   attr_accessible :race_category_ids
   attr_accessible :contacts_attributes
 
+  attr_accessible :photo_file_name
+  attr_accessible :photo_content_type
+  attr_accessible :photo_file_size
+  attr_accessible :photo_updated_at
+
+  # Paperclip for uploading user photos
+  has_attached_file :photo,
+                    :url  => "/assets/users/:id/:basename.:extension",
+                    :path => ":rails_root/public/assets/users/:id/:basename.:extension"
+
   # for building nested form
   has_many :contacts, :class_name => 'Contact'
   accepts_nested_attributes_for :contacts, :allow_destroy => true, :reject_if => :all_blank
@@ -48,7 +58,15 @@ class User < ActiveRecord::Base
                   %w[ last_name last ]
                 ]
 
+
+  validates_attachment_presence :photo
+  validates_attachment_size :photo, :less_than => 1.megabytes
+  validates_attachment_content_type :photo, :content_type => ['image/jpg','image/jpeg','image/gif','image/png']
+
 end
+
+
+
 
 
 # == Schema Information
@@ -83,5 +101,9 @@ end
 #  current_login_ip        :string(255)
 #  created_at              :datetime
 #  updated_at              :datetime
+#  photo_file_name         :string(255)
+#  photo_content_type      :string(255)
+#  photo_file_size         :integer(4)
+#  photo_updated_at        :datetime
 #
 

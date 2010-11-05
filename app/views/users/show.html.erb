@@ -6,6 +6,10 @@
   <tr><th>First name</th><td><%=h @user.first_name %></td></tr>
   <tr><th>Initial</th><td><%=h @user.middle_initial %></td></tr>
   <tr><th>Last name</th><td><%=h @user.last_name %></td></tr>
+
+  <tr><th>User photo</th><td><%= image_tag @user.photo.url %></td></tr>
+
+
   <tr><th>Date of birth</th><td><%=h @user.date_of_birth %></td></tr>
   <tr><th>Gender</th><td><%=h @user.gender %></td></tr>
   <tr><th>Member since</th><td><%=h @user.member_since %></td></tr>

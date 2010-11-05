@@ -9,7 +9,7 @@ class Club::DocumentsController < ApplicationController
 
   # GET /club/documents
   def index
-    @documents = Dir.glob("restricted/docs/*")
+    @documents = Dir.glob("public/assets/docs/*")
 
     unless @current_document == nil
       #download

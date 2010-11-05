@@ -4,6 +4,9 @@
   <title>User profile</title>
   <tr><th>ID</th><td><%=h @user.id %></td></tr>
   <tr><th>Name</th><td><%=h @user.name %></td></tr>
+  <tr><th>Avatar</th><td><%= image_tag @user.avatar.url %></td></tr>
+  <tr><th>Avatar medium</th><td><%= image_tag @user.avatar.url(:medium) %></td></tr>
+  <tr><th>Avatar thumb</th><td><%= image_tag @user.avatar.url(:thumb) %></td></tr>
   <tr><th>Login name</th><td><%=h @user.login %></td></tr>
   <tr><th>Date of birth</th><td><%=h @user.date_of_birth %></td></tr>
   <tr><th>Gender</th><td><%=h @user.gender %></td></tr>
