@@ -7,8 +7,9 @@
   <tr><th>Initial</th><td><%=h @user.middle_initial %></td></tr>
   <tr><th>Last name</th><td><%=h @user.last_name %></td></tr>
 
-  <tr><th>User photo</th><td><%= image_tag @user.photo.url %></td></tr>
-
+  <tr><th>User photo thumb</th><td><%= image_tag @user.photo.url(:thumb) %></td></tr>
+  <tr><th>User photo small</th><td><%= image_tag @user.photo.url(:small) %></td></tr>
+  <tr><th>User photo medium</th><td><%= image_tag @user.photo.url(:medium) %></td></tr>
 
   <tr><th>Date of birth</th><td><%=h @user.date_of_birth %></td></tr>
   <tr><th>Gender</th><td><%=h @user.gender %></td></tr>

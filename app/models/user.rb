@@ -4,8 +4,8 @@ class User < ActiveRecord::Base
   acts_as_authorization_subject  :association_name => :roles
   # Paperclip for uploading user photos
   has_attached_file :photo, :styles => { :medium => "300x300>", :small => "150x150>", :thumb => "100x100>"  },
-                    :url  => "/assets/users/:id/:basename.:extension",
-                    :path => ":rails_root/public/assets/users/:id/:basename.:extension"
+                    :url  => "/assets/users/:id/:styles/:basename.:extension",
+                    :path => ":rails_root/public/assets/users/:id/:styles/:basename.:extension"
 
   attr_accessible :first_name
   attr_accessible :last_name
