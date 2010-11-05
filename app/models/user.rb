@@ -2,6 +2,10 @@ class User < ActiveRecord::Base
 
   acts_as_authentic
   acts_as_authorization_subject  :association_name => :roles
+  # Paperclip for uploading user photos
+  has_attached_file :photo, :styles => { :medium => "300x300>", :small => "150x150>", :thumb => "100x100>"  },
+                    :url  => "/assets/users/:id/:basename.:extension",
+                    :path => ":rails_root/public/assets/users/:id/:basename.:extension"
 
   attr_accessible :first_name
   attr_accessible :last_name
@@ -26,15 +30,13 @@ class User < ActiveRecord::Base
   attr_accessible :race_category_ids
   attr_accessible :contacts_attributes
 
+  attr_accessible :photo
   attr_accessible :photo_file_name
   attr_accessible :photo_content_type
   attr_accessible :photo_file_size
   attr_accessible :photo_updated_at
 
-  # Paperclip for uploading user photos
-  has_attached_file :photo,
-                    :url  => "/assets/users/:id/:basename.:extension",
-                    :path => ":rails_root/public/assets/users/:id/:basename.:extension"
+
 
   # for building nested form
   has_many :contacts, :class_name => 'Contact'
@@ -58,10 +60,19 @@ class User < ActiveRecord::Base
                   %w[ last_name last ]
                 ]
 
-
   validates_attachment_presence :photo
   validates_attachment_size :photo, :less_than => 1.megabytes
   validates_attachment_content_type :photo, :content_type => ['image/jpg','image/jpeg','image/gif','image/png']
+
+  file_types = ['image/jpg', 'image/jpeg', 'image/gif', 'image/png', 'image/pjpeg']
+  validate do |photo|
+    photo.errors.clear
+    photo.errors.add_to_base("File missing") if photo.photo_file_name == nil
+    photo.errors.add_to_base("Wrong format") unless file_types.any? { |type| type == photo.photo_content_type }
+    photo.errors.add_to_base("Wrong size") if photo.photo_file_size != nil && photo.photo_file_size > 2.megabytes
+  end
+
+
 
 end
 
