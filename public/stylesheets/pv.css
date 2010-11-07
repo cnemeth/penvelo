@@ -201,43 +201,9 @@ body {
 	background-color: #f93;
 }
 
-#club_members{
-    padding:    1em;
-	/*background-color: #f93;*/
-}
-
-#club_members table{
-    width:  100%
-	border: 0;
-}
-
-#club_members table th{
-	width: 20%;
-}
-
-#club_members table td{
-	padding: 1em 0;
-}
-
 #item_body{
 	min-height: 50px;
 }
-
-#listing .list-line-even {
-  background:   #fff;
-}
-
-#listing .list-line-odd {
-  background:   #c0c0c0;
-}
-
-#listing .member-photo {
-  width: 150px;
-  padding:  0;
-  background:   #f93;
-}
-
-
 
 /* =Headings
 -----------------------------------------------------------------------------*/
@@ -422,12 +388,9 @@ th, td{
     padding:    0 1em;
 }
 
-
-
-/* =Misc 1
+/* =Notice
 -----------------------------------------------------------------------------*/
 
-/* START:notice */
 #notice {
   border: 2px solid red;
   padding: 1em;
@@ -435,9 +398,38 @@ th, td{
   background-color: #f0f0f0;
   font: bold larger sans-serif;
 }
-/* END:notice */
 
-
-/* =Misc 2
+/* =Listings
 -----------------------------------------------------------------------------*/
+
+
+#listing .list-line-even {
+  background:   #fff;
+}
+
+#listing .list-line-odd {
+  background:   #c0c0c0;
+}
+
+#listing .member-photo {
+  width: 150px;
+  height: 150px;
+  padding:  0;
+  background:   #de1800;
+}
+
+#listing table{
+    background; #f93;
+    width:  100%
+	border: 0;
+}
+
+#listing table th{
+	width: 150px;
+}
+
+#listing table td{
+    width:  600px;
+	padding: 1.0em;
+}
 

@@ -1,18 +1,13 @@
 <h1>Club Documents and Forms</h1>
-
-<table>
-  <tr>
-    <th>Description</th>
-    <th>File name</th>
-  </tr>
-
-<% @documents.each do |doc| %>
-  <% @current_document = doc %>
-  <tr>
-    <td><%=h link_to "Download" %></td>
-    <td><%=h File.basename(doc) %></td>
-
-  </tr>
-<% end %>
-</table>
+<div id="listing">
+  <table>
+  <% @documents.each do |doc| %>
+    <% @current_document = doc %>
+    <tr  class="<%= cycle('list-line-odd', 'list-line-even') %>">
+      <td><%=h link_to "Download" %></td>
+      <td><%=h File.basename(doc) %></td>
+    </tr>
+  <% end %>
+  </table>
+</div>
 

@@ -5,12 +5,14 @@
     <h2><%= s.name %> discount(s)</h2>
     <% @sponsor_discounts.each do |f| %>
       <% next unless s.id == f.sponsor_id %>
+      <div id="listing">
 	    <table>
-      <tr>
+      <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
         <td><%= link_to 'Show Details', common_sponsor_discount_path(f) %></td>
         <td><%=h truncate(f.discount.gsub(/<.*?>/,''), :length => 80) %></td>
       </tr>
       </table>
+      </div>
     <% end %>
   <% end %>
 
