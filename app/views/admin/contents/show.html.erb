@@ -3,7 +3,7 @@
 <table>
 <tr><th>ID:</th><td><%=h @content.id %></td></tr>
 <tr><th>Title:</th><td><%=h @content.title %></td></tr>
-<tr><th>Entry:</th><td><%=h @content.entry %></td></tr>
+<tr><th>Entry:</th><td><%=h word_wrap(@content.entry) %></td></tr>
 <tr><th>Tags:</th><td><%=h @content.tags %></td></tr>
 <tr><th>Content type id:</th><td><%=h @content.content_type_id %></td></tr>
 <tr><th>Content type:</th><td><%=h ContentType.find(@content.content_type_id).name %></td></tr>

@@ -15,7 +15,7 @@
             <tr><th>Image gallery URL</th><td><%=h image_gallery(user) || "" %></td></tr>
             <tr><th>Performance team member</th><td><%=h user.performance_team_member %></td></tr>
             <tr><th>USAC license</th><td><%=h user.usac_license || "" %></td></tr>
-            <tr><th>Profile</th><td><%= user.profile %></td></tr>
+            <tr><th>Profile</th><td><%= word_wrap(user.profile, :line_width => 1) %></td></tr>
           </table>
           </td>
        </tr>
