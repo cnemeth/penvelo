@@ -5,7 +5,7 @@
   <div id="listing">
     <table>
       <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
-        <th class="member-photo"><%= image_tag(user.user_image_url) %></th>
+        <th class="member-photo"><%= image_tag(user.photo.url(:medium)) %></th>
         <td>
           <table>
             <tr><th>Name</th><td><%=h user.name %></td> </tr>

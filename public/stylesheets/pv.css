@@ -209,28 +209,29 @@ body {
 -----------------------------------------------------------------------------*/
 
 h1{
-	font-size:			15%0;
+	font-size:			x-large;
 	text-align:			left;
-	padding:				0.5em 0;
+	padding:			0.5em;
 	margin:				0.5em 0;
+	/*background:     #de1800;*/
 }
 
 h2{
-	font-size:			125%;
+	font-size:			large;
 	text-align:			left;
 	padding:			0.25em 0;
 	margin:				0.25em 0;
 }
 
 h3{
-	font-size:			105%;
+	font-size:			medium;
 	text-align:			left;
 	padding:			0.1em 0;
 	margin:				0.1em 0;
 }
 
 h4{
-	font-size:			100%;
+	font-size:			small;
 	text-align:			left;
 	padding:			0;
 	margin:				0;
@@ -270,12 +271,11 @@ a:focus, a:hover
 -----------------------------------------------------------------------------*/
 
 #menu, #bottombar {
-
 	width:				100%;
 	float:				left;
 	border-top:		  3px solid #de1800;
 	border-bottom:	3px solid #de1800;
-/*	background-color:   #de1800;*/
+	/*background-color:   #de1800;*/
 }
 
 #menu ul, #bottombar ul {

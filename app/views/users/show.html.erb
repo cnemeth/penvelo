@@ -2,15 +2,10 @@
 <h2>&lt;&lt;&nbsp;Last login at:&nbsp; <%=h @user.last_login_at %>&nbsp;&gt;&gt;</h2>
 
 <table>
- <tr><th><%=h link_to(image_tag(@user.user_image_url)) %></th><td></td></tr>
+ <tr><th><%=h link_to(image_tag(@user.photo.url(:thumb))) %></th><td></td></tr>
   <tr><th>First name</th><td><%=h @user.first_name %></td></tr>
   <tr><th>Initial</th><td><%=h @user.middle_initial %></td></tr>
   <tr><th>Last name</th><td><%=h @user.last_name %></td></tr>
-
-  <tr><th>User photo thumb</th><td><%= image_tag @user.photo.url(:thumb) %></td></tr>
-  <tr><th>User photo small</th><td><%= image_tag @user.photo.url(:small) %></td></tr>
-  <tr><th>User photo medium</th><td><%= image_tag @user.photo.url(:medium) %></td></tr>
-
   <tr><th>Date of birth</th><td><%=h @user.date_of_birth %></td></tr>
   <tr><th>Gender</th><td><%=h @user.gender %></td></tr>
   <tr><th>Member since</th><td><%=h @user.member_since %></td></tr>

@@ -3,7 +3,7 @@
 	<% news_content %>
 	<% news_content.each do |content| %>
 
-		<h2><%= content.title %>&nbsp;&#9830;&nbsp;Posted on:<%= content.created_at %></h2>
+		<h2><%= content.title %>&nbsp;&#9830;&nbsp;Posted on:&nbsp;<%= content.created_at %></h2>
 		<div id="item_body">
 		<p><%= content.entry %></p>
     </div>
