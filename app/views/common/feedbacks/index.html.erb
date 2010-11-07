@@ -3,7 +3,7 @@
 <p>
   <%= link_to 'Create New Feedback', new_common_feedback_path %>
 </p>
-
+<div id="listing">
 <table>
   <tr>
     <th>ID</th>
@@ -15,7 +15,7 @@
   </tr>
 
 <% @feedbacks.each do |feedback| %>
-  <tr>
+  <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
     <td><%=h feedback.id %></td>
     <td><%=h truncate(feedback.feedback.gsub(/<.*?>/,''), :length => 20) %></td>
     <td><%=h feedback.feedback_type.name %></td>
@@ -29,7 +29,7 @@
   </tr>
 <% end %>
 </table>
-
+</div>
 <p>
   <%= link_to 'Create New Feedback', new_common_feedback_path %>
 </p>

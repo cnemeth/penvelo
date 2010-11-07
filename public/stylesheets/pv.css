@@ -203,15 +203,38 @@ body {
 
 #club_members{
     padding:    1em;
-	background-color: #f93;
+	/*background-color: #f93;*/
 }
 
 #club_members table{
+    width:  100%
 	border: 0;
+}
+
+#club_members table th{
+	width: 20%;
+}
+
+#club_members table td{
+	padding: 1em 0;
 }
 
 #item_body{
 	min-height: 50px;
+}
+
+#listing .list-line-even {
+  background:   #fff;
+}
+
+#listing .list-line-odd {
+  background:   #c0c0c0;
+}
+
+#listing .member-photo {
+  width: 150px;
+  padding:  0;
+  background:   #f93;
 }
 
 

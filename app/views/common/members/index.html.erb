@@ -2,26 +2,26 @@
   <h1>Active Club Members</h1>
   <div id="item_body">
   <% @users.each do |user| %>
+  <div id="listing">
+    <table>
 
-    <table width="100%">
-      <th colspan="3"><h2><%=h user.name %></h2></th>
-      <tr>
-        <th width="20%"><%= image_tag(user.user_image_url, :size => '125x150') %></th>
+      <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+        <th class="member-photo"><%= image_tag(user.user_image_url) %></th>
       <td>
-        <table width="100%">
-          <tr><th width="20%">Name</th><td><%=h user.name %></td> </tr>
-          <tr><th width="20%">Age</th><td><%=h age(user) unless user.date_of_birth == nil %></td></tr>
-          <tr><th width="20%">Gender</th><td><%=h user.gender %></td></tr>
-          <tr><th width="20%">user Since</th><td><%=h user.member_since %></td></tr>
-          <tr><th width="20%">Image gallery URL</th><td><%=h user.image_gallery_url ? user.image_gallery_url : "" %></td></tr>
-          <tr><th width="20%">Performance team member</th><td><%=h user.performance_team_member %></td></tr>
-          <tr><th width="20%">USAC license</th><td><%=h user.usac_license ? user.usac_license : "" %></td></tr>
-          <tr><th width="20%">Profile</th><td><%=h user.profile %></td></tr>
+        <table>
+          <tr><th>Name</th><td><%=h user.name %></td> </tr>
+          <tr><th>Age</th><td><%=h age(user) unless user.date_of_birth == nil %></td></tr>
+          <tr><th>Gender</th><td><%=h user.gender %></td></tr>
+          <tr><th>user Since</th><td><%=h user.member_since %></td></tr>
+          <tr><th>Image gallery URL</th><td><%=h user.image_gallery_url ? user.image_gallery_url : "" %></td></tr>
+          <tr><th>Performance team member</th><td><%=h user.performance_team_member %></td></tr>
+          <tr><th>USAC license</th><td><%=h user.usac_license || "" %></td></tr>
+          <tr><th>Profile</th><td><%=h user.profile %></td></tr>
         </table>
         </td>
        </tr>
     </table>
-
+   </div>
   <% end %>
   </div>
 </div>
