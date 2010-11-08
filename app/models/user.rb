@@ -67,8 +67,8 @@ class User < ActiveRecord::Base
   file_types = ['image/jpg', 'image/jpeg', 'image/gif', 'image/png', 'image/pjpeg']
   validate do |photo|
     photo.errors.clear
-    photo.errors.add_to_base("File missing") if photo.photo_file_name == nil
-    photo.errors.add_to_base("Wrong format") unless file_types.any? { |type| type == photo.photo_content_type }
+#    photo.errors.add_to_base("File missing") if photo.photo_file_name == nil
+#    photo.errors.add_to_base("Wrong format") unless file_types.any? { |type| type == photo.photo_content_type }
     photo.errors.add_to_base("Wrong size") if photo.photo_file_size != nil && photo.photo_file_size > 2.megabytes
   end
 

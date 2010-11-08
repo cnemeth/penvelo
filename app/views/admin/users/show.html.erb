@@ -4,13 +4,15 @@
   <title>User profile</title>
   <tr><th>ID</th><td><%=h @user.id %></td></tr>
   <tr><th>Name</th><td><%=h @user.name %></td></tr>
-  <tr><th>Avatar</th><td><%= image_tag @user.avatar.url %></td></tr>
-  <tr><th>Avatar medium</th><td><%= image_tag @user.avatar.url(:medium) %></td></tr>
-  <tr><th>Avatar thumb</th><td><%= image_tag @user.avatar.url(:thumb) %></td></tr>
+
+  <tr><th>Photo</th><td><%= image_tag @user.photo.url %></td></tr>
+  <tr><th>Photo thumb</th><td><%= image_tag @user.photo.url(:thumb) %></td></tr>
+  <tr><th>Photo small</th><td><%= image_tag @user.photo.url(:small) %></td></tr>
+  <tr><th>Photo medium</th><td><%= image_tag @user.photo.url(:medium) %></td></tr>
+
   <tr><th>Login name</th><td><%=h @user.login %></td></tr>
   <tr><th>Date of birth</th><td><%=h @user.date_of_birth %></td></tr>
   <tr><th>Gender</th><td><%=h @user.gender %></td></tr>
-  <tr><th>Member's Image URL</th><td><%=h @user.user_image_url %></td></tr>
   <tr><th>Member's Image Gallery URL</th><td><%=h @user.image_gallery_url %></td></tr>
   <tr><th>Performance team member</th><td><%=h @user.performance_team_member %></td></tr>
   <tr><th>Usac license</th><td><%=h @user.usac_license %></td></tr>
@@ -20,7 +22,7 @@
   <tr><th>Member positions</th><td><%=h member_positions(@user.position_ids) %></td></tr>
   <tr><th>Race/Ride disciplines</th><td><%=h member_race_disciplines(@user.race_discipline_ids) %></td></tr>
   <tr><th>Race categories</th><td><%=h member_race_categories(@user.race_category_ids) %></td></tr>
-  <tr><th>Profile</th><td><%=h @user.profile %></td></tr>
+  <tr><th>Profile</th><td><%= word_wrap(@user.profile, 40) %></td></tr>
   <tr><th>Login Count</th><td><%=h @user.login_count %></td></tr>
   <tr><th>Failed Login Count</th><td><%=h @user.failed_login_count %></td></tr>
   <tr><th>Last Login At</th><td><%=h @user.last_login_at %></td></tr>
