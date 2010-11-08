@@ -12,29 +12,34 @@
 	</table>
 
 	<h3>Club Officers</h3>
-  <% if @club_officers != nil  %>
-	  <% @club_officers.each do |f| %>
-	  <table>
-		  <tr><td>f.name</td><td><%=h f.role %></td></tr>
-	  </table>
-	  <% end %>
-	<% end %>
 
-	<h3>Board Members</h3>
-  <% if @board_members != nil  %>
-    <% @board_members.each do |f| %>
+  <h3>Chairman of the Board</h3>
+  <% board_chairman.each do |f| %>
     <table>
-	    <tr><td>f.name</td><td><%=h f.role %></td></tr>
+      <tr><td><%=h f.name %></td></tr>
     </table>
-    <% end %>
-	<% end %>
+  <% end %>
+	<h3>Board Members</h3>
+  <% board_members.each do |f| %>
+    <table>
+      <tr><td><%=h f.name %></td></tr>
+    </table>
+  <% end %>
+
 
 	<h3>Directors</h3>
-  <% if @club_directors != nil  %>
-	  <% @club_directors.each do |f| %>
-	  <table>
-		  <tr><td>f.name</td><td><%=h f.role %></td></tr>
-	  </table>
-	  <% end %>
-	<% end %>
+	<% if directors != nil %>
+    <% directors.each do |f| %>
+      <table>
+        <tr><td><%=h f.name %></td></tr>
+      </table>
+    <% end %>
+  <% end %>
+
+  <h3>Web Masters</h3>
+  <% webmasters.each do |f| %>
+    <table>
+      <tr><td><%=h f.name %></td></tr>
+    </table>
+  <% end %>
 

@@ -12,6 +12,36 @@ module UsersHelper
     RaceCategory.all.collect  {|race_category|[race_category.name, race_category.id]}
   end
 
+   def officiers
+    Position.find_by_name(['president',
+                           'vice president',
+                           'treasurer',
+                           'secretary']).users
+  end
+
+  def board_chairman
+    Position.find_by_name("board chairman").users
+  end
+
+  def board_members
+    Position.find_by_name("board member").users
+  end
+
+  def directors
+    Position.find_by_name(['director, uniforms',
+                           'director, sponsorship',
+                           'director, membership',
+                           'director, athletics',
+                           %{director, women's team},
+                           'director, century and recreational rides',
+                           'director, race, Burlingame Criterium',
+                           'director, race, San Bruno Hill Climb']).users
+  end
+
+  def webmasters
+    Position.find_by_name('webmaster').users
+  end
+
   def member_roles(ids)
     role_ids = Role.find_all_by_id(ids)
     roles = []
