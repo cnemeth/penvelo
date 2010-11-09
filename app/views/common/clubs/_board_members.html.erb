@@ -1,0 +1,16 @@
+<div id="board_members">
+  <h3>Chairman of the Board</h3>
+  <% board_chairman.each do |f| %>
+    <table>
+      <tr><td class="column_left"><%=h f.name %></td></tr>
+    </table>
+  <% end %>
+
+	<h3>Board Members</h3>
+  <% board_members.each do |f| %>
+    <table>
+      <tr><td class="column_left"><%=h f.name %></td></tr>
+    </table>
+  <% end %>
+</div>
+

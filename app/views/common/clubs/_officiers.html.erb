@@ -1,0 +1,24 @@
+<div id="officiers">
+<h3>Club Officers</h3>
+<% presidents.each do |f| %>
+    <table>
+      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
+    </table>
+  <% end %>
+  <% vice_presidents.each do |f| %>
+    <table>
+      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
+    </table>
+  <% end %>
+  <% treasurers.each do |f| %>
+    <table>
+      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
+    </table>
+  <% end %>
+  <% secretaries.each do |f| %>
+    <table>
+      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
+    </table>
+  <% end %>
+</div>
+

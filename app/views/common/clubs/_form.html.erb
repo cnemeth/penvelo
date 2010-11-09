@@ -1,0 +1,7 @@
+<% pions = get_user_in_role(object) %>
+  <% pions.each do |f| %>
+    <table>
+      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
+    </table>
+  <% end %>
+

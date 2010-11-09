@@ -12,90 +12,31 @@
 		<tr><td class="column_left">URL</td><td><%=h link_to("penvelo.org", @pv_club.url, :target => "_blank") %></td></tr>
 	</table>
 
-	<h3>Club Officers</h3>
- <% presidents.each do |f| %>
-    <table>
-      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
-    </table>
-  <% end %>
-  <% vice_presidents.each do |f| %>
-    <table>
-      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
-    </table>
-  <% end %>
-  <% treasurers.each do |f| %>
-    <table>
-      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
-    </table>
-  <% end %>
-  <% secretaries.each do |f| %>
-    <table>
-      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
-    </table>
-  <% end %>
+	<div id="executives">
+  <h3>Officiers</h3>
+    <%= render :partial => "form", :object => "executive" %>
+  </div>
 
+  <div id="board_members">
   <h3>Chairman of the Board</h3>
   <% board_chairman.each do |f| %>
     <table>
       <tr><td class="column_left"><%=h f.name %></td></tr>
     </table>
   <% end %>
-
 	<h3>Board Members</h3>
-  <% board_members.each do |f| %>
-    <table>
-      <tr><td class="column_left"><%=h f.name %></td></tr>
-    </table>
-  <% end %>
+    <%= render :partial => "form", :object => "board_member" %>
+  </div>
 
+	<div id="directors">
+  <h3>Directors</h3>
+  <%= render :partial => "form", :object => "director" %>
+  </div>
 
-	<h3>Directors</h3>
-	<% director_uniforms.each do |f| %>
-    <table>
-      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
-    </table>
-  <% end %>
-  <% director_sponsorhip.each do |f| %>
-    <table>
-      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
-    </table>
-  <% end %>
-  <% director_membership.each do |f| %>
-    <table>
-      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
-    </table>
-  <% end %>
-  <% director_athletics.each do |f| %>
-    <table>
-      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
-    </table>
-  <% end %>
-  <% director_women.each do |f| %>
-    <table>
-      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
-    </table>
-  <% end %>
-  <% director_century.each do |f| %>
-    <table>
-      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
-    </table>
-  <% end %>
-  <% director_burlingame.each do |f| %>
-    <table>
-      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
-    </table>
-  <% end %>
-  <% director_sanbruno.each do |f| %>
-    <table>
-      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
-    </table>
-  <% end %>
-
+  <div id="webmasters">
   <h3>Web Masters</h3>
-  <% webmasters.each do |f| %>
-    <table>
-      <tr><td class="column_left"><%=h f.name %></td></tr>
-    </table>
-  <% end %>
+    <%= render :partial => "form", :object => "site_admin" %>
+  </div>
+
 </div>
 
