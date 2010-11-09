@@ -13,16 +13,5 @@ class Common::NewsesController < ApplicationController
     end
   end
 
-  # GET /common/newses/1
-  # GET /common/newses/1.xml
-  def show
-    @news = news.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @news }
-    end
-  end
-
 end
 

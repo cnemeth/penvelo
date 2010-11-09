@@ -128,18 +128,18 @@ body {
 	float:	left;
 }
 
-#sidebar1{
+#sidebar{
 	width:	23%;
-	margin:	0;
-	padding:	5px;
+	margin:	0.5em;
+	padding: 0.5em;
 	float: left;
 
 }
 
 #main_content{
-	border-left:	solid 3px #de1800;
+	/*border-left:	solid 3px #de1800;*/
 	width:	69%;
-	margin:	0;
+	margin:	1em;
 	padding:	0 0 0 1%;
 	float: left;
 	text-align:	left;
@@ -163,6 +163,25 @@ body {
 	width:	48%;
 }
 
+#video-player{
+    height: 250px;
+    width:  275px;
+}
+
+#podium{
+    height: 400px;
+    width:  275px;
+}
+
+#club_meeting, #top_news, #special_events,
+#announcements, #cool-stuff, #video-player, #podium{
+    margin:    0 0 0.5em 0;
+    padding:    0 0.5em 1.0em 0.5em;
+    border-top:	solid 10px #de1800;
+    border-left:	solid 1px #de1800;
+    border-right:	solid 1px #de1800;
+    border-bottom:	solid 1px #de1800;
+}
 
 #about .column_left{
 	width: 9em;
