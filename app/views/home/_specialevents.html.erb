@@ -1,11 +1,10 @@
 <h1>Special Events</h1>
 <ul>
-	<% special_events = Content.find(:all, :conditions => "content_type_id = #{ContentType.find(:first, :conditions => "name = 'special event'").id}", :order => "created_at DESC") %>
 	<% special_events.each do |se| %>
 	<li>
 		<h2><%= se.title %></h2>
-		<p><%=se.entry %></p>
 		<p>Posted on:<%=se.created_at %></p>
+		<p><%=se.entry %></p>
 	</li>
 	<% end %>
 </ul>

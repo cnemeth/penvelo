@@ -1,11 +1,10 @@
 <h1>Announcements</h1>
 <ul>
-	<% top_a = Content.find(:all, :conditions => "content_type_id = #{ContentType.find(:first, :conditions => "name = 'announcement'").id}", :order => "created_at DESC", :limit => 3) %>
-	<% top_a.each do |a| %>
+  <% top_a.each do |a| %>
 	<li>
 		<h2><%= a.title %></h2>
-		<p><%= a.entry %></p>
 		<p>Posted on:<%= a.created_at %></p>
+		<p><%= a.entry %></p>
 	</li>
 	<% end %>
 </ul>

@@ -1,4 +1,10 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
-<p><%= render :partial => "maincontents", :locals => {:contents => @contents }%></p>
+<div id="content">
+  <div id="cool-stuff">
+    <h1>Cool Stuff</h1>
+    <p>... some cool stuff here ...</p>
+  </div>
+
+  <%= render :partial => "maincontents", :locals => {:contents => @contents }%>
+
+</div>
 

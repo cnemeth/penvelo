@@ -1,11 +1,11 @@
 <div id="news">
   <h1>Club News</h1>
-	<% news_content %>
-	<% news_content.each do |content| %>
 
-		<h2><%= content.title %>&nbsp;&#9830;&nbsp;Posted on:&nbsp;<%= content.created_at %></h2>
+	<% @newses.each do |news| %>
+
+		<h2><%= news.title %>&nbsp;&#9830;&nbsp;Posted on:&nbsp;<%= news.created_at %></h2>
 		<div id="item_body">
-		<p><%= content.entry %></p>
+		<p><%= news.entry %></p>
     </div>
 	<% end %>
 

@@ -1,10 +1,10 @@
 <h1>Latest News</h1>
 <ul>
-	<% top_news = Content.find(:all, :conditions => "content_type_id = #{ContentType.find(:first, :conditions => "name = 'news'").id}", :order => "created_at DESC", :limit => 3) %>
 	<% top_news.each do |news| %>
 	<li>
 		<h2><%= news.title %></h2>
 		<p>Posted on:<%= news.created_at %></p>
+		<p><%= truncate(news.entry, :length => 40) %>&nbsp;<%= link_to "read more ...", common_newses_path %></p>
 	</li>
 	<% end %>
 </ul>
