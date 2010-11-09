@@ -1,0 +1,12 @@
+<h1>Next Club Meeting</h1>
+<ul>
+	<% club_meeting = Content.find(:all, :conditions => "content_type_id = #{ContentType.find(:first, :conditions => "name = 'meeting notice'").id}", :order => "created_at DESC") %>
+	<% club_meeting.each do |c| %>
+	<li>
+		<h2><%= c.title %></h2>
+		<p><%=c.entry %></p>
+		<p>Posted on:<%=c.created_at %></p>
+	</li>
+	<% end %>
+</ul>
+
