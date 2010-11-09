@@ -15,7 +15,7 @@
   <tr><th>USAC license</th><td>
     <%=h @user.usac_license == '' ? "N/A" : @user.usac_license %></td></tr>
   <tr><th>Login name </th><td><%=h @user.login %></td></tr>
-  <tr><th>Member profile</th><td><%= @user.profile %></td></tr>
+  <tr><th>Member profile</th><td><%= @user.profile || '' %></td></tr>
   <tr><th>Member roles</th><td><%=h member_roles(@user.role_ids) %></td></tr>
   <tr><th>Member positions</th><td><%=h member_positions(@user.position_ids) %></td></tr>
   <tr><th>Race/Ride disciplines</th><td><%=h member_race_disciplines(@user.race_discipline_ids) %></td></tr>

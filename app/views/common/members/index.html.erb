@@ -1,7 +1,8 @@
 <div id="club_members">
   <h1> Listing Club Members</h1>
   <div id="item_body">
-  <% @users.each do |user| %>
+  <% users = User.find(:all, :order => "last_name ASC")%>
+  <% users.each do |user| %>
   <div id="listing">
     <table>
       <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
@@ -14,8 +15,9 @@
             <tr><th>Member Since</th><td><%=h user.member_since %></td></tr>
             <tr><th>Image gallery URL</th><td><%=h image_gallery(user) || "" %></td></tr>
             <tr><th>Performance team member</th><td><%=h user.performance_team_member %></td></tr>
+            <tr><th>Club position</th><td><%=h member_positions(user.position_ids) || "club member" %></td></tr>
             <tr><th>USAC license</th><td><%=h user.usac_license || "" %></td></tr>
-            <tr><th>Profile</th><td><%= word_wrap(user.profile, :line_width => 1) %></td></tr>
+            <tr><th>Profile</th><td><%= user.profile || '' %></td></tr>
           </table>
           </td>
        </tr>

@@ -1,3 +1,4 @@
+<div id="about">
   <h1>About <%=h @pv_club.name %></h1>
 
 	<p><%= @pv_club.description %></p>
@@ -6,40 +7,95 @@
 	<p><%=h @pv_club.location %></p>
 	<h3>Contact info</h3>
 	<table>
-		<tr><td>Phone</td><td><%=h @pv_club.phone %></td></tr>
-		<tr><td>Email</td><td><%= auto_link_email_addresses(@pv_club.email) %></td></tr>
-		<tr><td>Url</td><td><%=h link_to("penvelo.org", @pv_club.url, :target => "_blank") %></td></tr>
+		<tr><td class="column_left">Phone</td><td><%=h @pv_club.phone %></td></tr>
+		<tr><td class="column_left">Email</td><td><%= auto_link_email_addresses(@pv_club.email) %></td></tr>
+		<tr><td class="column_left">URL</td><td><%=h link_to("penvelo.org", @pv_club.url, :target => "_blank") %></td></tr>
 	</table>
 
 	<h3>Club Officers</h3>
+ <% presidents.each do |f| %>
+    <table>
+      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
+    </table>
+  <% end %>
+  <% vice_presidents.each do |f| %>
+    <table>
+      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
+    </table>
+  <% end %>
+  <% treasurers.each do |f| %>
+    <table>
+      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
+    </table>
+  <% end %>
+  <% secretaries.each do |f| %>
+    <table>
+      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
+    </table>
+  <% end %>
 
   <h3>Chairman of the Board</h3>
   <% board_chairman.each do |f| %>
     <table>
-      <tr><td><%=h f.name %></td></tr>
+      <tr><td class="column_left"><%=h f.name %></td></tr>
     </table>
   <% end %>
+
 	<h3>Board Members</h3>
   <% board_members.each do |f| %>
     <table>
-      <tr><td><%=h f.name %></td></tr>
+      <tr><td class="column_left"><%=h f.name %></td></tr>
     </table>
   <% end %>
 
 
 	<h3>Directors</h3>
-	<% if directors != nil %>
-    <% directors.each do |f| %>
-      <table>
-        <tr><td><%=h f.name %></td></tr>
-      </table>
-    <% end %>
+	<% director_uniforms.each do |f| %>
+    <table>
+      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
+    </table>
+  <% end %>
+  <% director_sponsorhip.each do |f| %>
+    <table>
+      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
+    </table>
+  <% end %>
+  <% director_membership.each do |f| %>
+    <table>
+      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
+    </table>
+  <% end %>
+  <% director_athletics.each do |f| %>
+    <table>
+      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
+    </table>
+  <% end %>
+  <% director_women.each do |f| %>
+    <table>
+      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
+    </table>
+  <% end %>
+  <% director_century.each do |f| %>
+    <table>
+      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
+    </table>
+  <% end %>
+  <% director_burlingame.each do |f| %>
+    <table>
+      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
+    </table>
+  <% end %>
+  <% director_sanbruno.each do |f| %>
+    <table>
+      <tr><td class="column_left"><%=h f.name %></td><td><%=h member_positions(f.position_ids) %></td></tr>
+    </table>
   <% end %>
 
   <h3>Web Masters</h3>
   <% webmasters.each do |f| %>
     <table>
-      <tr><td><%=h f.name %></td></tr>
+      <tr><td class="column_left"><%=h f.name %></td></tr>
     </table>
   <% end %>
+</div>
 

@@ -13,10 +13,35 @@ module UsersHelper
   end
 
    def officiers
-    Position.find_by_name(['president',
-                           'vice president',
-                           'treasurer',
-                           'secretary']).users
+    #positions = ['president', 'vice president', 'treasurer', 'secretary']
+    officiers = {
+      'president'       =>  Position.find_by_name('president').users,
+      'vice president'  =>  Position.find_by_name('vice president').users,
+      'treasurer'       =>  Position.find_by_name('treasurer').users,
+      'secretary'       =>  Position.find_by_name('secretary').users
+    }
+    #officiers.push(Position.find_by_name('president').users)
+    #officiers.push(Position.find_by_name('vice president').users)
+    #officiers.push(Position.find_by_name('treasurer').users)
+    #officiers.push(Position.find_by_name('secretary').users)
+
+
+  end
+
+  def presidents
+    Position.find_by_name("president").users
+  end
+
+  def vice_presidents
+    Position.find_by_name("vice president").users
+  end
+
+  def treasurers
+    Position.find_by_name("treasurer").users
+  end
+
+  def secretaries
+    Position.find_by_name("secretary").users
   end
 
   def board_chairman
@@ -27,15 +52,54 @@ module UsersHelper
     Position.find_by_name("board member").users
   end
 
+  def director_uniforms
+    Position.find_by_name("director, uniforms").users
+  end
+
+  def director_sponsorhip
+    Position.find_by_name("director, sponsorship").users
+  end
+
+  def director_membership
+    Position.find_by_name("director, membership").users
+  end
+
+  def director_athletics
+    Position.find_by_name("director, athletics").users
+  end
+
+  def director_women
+    Position.find_by_name("director, women's team").users
+  end
+
+  def director_century
+    Position.find_by_name("director, century and recreational rides").users
+  end
+
+  def director_burlingame
+    Position.find_by_name("director, race, Burlingame Criterium").users
+  end
+
+  def director_sanbruno
+    Position.find_by_name("director, race, San Bruno Hill Climb").users
+  end
+
   def directors
-    Position.find_by_name(['director, uniforms',
-                           'director, sponsorship',
-                           'director, membership',
-                           'director, athletics',
-                           %{director, women's team},
-                           'director, century and recreational rides',
-                           'director, race, Burlingame Criterium',
-                           'director, race, San Bruno Hill Climb']).users
+    directors = []
+    positions = ['director, uniforms',
+                 'director, sponsorship',
+                 'director, membership',
+                 'director, athletics',
+                 %{director, women's team},
+                 'director, century and recreational rides',
+                 'director, race, Burlingame Criterium',
+                 'director, race, San Bruno Hill Climb']
+
+    positions.each do |p|
+      directors.push(Position.find_by_name(p).users)
+    end
+
+    directors
   end
 
   def webmasters

@@ -9,8 +9,7 @@
     <th>Login Name</th>
     <th>Date Of Birth</th>
     <th>Gender</th>
-    <th>Image URL</th>
-    <th>Image Gallery URL</th>
+
     <th>Member Since</th>
     <th>Active</th>
     <th>Performance Team Member</th>
@@ -34,13 +33,12 @@
     <td><%=h user.login %></td>
     <td><%=h user.date_of_birth %></td>
     <td><%=h user.gender %></td>
-    <td><%=h user.user_image_url %></td>
-    <td><%=h user.image_gallery_url %></td>
+
     <td><%=h user.member_since %></td>
     <td><%=h user.active %></td>
     <td><%=h user.performance_team_member %></td>
     <td><%=h user.usac_license %></td>
-    <td><%=h truncate(user.profile.gsub(/<.*?>/,''), :length => 40) %></td>
+    <td><%=h truncate(user.profile.gsub(/<.*?>/,''), :length => 40) unless user.profile == nil %></td>
 
     <td><%=h user.login_count %></td>
     <td><%=h user.failed_login_count %></td>

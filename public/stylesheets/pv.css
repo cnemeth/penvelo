@@ -163,11 +163,10 @@ body {
 	width:	48%;
 }
 
-/*
-#about, #news, #sponsors, #discounts, #club_races, #club_rides{
-	padding: 1em 0;
+
+#about .column_left{
+	width: 9em;
 }
-*/
 
 #club_races ul li h4{
 	text-decoration:	underline;

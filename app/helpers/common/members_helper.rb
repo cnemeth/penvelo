@@ -10,7 +10,11 @@ module Common::MembersHelper
   end
 
   def image_gallery(user)
-    link_to("Click here to visit #{user.first_name}'s image gallery.", user.image_gallery_url, :target => '_blank')
+    if user.image_gallery_url == nil
+      return nil
+    else
+      link_to("Click here to visit #{user.first_name}'s image gallery.", user.image_gallery_url, :target => '_blank')
+    end
   end
 
 end
