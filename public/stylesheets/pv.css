@@ -97,10 +97,6 @@ body {
 	float:	right;
 }
 
-#login, #admin_home_link{
-	float:	right;
-}
-
 #club_logo{
 	margin-top:	1em;
 }
@@ -201,6 +197,8 @@ body {
 }
 
 #footer{
+    margin-top: 1em;
+    border-top: solid 3px #de1800;
 	text-align:	center;
 }
 
@@ -288,79 +286,53 @@ a:focus, a:hover
 /* =Main Nav
 -----------------------------------------------------------------------------*/
 
-#menu, #bottombar {
+#menu, #bottombar, #hidden-nav {
 	width:				100%;
 	float:				left;
-	border-top:		  3px solid #de1800;
-	border-bottom:	3px solid #de1800;
-	/*background-color:   #de1800;*/
+	/*border-top:		  3px solid #de1800;*/
+	/*border-bottom:	3px solid #de1800;*/
 }
 
-#menu ul, #bottombar ul {
+#menu ul, #bottombar ul, #hidden-nav ul {
 	margin: 0;
 	padding: 0;
 	float: left;
 	width: 100%;
 	list-style: none;
 	text-transform: uppercase;
+	float:  left;
+	background: #faa819 url(images/mainNavBg.png) repeat-x;
 }
 
-#menu ul li, #bottombar ul li {
+#menu ul li, #bottombar ul li, #hidden-nav ul li {
   float: left;
-  /*background:  url(../images/tab-right.png) no-repeat top right;*/
 }
 
-#menu li a, #bottombar li a{
+#menu li a, #bottombar li a, #hidden-nav li a{
 	display:	block;
+	float:      left;
 	padding:	0 2em;
-	line-height:	1.5em;
-	/*background:	url(../images/tab-left.png) no-repeat top left;*/
+	line-height:	2em;
+	background:	url(../images/divider.png) repeat-y top left;
 	text-decoration:	none;
 	color:	#000;
 	float:	left;
 }
 
-#menu ul a:hover, #bottombar ul a:hover{
+#menu ul a:hover, #bottombar ul a:hover, #hidden-nav ul a:hover{
 	color:	#333;
+}
+
+#hidden-nav ul, #hidden-nav ul li a{
+    background: none;
 }
 
 
 /* =Sub Nav
 -----------------------------------------------------------------------------*/
 
-/*
-#bottombar{
-	background-color:	#fff;
-	width:				100%;
-	float:				left;
-			padding:			0px -5px 0px 5px;
-	margin:				0;
-	text-align:			left;
-	font-size:			0.75em;
 
-	border-top:		   3px solid #333;
-	border-bottom:		   3px solid #333;
-	}
 
-div#bottombar ul{
-	margin: 0;
-	padding: 0;
-	float: left;
-	width: 100%;
-	list-style: none;
-	text-transform: uppercase;
-	}
-
-div#bottombar ul li {
-	display:	block;
-	padding:	0 2em;
-	line-height:	2.1em;
-	text-decoration:	none;
-	color: #fff;
-	float: left;
-}
-
-*/
 /* =Main Content
 -----------------------------------------------------------------------------*/
 
