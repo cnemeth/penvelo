@@ -53,6 +53,15 @@ body {
 	margin:				0 auto;
 	text-align:			left;
 	padding:	0.5em;
+	background:	url(../images/pv_background.png);
+}
+
+#home-wrapper {
+	background-color:	#fff;
+	width:				1180px;
+	margin:				0 auto;
+	text-align:			left;
+	padding:	0.5em;
 }
 
 #sponsor_banner{
@@ -71,6 +80,15 @@ body {
 	text-align:			left;
     /*border-bottom:	solid 3px #de1800;*/
     margin-bottom:  1em;
+}
+
+#home-header {
+	width:				100%;
+	height:	250px;
+	text-align:			left;
+    /*border-bottom:	solid 3px #de1800;*/
+    margin-bottom:  1em;
+    background:	url(../images/pv_background.png);
 }
 
 #header_1{
@@ -124,6 +142,12 @@ body {
 }
 
 #main{
+	width:	100%;
+	float:	left;
+
+}
+
+#home-main{
 	width:	100%;
 	float:	left;
 	background:	url(../images/pv_group_photo.png) no-repeat;
@@ -280,8 +304,6 @@ h4{
 /* =Links
 -----------------------------------------------------------------------------*/
 
-
-
 /*
 
 
@@ -330,11 +352,8 @@ a:focus, a:hover
     background: #000;
 }
 
-#pv-group-photo{
-    float:  left;
-    width:  100%;
-    height: 50px;
-    background:	url(../images/pv_group_photo.png) no-repeat;
+#links{
+
 }
 
 
@@ -409,6 +428,10 @@ a:focus, a:hover
 /* =Secondary Content
 -----------------------------------------------------------------------------*/
 
+
+
+/* =Header
+-----------------------------------------------------------------------------*/
 
 
 /* =Footer
