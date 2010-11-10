@@ -71,7 +71,8 @@ body {
 	width:				100%;
 	height:	250px;
 	text-align:			left;
-
+    border-bottom:	solid 3px #de1800;
+    margin-bottom:  1em;
 }
 
 #header_1{
@@ -174,9 +175,9 @@ body {
     margin:    0 0 0.5em 0;
     padding:    0 0.5em 1.0em 0.5em;
     border-top:	solid 10px #de1800;
-    border-left:	solid 1px #de1800;
-    border-right:	solid 1px #de1800;
-    border-bottom:	solid 1px #de1800;
+    border-left:	solid 1px #333;
+    border-right:	solid 1px #333;
+    border-bottom:	solid 1px #333;
 }
 
 #about .column_left{
@@ -286,14 +287,14 @@ a:focus, a:hover
 /* =Main Nav
 -----------------------------------------------------------------------------*/
 
-#menu, #bottombar, #hidden-nav {
+#menu, #bottombar{
 	width:				100%;
 	float:				left;
 	/*border-top:		  3px solid #de1800;*/
 	/*border-bottom:	3px solid #de1800;*/
 }
 
-#menu ul, #bottombar ul, #hidden-nav ul {
+#menu ul, #bottombar ul{
 	margin: 0;
 	padding: 0;
 	float: left;
@@ -301,19 +302,19 @@ a:focus, a:hover
 	list-style: none;
 	text-transform: uppercase;
 	float:  left;
-	background: #faa819 url(images/mainNavBg.png) repeat-x;
+	background: #999 url(images/navbarbg.png) repeat-x;
 }
 
-#menu ul li, #bottombar ul li, #hidden-nav ul li {
+#menu ul li, #bottombar ul li{
   float: left;
 }
 
-#menu li a, #bottombar li a, #hidden-nav li a{
+#menu li a, #bottombar li a{
 	display:	block;
 	float:      left;
 	padding:	0 2em;
 	line-height:	2em;
-	background:	url(../images/divider.png) repeat-y top left;
+	background:	url(../images/navbardivider.png) repeat-y top right;
 	text-decoration:	none;
 	color:	#000;
 	float:	left;
@@ -328,9 +329,13 @@ a:focus, a:hover
 }
 
 
+
 /* =Sub Nav
 -----------------------------------------------------------------------------*/
 
+#hidden-nav ul{
+    list-style: none;
+}
 
 
 /* =Main Content
