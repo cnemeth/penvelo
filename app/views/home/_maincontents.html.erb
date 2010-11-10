@@ -1,4 +1,10 @@
-<div id="top_half">
+<div id="top">
+  <div id="announcements">
+		  <%= render :partial => "announcements" %>
+	  </div>
+</div>
+
+<div id="middle">
 	<div id="club_meeting">
 		<%= render :partial => "clubmeeting" %>
 	</div>
@@ -7,12 +13,9 @@
 	</div>
 </div>
 
-<div id="bottom_half">
+<div id="bottom">
 	<div id="top_news">
 		<%= render :partial => "topnews" %>
-	</div>
-	<div id="announcements">
-		<%= render :partial => "announcements" %>
 	</div>
 </div>
 

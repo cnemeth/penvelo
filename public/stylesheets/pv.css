@@ -71,7 +71,7 @@ body {
 	width:				100%;
 	height:	250px;
 	text-align:			left;
-    border-bottom:	solid 3px #de1800;
+    /*border-bottom:	solid 3px #de1800;*/
     margin-bottom:  1em;
 }
 
@@ -85,7 +85,7 @@ body {
 
 #header_main{
 	/*background-color:	#De1800;*/
-	width:	50%;
+	width:	60%;
 	height:	250px;
 	text-align:	left;
 	float:	left;
@@ -93,6 +93,8 @@ body {
 
 #header_2{
 	/*background-color:	#De1800;*/
+	margin: 1em;
+	padding:    0;
 	height:	250px;
 	text-align:	center;
 	float:	right;
@@ -117,6 +119,7 @@ body {
 #search{
 	padding: 1em 0;
 	height:	10%;
+	float:  right;
 	/*vertical-align:	middle;*/
 }
 
@@ -143,19 +146,18 @@ body {
 	/*border:	solid 1px;*/
 }
 
-#top_half, #bottom_half{
+#top, #middle, #bottom{
 	width: 100%;
 	float:	left;
 	text-align:	left;
-
 }
 
-#club_meeting, #top_news{
+#club_meeting{
 	float:	left;
 	width:	48%;
 }
 
-#special_events, #announcements{
+#special_events{
 	float:	right;
 	width:	48%;
 }
@@ -281,10 +283,30 @@ a:focus, a:hover
 /* =Branding
 -----------------------------------------------------------------------------*/
 
+#club-colors{
+    width:  100%;
+    float:  left;
+    margin: 1em 0;
+}
+
+#red, #white, #black{
+    height: 0.5em;
+}
+
+#red{
+    background: #de1800;
+}
+
+#white{
+    background: #fff;
+}
+
+#black{
+    background: #000;
+}
 
 
-
-/* =Main Nav
+/* =Main Nav (top and bottom menu bars)
 -----------------------------------------------------------------------------*/
 
 #menu, #bottombar{
@@ -320,21 +342,24 @@ a:focus, a:hover
 	float:	left;
 }
 
-#menu ul a:hover, #bottombar ul a:hover, #hidden-nav ul a:hover{
+#menu ul a:hover, #bottombar ul a:hover{
+	color:	#333;
+}
+
+
+/* =Hidden Nav
+-----------------------------------------------------------------------------*/
+
+#hidden-nav ul{
+    list-style: none;
+}
+
+#hidden-nav ul a:hover{
 	color:	#333;
 }
 
 #hidden-nav ul, #hidden-nav ul li a{
     background: none;
-}
-
-
-
-/* =Sub Nav
------------------------------------------------------------------------------*/
-
-#hidden-nav ul{
-    list-style: none;
 }
 
 
