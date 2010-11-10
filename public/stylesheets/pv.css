@@ -126,6 +126,7 @@ body {
 #main{
 	width:	100%;
 	float:	left;
+	background:	url(../images/pv_group_photo.png) no-repeat;
 }
 
 #sidebar{
@@ -144,8 +145,6 @@ body {
 	float: left;
 	text-align:	left;
 	/*border:	solid 1px;*/
-	background:	url(../images/pv_goup_photo.png) no-repeat;
-
 }
 
 #top, #middle, #bottom{
@@ -329,6 +328,13 @@ a:focus, a:hover
 
 #black{
     background: #000;
+}
+
+#pv-group-photo{
+    float:  left;
+    width:  100%;
+    height: 50px;
+    background:	url(../images/pv_group_photo.png) no-repeat;
 }
 
 
