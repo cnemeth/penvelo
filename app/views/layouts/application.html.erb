@@ -28,6 +28,9 @@
 
     <div id="menu">
 			<%= render :partial => "layouts/topnav" %>
+<% show_to :site_admin, :executive, :director, :board_member, :sponsor, :performance_team_member,  :basic_member do %>
+			<%= render :partial => "layouts/secondary_nav" %>
+<% end %>
 		</div>
 
 		<div class="clear"></div>

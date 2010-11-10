@@ -374,9 +374,9 @@ a:focus, a:hover
 }
 
 
-/* =Hidden Nav
+/* =Secondary Nav
 -----------------------------------------------------------------------------*/
-
+/*
 #hidden-nav{
     margin-top: 3em;
 }
@@ -388,16 +388,11 @@ a:focus, a:hover
 #hidden-nav ul li a{
    background:	#333;
 }
+*/
 
-#login-logout-links{
-
-}
-
-#admin-home-link{
+#login-logout-links, #admin-home-link{
     float:  right;
 }
-
-
 
 /* =Main Content
 -----------------------------------------------------------------------------*/
