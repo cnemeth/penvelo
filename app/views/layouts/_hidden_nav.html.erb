@@ -1,10 +1,5 @@
 <ul>
-  <div id="admin_home_link">
-	<% show_to :site_admin do %>
-      <li><%= link_to(image_tag("my_admin_button.png", :size => "100x25"), admin_home_path) %></li>
-  <% end %>
-  </div>
-  <div id="login">
+  <div id="login-logout-links">
     <% if !current_user %>
       <li><%= link_to(image_tag("my_register_button.png", :size => "100x25"), new_account_path) %></li>
       <li><%= link_to(image_tag("my_login_button.png", :size => "100x25"), new_user_session_url) %></li>

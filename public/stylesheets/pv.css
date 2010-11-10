@@ -66,8 +66,6 @@ body {
 }
 
 #header {
-/*    color:  #fff;
-	background-color:	#333;*/
 	width:				100%;
 	height:	250px;
 	text-align:			left;
@@ -84,7 +82,7 @@ body {
 }
 
 #header_main{
-	/*background-color:	#De1800;*/
+	color:	#000;
 	width:	60%;
 	height:	250px;
 	text-align:	left;
@@ -104,12 +102,17 @@ body {
 	margin-top:	1em;
 }
 
-#club_mission p{
+#club-mission{
+    color:      #fff;
+    background:	url(../images/top_collage.png) no-repeat;
+
+}
+
+#club-mission p{
 	font-size:	1.5em;
 	font-family:	Arial, Arial, Helvetica, sans-serif;
 	font-style:	italic;
 	font-weight:	bold;
-
 }
 
 #club_dates{
@@ -117,10 +120,7 @@ body {
 }
 
 #search{
-	padding: 1em 0;
-	height:	10%;
 	float:  right;
-	/*vertical-align:	middle;*/
 }
 
 #main{
@@ -144,6 +144,8 @@ body {
 	float: left;
 	text-align:	left;
 	/*border:	solid 1px;*/
+	background:	url(../images/pv_goup_photo.png) no-repeat;
+
 }
 
 #top, #middle, #bottom{
@@ -165,6 +167,7 @@ body {
 #video-player{
     height: 250px;
     width:  275px;
+    background:	url(../images/pv_home.png) no-repeat left top;
 }
 
 #podium{
@@ -200,8 +203,9 @@ body {
 }
 
 #footer{
-    margin-top: 1em;
-    border-top: solid 3px #de1800;
+    /*margin-top: 1em;*/
+    padding-top: 1em;
+    /*border-top: solid 2px #de1800;*/
 	text-align:	center;
 }
 
@@ -230,7 +234,7 @@ body {
 h1{
 	font-size:			x-large;
 	text-align:			left;
-	padding:			0.5em;
+	padding:			0.5em 0;
 	margin:				0.5em 0;
 	/*background:     #de1800;*/
 }
@@ -256,14 +260,36 @@ h4{
 	margin:				0;
 }
 
+#page-title h1{
+
+}
+
+#headline p{
+    font-size:			medium;
+	text-align:			left;
+	font-style:         italic;
+	margin:				0.1em 0;
+	padding:			0.1em 0;
+}
+
+#club-mission h2{
+    margin-top:    2em;
+
+}
+
 
 /* =Links
 -----------------------------------------------------------------------------*/
 
+
+
+/*
+
+
 a{
-	border-color: #0000ff !important;
+	border-color: #fff !important;
 	border-width: 0 0 1px 0 !important;
-	color: #0000ff !important;
+	color: #fff !important;
 	text-decoration: none !important;
 }
 
@@ -278,7 +304,7 @@ a:focus, a:hover
 		border-color: #ff0000 !important;
 		color: #ff0000 !important;
 }
-
+*/
 
 /* =Branding
 -----------------------------------------------------------------------------*/
@@ -286,7 +312,7 @@ a:focus, a:hover
 #club-colors{
     width:  100%;
     float:  left;
-    margin: 1em 0;
+    margin: 1em -1em 0 0;
 }
 
 #red, #white, #black{
@@ -310,6 +336,7 @@ a:focus, a:hover
 -----------------------------------------------------------------------------*/
 
 #menu, #bottombar{
+
 	width:				100%;
 	float:				left;
 	/*border-top:		  3px solid #de1800;*/
@@ -324,7 +351,7 @@ a:focus, a:hover
 	list-style: none;
 	text-transform: uppercase;
 	float:  left;
-	background: #999 url(images/navbarbg.png) repeat-x;
+	background: url(../images/navbarbg.png) repeat-x;
 }
 
 #menu ul li, #bottombar ul li{
@@ -338,7 +365,7 @@ a:focus, a:hover
 	line-height:	2em;
 	background:	url(../images/navbardivider.png) repeat-y top right;
 	text-decoration:	none;
-	color:	#000;
+	color:	#fff;
 	float:	left;
 }
 
@@ -350,17 +377,26 @@ a:focus, a:hover
 /* =Hidden Nav
 -----------------------------------------------------------------------------*/
 
+#hidden-nav{
+    margin-top: 3em;
+}
+
 #hidden-nav ul{
     list-style: none;
 }
 
-#hidden-nav ul a:hover{
-	color:	#333;
+#hidden-nav ul li a{
+   background:	#333;
 }
 
-#hidden-nav ul, #hidden-nav ul li a{
-    background: none;
+#login-logout-links{
+
 }
+
+#admin-home-link{
+    float:  right;
+}
+
 
 
 /* =Main Content

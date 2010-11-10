@@ -9,4 +9,19 @@
 	<li><%= link_to "Galleries", common_galleries_path %></li>
 	<li><%= link_to "Calendar", common_calendars_path %></li>
 </ul>
+<ul>
+	<% show_to :site_admin, :executive, :director, :board_member, :sponsor, :performance_team_member,  :basic_member do %>
+	<li><%= link_to "Feedback", common_feedbacks_path %></li>
+	<li><%= link_to "Sponsor Discounts", common_sponsor_discounts_path %></li>
+	<li><%= link_to "Race Reports", common_sponsor_discounts_path %></li>
+	<li><%= link_to "Club Documents", club_documents_path %></li>
+
+<% end %>
+<div id="admin-home-link">
+<% show_to :site_admin do %>
+  <li><%= link_to "admin", admin_home_path %></li>
+<% end %>
+</div>
+
+</ul>
 

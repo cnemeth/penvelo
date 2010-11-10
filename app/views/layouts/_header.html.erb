@@ -3,22 +3,32 @@
 
 <div id="header_1">
 
+
+
 	<div id="club_logo">
 		<%= link_to(image_tag(club.logo_url), root_url) %>
 	</div>
 
 	<div id="club_dates"><em>Est. <%= club.year %></em></div>
 
+
+
 </div>
 
 <div id="header_main">
 
-	<div id="headline">
+	<div id="page-title">
 		<h1>Welcome to the <%= club.name  %></h1>
-		<p><em><%=h club.headline -%></em></p>
 	</div>
-	<h2>Our Mission</h2>
-	<div id="club_mission">
+  <div id="headline">
+		<p><%=h club.headline -%></p>
+	</div>
+  <div id="club-colors">
+      <%= render :partial => "home/club_colors" %>
+   </div>
+
+	<div id="club-mission">
+	  <h2>Our Mission</h2>
 		<p><%= club.mission  %></p>
 	</div>
 
@@ -28,6 +38,8 @@
 			<input type="submit" value="Search" class="button" />
 		</form>
 	</div>
+
+
 
 </div>
 
@@ -42,6 +54,7 @@
 	<div id="hidden-nav">
 	  <%= render :partial => "layouts/hidden_nav" %>
 	</div>
+
 
 </div>
 
