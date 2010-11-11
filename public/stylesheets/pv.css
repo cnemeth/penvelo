@@ -486,7 +486,7 @@ th, td{
 
 #race-stats tr {
     width:  67%;
-    border-bottom:     3px solid red;
+    border-bottom:     0.35em solid red;
 }
 
 #race-stats th {
