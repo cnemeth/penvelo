@@ -193,13 +193,13 @@ body {
     background:	url(../images/pv_home.png) no-repeat left top;
 }
 
-#podium{
+#race-stats{
     height: 400px;
     width:  275px;
 }
 
 #club_meeting, #top_news, #special_events,
-#announcements, #cool-stuff, #video-player, #podium{
+#announcements, #cool-stuff, #video-player, #race-stats{
     margin:    0 0 0.5em 0;
     padding:    0 0.5em 1.0em 0.5em;
     border-top:	solid 10px #de1800;
@@ -285,6 +285,10 @@ h4{
 
 #page-title h1{
 
+}
+
+#race-stats h1 {
+     text-align:    center;
 }
 
 #headline p{
@@ -466,6 +470,28 @@ th, td{
     vertical-align:     top;
     border:     none;
     padding:    0 1em;
+}
+
+/* race stats table in side bar */
+#race-stats table {
+    width:  100%;
+}
+
+#race-stats th, #race-stats td {
+    font-size:  x-large;
+    padding:    0.5em;
+    /*border:     3px solid red;*/
+    vertical-align:    bottom;
+}
+
+#race-stats th {
+    width:  67%;
+}
+
+#race-stats td {
+     width:  33%;
+     font-weight:   bold;
+     text-align:    right;
 }
 
 /* =Notice
