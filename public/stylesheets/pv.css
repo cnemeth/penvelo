@@ -357,22 +357,21 @@ a:focus, a:hover
 /* =sws-links
 -----------------------------------------------------------------------------*/
 
-#sws{
+#sws-links{
     width:  100%;
     float:  left;
 }
 
-#sws .column1{
-    width:  48%;
+#sws-links .first-column{
     float:  left;
 }
 
-#sws .column2{
-    width:  48%;
-    float:  right;
+#sws-links .column{
+    padding-left:    0.5em;
+    float:  left;
 }
 
-#sws .icons{
+#sws-links .icons{
     float:  left;
     text-align: center;
 }
