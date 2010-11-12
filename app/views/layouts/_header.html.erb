@@ -3,15 +3,11 @@
 
 <div id="header_1">
 
-
-
 	<div id="club_logo">
 		<%= link_to(image_tag(club.logo_url), root_url) %>
 	</div>
 
 	<div id="club_dates"><em>Est. <%= club.year %></em></div>
-
-
 
 </div>
 
@@ -39,22 +35,17 @@
 		</form>
 	</div>
 
-
-
 </div>
 
 <div id="header_2">
-
-
 
 	<div id="sponsor_banner">
 		<%= render :partial => "layouts/sponsors" %>
 	</div>
 
-	<div id="links">
-    <%= render :partial => "layouts/links" %>
+	<div id="sws-links">
+    <%= render :partial => "layouts/sws_links" %>
 	</div>
-
 
 </div>
 

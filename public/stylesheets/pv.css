@@ -309,8 +309,6 @@ h4{
 -----------------------------------------------------------------------------*/
 
 /*
-
-
 a{
 	border-color: #fff !important;
 	border-width: 0 0 1px 0 !important;
@@ -356,10 +354,27 @@ a:focus, a:hover
     background: #000;
 }
 
-#links{
+/* =sws-links
+-----------------------------------------------------------------------------*/
+
+#sws{
     width:  100%;
     float:  left;
-    text-align: left;
+}
+
+#sws .column1{
+    width:  48%;
+    float:  left;
+}
+
+#sws .column2{
+    width:  48%;
+    float:  right;
+}
+
+#sws .icons{
+    float:  left;
+    text-align: center;
 }
 
 
@@ -370,8 +385,6 @@ a:focus, a:hover
 
 	width:				100%;
 	float:				left;
-	/*border-top:		  3px solid #de1800;*/
-	/*border-bottom:	3px solid #de1800;*/
 }
 
 #menu ul, #bottombar ul{
@@ -404,22 +417,8 @@ a:focus, a:hover
 	color:	#333;
 }
 
-
 /* =Secondary Nav
 -----------------------------------------------------------------------------*/
-/*
-#hidden-nav{
-    margin-top: 3em;
-}
-
-#hidden-nav ul{
-    list-style: none;
-}
-
-#hidden-nav ul li a{
-   background:	#333;
-}
-*/
 
 #login-logout-links, #admin-home-link{
     float:  right;
@@ -516,6 +515,19 @@ th, td{
 /* =Listings
 -----------------------------------------------------------------------------*/
 
+#listing{
+    margin-top: 1em;
+    display:    inline-block;
+}
+
+#listing p{
+    border: 1px solid black;
+    padding: 1em;
+    font-size:  large;
+    font-style: italic;
+    font-weight: bold;
+    background:   #c0c0c0;
+}
 
 #listing .list-line-even {
   background:   #fff;

@@ -1,9 +1,16 @@
+<div id="listing">
 <h1>Listing Feedback</h1>
 
-<p>
-  <%= link_to 'Create New Feedback', new_common_feedback_path %>
+<p>Select feedback type:
+<%= radio_button_tag(:feedback_type, "all") %><%= label_tag(:feedback_type_all, "all") %>
+<%= radio_button_tag(:feedback_type, "comment") %><%= label_tag(:feedback_type_comments, "comments") %>
+<%= radio_button_tag(:feedback_type, "change_request") %><%= label_tag(:feedback_type_change_request, "change requests") %>
+<%= radio_button_tag(:feedback_type, "new_feature") %><%= label_tag(:feedback_type_new_features, "new features") %>
+<%= radio_button_tag(:feedback_type, "bug_report") %><%= label_tag(:feedback_type_bug_reports, "bug reports") %>
 </p>
-<div id="listing">
+
+<h3><%= link_to 'New Feedback', new_common_feedback_path %></h3>
+
 <table>
   <tr>
     <th>ID</th>
@@ -14,23 +21,24 @@
     <th>Updated At</th>
   </tr>
 
-<% @feedbacks.each do |feedback| %>
-  <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
-    <td><%=h feedback.id %></td>
-    <td><%=h truncate(feedback.feedback.gsub(/<.*?>/,''), :length => 20) %></td>
-    <td><%=h feedback.feedback_type.name %></td>
+  <% @feedbacks.each do |feedback| %>
+    <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+      <td><%=h feedback.id %></td>
+      <td><%=h truncate(feedback.feedback.gsub(/<.*?>/,''), :length => 20) %></td>
+      <td><%=h feedback.feedback_type.name %></td>
 
-    <td><%=h feedback.created_at.to_s(:chatty) %></td>
-    <td><%=h feedback.updated_at.to_s(:rfc822) %></td>
+      <td><%=h feedback.created_at.to_s(:chatty) %></td>
+      <td><%=h feedback.updated_at.to_s(:rfc822) %></td>
 
-    <td><%= link_to 'Show', common_feedback_path(feedback) %></td>
-    <td><%= link_to 'Edit', edit_common_feedback_path(feedback) %></td>
+      <td><%= link_to 'Show', common_feedback_path(feedback) %></td>
+      <td><%= link_to 'Edit', edit_common_feedback_path(feedback) %></td>
 
-  </tr>
-<% end %>
+    </tr>
+  <% end %>
+
 </table>
+
+<h3><%= link_to 'New Feedback', new_common_feedback_path %></h3>
+
 </div>
-<p>
-  <%= link_to 'Create New Feedback', new_common_feedback_path %>
-</p>
 

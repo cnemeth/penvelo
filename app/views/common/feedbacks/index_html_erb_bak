@@ -1,0 +1,33 @@
+<h1>Listing Feedback</h1>
+<div id="menu">
+  <%= render :partial => "nav"%>
+</div>
+<div class="clear"></div>
+<div id="listing">
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Feedback</th>
+    <th>Feedback type</th>
+
+    <th>Created At</th>
+    <th>Updated At</th>
+  </tr>
+
+<% feedbacks.each do |feedback| %>
+  <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+    <td><%=h feedback.id %></td>
+    <td><%=h truncate(feedback.feedback.gsub(/<.*?>/,''), :length => 20) %></td>
+    <td><%=h feedback.feedback_type.name %></td>
+
+    <td><%=h feedback.created_at.to_s(:chatty) %></td>
+    <td><%=h feedback.updated_at.to_s(:rfc822) %></td>
+
+    <td><%= link_to 'Show', common_feedback_path(feedback) %></td>
+    <td><%= link_to 'Edit', edit_common_feedback_path(feedback) %></td>
+
+  </tr>
+<% end %>
+</table>
+</div>
+
