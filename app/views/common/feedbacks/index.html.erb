@@ -1,13 +1,7 @@
 <div id="listing">
 <h1>Listing Feedback</h1>
 
-<p>Select feedback type:
-<%= radio_button_tag(:feedback_type, "all") %><%= label_tag(:feedback_type_all, "all") %>
-<%= radio_button_tag(:feedback_type, "comment") %><%= label_tag(:feedback_type_comments, "comments") %>
-<%= radio_button_tag(:feedback_type, "change_request") %><%= label_tag(:feedback_type_change_request, "change requests") %>
-<%= radio_button_tag(:feedback_type, "new_feature") %><%= label_tag(:feedback_type_new_features, "new features") %>
-<%= radio_button_tag(:feedback_type, "bug_report") %><%= label_tag(:feedback_type_bug_reports, "bug reports") %>
-</p>
+<%= render :partial => "radio" %>
 
 <h3><%= link_to 'New Feedback', new_common_feedback_path %></h3>
 
@@ -21,7 +15,8 @@
     <th>Updated At</th>
   </tr>
 
-  <% @feedbacks.each do |feedback| %>
+  <% feedbacks = feedback_by_type("all") %>
+  <% feedbacks.each do |feedback| %>
     <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
       <td><%=h feedback.id %></td>
       <td><%=h truncate(feedback.feedback.gsub(/<.*?>/,''), :length => 20) %></td>
