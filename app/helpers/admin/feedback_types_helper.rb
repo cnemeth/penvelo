@@ -1,7 +1,8 @@
 module Admin::FeedbackTypesHelper
 
-  def feedback_types
-    FeedbackType.all
-  end
+  #def feedback_types
+  #  FeedbackType.all
+  #end
+
 end
 

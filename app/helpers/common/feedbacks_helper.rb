@@ -1,8 +1,8 @@
 module Common::FeedbacksHelper
 
-  def feedbacks
-    Feedback.find(:all, :order => "created_at DESC")
-  end
+  #def feedbacks
+  #  Feedback.find(:all, :order => "created_at DESC")
+  #end
 
   def feedback_by_type(feedback_type)
     feedbacks = nil
