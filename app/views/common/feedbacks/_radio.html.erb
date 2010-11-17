@@ -1,6 +1,6 @@
 <p>
-<label for="feedback_type">Feedback Type:</label>
-<% [ 'comment', 'bug_report', 'change_request', 'new_feature' ].each do |f| %>
+<label for="feedback_type">Select Feedback Type:</label>
+<% [ 'all', 'comment', 'bug_report', 'change_request', 'new_feature' ].each do |f| %>
   <%= radio_button_tag 'feedback_type', f, :feedback_type == f %>
   <%= label_tag "feedback_type_#{f}", f.humanize %>
 <% end %>

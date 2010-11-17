@@ -516,11 +516,10 @@ th, td{
 
 #listing{
     margin-top: 1em;
-    display:    inline-block;
+    /*display:    inline-block;*/
 }
 
-#listing p{
-    border: 1px solid black;
+#listing div{
     padding: 1em;
     font-size:  large;
     font-style: italic;
@@ -544,16 +543,18 @@ th, td{
 }
 
 #listing table{
-    background; #f93;
-    width:  100%
+    background: #f93;
+    width:  100%;
 	border: 0;
 }
 
 #listing table th{
+    font-size:  medium;
 	width: 150px;
 }
 
 #listing table td{
+    font-size:  small;
     width:  600px;
 	padding: 1.0em;
 }

@@ -6,6 +6,20 @@ class Common::FeedbacksController < ApplicationController
     allow logged_in
   end
 
+  def index_by_type
+    feedback_type_id = FeedbackType.find_by_name(params[:feedback_type]).id
+    if feedback_type_id == 'all'
+      @feedbacks = Feedback.find(:all, :order => "created_at DESC")
+    else
+      @feedbacks = Feedback.find(:all, :conditions => ["feedback_type_id = ?",feedback_type_id], :order => "created_at DESC")
+    end
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @feedbacks }
+    end
+  end
+
   # GET /common/feedbacks
   # GET /common/feedbacks.xml
   def index

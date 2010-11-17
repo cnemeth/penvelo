@@ -1,39 +1,47 @@
 <div id="listing">
-<h1>Listing Feedback</h1>
+  <h1>Listing Feedback</h1>
 
-<%= render :partial => "radio", :object => "feedback-type" %>
+  <div>
+    <label for="feedback_type">Select Feedback Type:</label>
+    <% form_for :feedback_type do |f| %>
+      <%= radio_button_tag(:feedback_type, "all", :checked => true) %>&nbsp;<%= label_tag(:feedback_type_all, "All") %>&nbsp;
+      <%= radio_button_tag(:feedback_type, "comment") %>&nbsp;<%= label_tag(:feedback_type_comment, "Comment") %>&nbsp;
+      <%= radio_button_tag(:feedback_type, "bug report") %>&nbsp;<%= label_tag(:feedback_type_bug_report, "Bug report") %>&nbsp;
+      <%= radio_button_tag(:feedback_type, "change request") %>&nbsp;<%= label_tag(:feedback_type_change_request, "Change request") %>&nbsp;
+      <%= radio_button_tag(:feedback_type, "new feature") %>&nbsp;<%= label_tag(:feedback_type_new_feature, "New feature") %>
+    <% end %>
+  </div>
 
-<h3><%= link_to 'New Feedback', new_common_feedback_path %></h3>
+  <h3><%= link_to 'New Feedback', new_common_feedback_path %></h3>
 
-<table>
-  <tr>
-    <th>ID</th>
-    <th>Feedback</th>
-    <th>Feedback type</th>
+  <!-- ><%= render :partial => "radio", :object => "feedback_type" %> -->
 
-    <th>Created At</th>
-    <th>Updated At</th>
-  </tr>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Feedback</th>
+      <th>Feedback type</th>
 
-  <% feedbacks = feedback_by_type("all") %>
-  <% feedbacks.each do |feedback| %>
-    <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
-      <td><%=h feedback.id %></td>
-      <td><%=h truncate(feedback.feedback.gsub(/<.*?>/,''), :length => 20) %></td>
-      <td><%=h feedback.feedback_type.name %></td>
-
-      <td><%=h feedback.created_at.to_s(:chatty) %></td>
-      <td><%=h feedback.updated_at.to_s(:rfc822) %></td>
-
-      <td><%= link_to 'Show', common_feedback_path(feedback) %></td>
-      <td><%= link_to 'Edit', edit_common_feedback_path(feedback) %></td>
-
+      <th>Created At</th>
+      <th>Updated At</th>
     </tr>
-  <% end %>
 
-</table>
+    <% feedbacks.each do |feedback| %>
+      <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+        <td><%=h feedback.id %></td>
+        <td><%=h truncate(feedback.feedback.gsub(/<.*?>/,''), :length => 20) %></td>
+        <td><%=h feedback.feedback_type.name %></td>
 
-<h3><%= link_to 'New Feedback', new_common_feedback_path %></h3>
+        <td><%=h feedback.created_at.to_s(:chatty) %></td>
+        <td><%=h feedback.updated_at.to_s(:rfc822) %></td>
+
+        <td><%= link_to 'Show', common_feedback_path(feedback) %></td>
+        <td><%= link_to 'Edit', edit_common_feedback_path(feedback) %></td>
+      </tr>
+    <% end %>
+  </table>
+
+  <h3><%= link_to 'New Feedback', new_common_feedback_path %></h3>
 
 </div>
 

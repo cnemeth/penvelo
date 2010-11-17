@@ -2,6 +2,8 @@ class Feedback < ActiveRecord::Base
 
   acts_as_authorization_object
 
+  attr_accessible :selected_feedback_type
+
   belongs_to :feedback_type
 
 end
