@@ -3,6 +3,9 @@ class Content < ActiveRecord::Base
   acts_as_authorization_object
 
   belongs_to :content_type
+
+  validates_presence_of :title, :entry, :content_type_id
+
 end
 
 

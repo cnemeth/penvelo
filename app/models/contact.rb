@@ -16,6 +16,16 @@ class Contact < ActiveRecord::Base
 
   belongs_to :im_type
   belongs_to :user
+
+  validates_presence_of :city, :state, :email, :user_id
+
+  validates_format_of :email,
+                      :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i,
+                      :message => 'email must be valid'
+
+  #validates_format_of :email, :with => %r{^(?:[_a-z0-9-]+)(\.[_a-z0-9-]+)*@([a-z0-9-]+)(\.[a-zA-Z0-9\-\.]+)*(\.[a-z]{2,4})$}i
+
+
 end
 
 # == Schema Information

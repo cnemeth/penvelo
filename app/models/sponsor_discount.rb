@@ -4,6 +4,9 @@ class SponsorDiscount < ActiveRecord::Base
 
   belongs_to :sponsor
 
+  validates_presence_of :discount, :sponsor_id
+  validates_numericality_of :sponsor_id
+
 end
 
 

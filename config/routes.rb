@@ -22,7 +22,6 @@ ActionController::Routing::Routes.draw do |map|
     common.resources  :privacies
     common.resources  :feedbacks
     common.resources  :sponsor_discounts
-#    common.resources  :bug_reports
   end
 
   map.namespace :club do |club|

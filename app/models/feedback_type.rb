@@ -4,6 +4,8 @@ class FeedbackType < ActiveRecord::Base
 
   has_many :feedbacks
 
+  validates_presence_of :name
+
 end
 
 # == Schema Information

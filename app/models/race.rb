@@ -4,6 +4,8 @@ class Race < ActiveRecord::Base
 
   belongs_to :race_discipline
 
+  validates_presence_of :name, :date, :place, :race_discipline_id
+
 end
 
 # == Schema Information

@@ -7,7 +7,14 @@ class Sponsor < ActiveRecord::Base
   belongs_to :sponsor_type
   has_many :sonsor_discounts
 
-  validates_presence_of :name
+  validates_presence_of :name, :email, :url, :contact_name, :rank, :active, :active_since, :sponsor_type_id
+  validates_numericality_of :rank, :sponsor_type_id
+
+  validates_format_of :email,
+                      :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i,
+                      :message => 'email must be valid'
+
+  validates_format_of :url, :with => URI::regexp(%w(http https))
 
 end
 

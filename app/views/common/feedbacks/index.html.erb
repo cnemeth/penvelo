@@ -1,6 +1,6 @@
 <div id="listing">
   <h1>Listing Feedback</h1>
-
+<!--
   <div>
     <label for="feedback_type">Select Feedback Type:</label>
     <% form_for :feedback_type do |f| %>
@@ -8,31 +8,25 @@
       <%= radio_button_tag(:feedback_type, "comment") %>&nbsp;<%= label_tag(:feedback_type_comment, "Comment") %>&nbsp;
       <%= radio_button_tag(:feedback_type, "bug report") %>&nbsp;<%= label_tag(:feedback_type_bug_report, "Bug report") %>&nbsp;
       <%= radio_button_tag(:feedback_type, "change request") %>&nbsp;<%= label_tag(:feedback_type_change_request, "Change request") %>&nbsp;
-      <%= radio_button_tag(:feedback_type, "new feature") %>&nbsp;<%= label_tag(:feedback_type_new_feature, "New feature") %>
+      <%= radio_button_tag(:feedback_type, "new feature") %>&nbsp;<%= label_tag(:feedback_type_new_feature, "New feature") %>&nbsp;
     <% end %>
   </div>
-
+-->
   <h3><%= link_to 'New Feedback', new_common_feedback_path %></h3>
-
-  <!-- ><%= render :partial => "radio", :object => "feedback_type" %> -->
 
   <table>
     <tr>
       <th>ID</th>
       <th>Feedback</th>
       <th>Feedback type</th>
-
-      <th>Created At</th>
-      <th>Updated At</th>
+      <th>Date</th>
     </tr>
 
     <% feedbacks.each do |feedback| %>
       <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
         <td><%=h feedback.id %></td>
-        <td><%=h truncate(feedback.feedback.gsub(/<.*?>/,''), :length => 20) %></td>
+        <td><%=h truncate(feedback.feedback, :length => 20) %></td>
         <td><%=h feedback.feedback_type.name %></td>
-
-        <td><%=h feedback.created_at.to_s(:chatty) %></td>
         <td><%=h feedback.updated_at.to_s(:rfc822) %></td>
 
         <td><%= link_to 'Show', common_feedback_path(feedback) %></td>

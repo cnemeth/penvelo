@@ -6,6 +6,9 @@ class RaceResult < ActiveRecord::Base
   belongs_to :race_category
   belongs_to :user
 
+  validates_presence_of :race, :date, :placement, :field_size, :race_discipline_id, :race_category_id, :user_id
+  validates_numericality_of :placement, :field_size, :race_discipline_id, :race_category_id, :user_id
+
 end
 
 # == Schema Information

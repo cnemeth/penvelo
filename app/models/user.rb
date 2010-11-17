@@ -72,13 +72,9 @@ class User < ActiveRecord::Base
     photo.errors.add_to_base("Wrong size") if photo.photo_file_size != nil && photo.photo_file_size > 2.megabytes
   end
 
-
+  validates_presence_of :first_name, :last_name, :date_of_birth, :gender, :member_since, :active, :login, :password, :password_salt
 
 end
-
-
-
-
 
 # == Schema Information
 #

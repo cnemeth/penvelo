@@ -4,6 +4,8 @@ class SponsorType < ActiveRecord::Base
 
   has_many :sponsors
 
+  validates_presence_of :name
+
 end
 
 # == Schema Information

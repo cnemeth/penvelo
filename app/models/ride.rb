@@ -4,6 +4,9 @@ class Ride < ActiveRecord::Base
 
   belongs_to :ride_type
 
+  validates_presence_of :name, :days, :location, :time, :start_point, :description, :disctance, :elevation
+  validates_numericality_of :disctance, :elevation
+
 end
 
 # == Schema Information

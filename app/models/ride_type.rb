@@ -4,6 +4,8 @@ class RideType < ActiveRecord::Base
 
   has_many :rides
 
+  validates_presence_of :name
+
 end
 
 # == Schema Information

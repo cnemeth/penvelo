@@ -6,6 +6,8 @@ class RaceDiscipline < ActiveRecord::Base
   has_many :race_results
   has_and_belongs_to_many :users
 
+  validates_presence_of :name
+
 end
 
 # == Schema Information
