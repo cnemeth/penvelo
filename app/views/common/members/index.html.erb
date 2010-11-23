@@ -1,8 +1,8 @@
 <div id="club_members">
   <h1> Listing Club Members</h1>
   <div id="item_body">
-  <% users = User.find(:all, :order => "last_name ASC")%>
-  <% users.each do |user| %>
+  <% #users = User.find(:all, :order => "last_name ASC")%>
+  <% @users.each do |user| %>
   <div id="listing">
     <table>
       <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
