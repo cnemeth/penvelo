@@ -1,0 +1,9 @@
+<% form_tag request.path, :method => 'get' do %>
+  <p>
+    <% content_tag :label do %>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search", :name => nil %>
+    <% end %>
+  </p>
+<% end %>
+

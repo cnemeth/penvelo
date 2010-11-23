@@ -11,7 +11,14 @@ class Admin::UsersController < ApplicationController
   # GET /admin/users
   # GET /admin/users.xml
   def index
-    @users = User.all
+    #@users = User.all
+
+    # simple search
+    @users = User.last_name_like_all(params[:search].to_s.split).ascend_by_last_name
+
+    # used by current serach form
+    #@search = User.search(params[:search])
+    #@users = @search.paginate( :page => params[:page] )
 
     respond_to do |format|
       format.html # index.html.erb

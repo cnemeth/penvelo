@@ -74,6 +74,14 @@ class User < ActiveRecord::Base
 
   validates_presence_of :first_name, :last_name, :date_of_birth, :gender, :member_since, :active, :login, :password, :password_salt
 
+  # this is for the will_paginate gem
+  def self.search(search, page)
+    paginate  :per_page => 5,
+              :page => page,
+              :conditions => ['last_name like ?', "%#{search}%"],
+              :order => 'last_name'
+  end
+
 end
 
 # == Schema Information
