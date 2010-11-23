@@ -1,6 +1,9 @@
 <div id="club_rides">
 	<h1>Weekly Club Rides</h1>
 
+
+	<h2>Group rides usually start at Canada Rd and Hwy 92 in Belmont as show in map below.</h2>
+	<p><%= render (:partial => 'map', :locals => {:data => '/test.xml'}) %></p>
 	<% ride_types %>
 	<% ride_types.each do | rt | %>
 

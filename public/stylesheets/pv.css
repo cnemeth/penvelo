@@ -237,6 +237,7 @@ body {
 }
 
 #sponsors h2, #club_rides h2, #club_races h2, #news h2{
+    padding-left:    1em;
 	font: 	italic x-large bold;
 	background-color: #c0c0c0;
 
