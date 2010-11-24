@@ -190,7 +190,7 @@ body {
 #video-player{
     height: 250px;
     width:  275px;
-    background:	url(../images/pv_home.png) no-repeat left top;
+    /*background:	url(../images/pv_home.png) no-repeat left top;*/
 }
 
 #race-stats{
