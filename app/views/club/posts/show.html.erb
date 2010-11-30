@@ -5,7 +5,6 @@
   <tr><th>Title</th><td><%=h @post.title %></td></tr>
   <tr><th>Tags</th><td><%=h @post.tags %></td></tr>
   <tr><th>Entry</th><td><%=h @post.entry %></td></tr>
-
   <tr class="<%= cycle('list-line-odd', 'list-line-even') %>"><th>Comments</th><td>
     <ul>
       <% @post.comments.each do |comment| %>
@@ -16,18 +15,9 @@
 </table>
 </div>
 <% form_for [:club, @post, Comment.new] do |f| %>
-
-<p>
-
-
-    <%= f.text_area :entry %>
-
-</p>
-
-   <p><%= f.submit "Add Comment" %></p>
-
+  <p><%= f.text_area :entry %></p>
+  <p><%= f.submit "Add Comment" %></p>
 <% end %>
-
 <p>
   <%= link_to 'Back', club_posts_path %>
 </p>

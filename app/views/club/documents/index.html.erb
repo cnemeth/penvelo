@@ -4,8 +4,7 @@
   <% @documents.each do |doc| %>
     <% @current_document = doc %>
     <tr  class="<%= cycle('list-line-odd', 'list-line-even') %>">
-      <td><%=h link_to "Download" %></td>
-      <td><%=h File.basename(doc) %></td>
+      <td><a href="../assets/docs/<%=h File.basename(doc) %>", target="_blank"><%=h File.basename(doc) %></a></td>
     </tr>
   <% end %>
   </table>

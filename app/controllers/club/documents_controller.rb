@@ -11,9 +11,9 @@ class Club::DocumentsController < ApplicationController
   def index
     @documents = Dir.glob("public/assets/docs/*")
 
-    unless @current_document == nil
-      #download
-    end
+    #unless @current_document == nil
+    #  download
+    #end
   end
 
 private
