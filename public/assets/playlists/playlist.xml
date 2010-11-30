@@ -1,0 +1,23 @@
+<rss version="2.0" xmlns:jwplayer="http://developer.longtailvideo.com/">
+  <channel>
+    <title>Example RSS feed with playlistitem extensions</title>
+    <item>
+
+      <title>First video</title>
+      <enclosure url="/assets/library/flvplayer.flv"/>
+
+      <jwplayer:provider>http</jwplayer:provider>
+      <jwplayer:http.startparam>start</jwplayer:http.startparam>
+    </item>
+
+    <item>
+      <title>Second Video</title>
+      <enclosure url="/assets/library/flvvideo.flv" />
+
+      <jwplayer:provider>http</jwplayer:provider>
+      <jwplayer:http.startparam>starttime</jwplayer:http.startparam>
+    </item>
+
+  </channel>
+</rss>
+

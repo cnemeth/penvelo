@@ -26,6 +26,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.namespace :club do |club|
     club.resources :documents
+    club.resources :posts
   end
 
   map.namespace :admin do |admin|

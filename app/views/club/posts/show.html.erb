@@ -1,0 +1,36 @@
+<h1>Post</h1>
+<div id="listing">
+<table>
+  <tr><th>Date</th><td><%=h @post.created_at %></td></tr>
+  <tr><th>Title</th><td><%=h @post.title %></td></tr>
+  <tr><th>Tags</th><td><%=h @post.tags %></td></tr>
+  <tr><th>Entry</th><td><%=h @post.entry %></td></tr>
+
+  <tr class="<%= cycle('list-line-odd', 'list-line-even') %>"><th>Comments</th><td>
+    <ul>
+      <% for comment in @post.comments %>
+        <li><%=h comment.created_at %><br /><%=h comment.entry %></li><br />
+      <% end %>
+    </ul>
+  </td></tr>
+</table>
+</div>
+<div class="fields">
+<p>
+  <% semantic_form_for([:club, @post]) do |f| %>
+      <%= f.error_messages %>
+      <% f.inputs do %>
+          <p><%= link_to_add_fields "Add Comment", f, :comments %></p>
+          <% f.semantic_fields_for :comments do |builder| %>
+            <%= render "comment_fields", :f => builder %>
+          <% end %>
+
+      <% end %>
+      <%= f.submit "Submit" %>
+   <% end %>
+</p>
+</div>
+<p>
+  <%= link_to 'Back', club_posts_path %> |
+</p>
+

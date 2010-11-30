@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist xmlns="http://xspf.org/ns/0/" version="1">
+  <trackList>
+
+    <track>
+      <title>Track 1</title>
+      <location>/assets/library/flvplayer.flv</location>
+    </track>
+
+    <track>
+      <title>Track 2</title>
+      <location>/assets/library/flvvideo.flv</location>
+    </track>
+
+    <track>
+      <title>Track 3</title>
+      <location>/assets/library/barsandtone.flv</location>
+    </track>
+
+  </trackList>
+</playlist>
+

@@ -1,0 +1,2 @@
+module Club::PostsHelper
+end

@@ -1,0 +1,27 @@
+<div id="listing">
+  <h1>Listing Posts</h1>
+
+  <h3><%= link_to 'New Post', new_club_post_path %></h3>
+
+  <table>
+    <tr>
+      <th>Title</th>
+      <th>Comments</th>
+      <th>Date</th>
+    </tr>
+
+    <% @posts.each do |post| %>
+      <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+        <td><%=h post.title %></td>
+        <td><%=h post.comments.length %></td>
+        <td><%=h post.updated_at.to_s(:rfc822) %></td>
+
+        <td><%= link_to 'Show', club_post_path(post) %></td>
+      </tr>
+    <% end %>
+  </table>
+
+  <h3><%= link_to 'New Post', new_club_post_path %></h3>
+
+</div>
+
