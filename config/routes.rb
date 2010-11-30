@@ -26,7 +26,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.namespace :club do |club|
     club.resources :documents
-    club.resources :posts
+    club.resources :posts, :has_many => :comments
   end
 
   map.namespace :admin do |admin|
