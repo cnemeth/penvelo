@@ -1,4 +1,6 @@
 rails --version 2.3.8
+activemodel --version 3.0.3
+activesupport --version 3.0.3
 acl9 --version '>=0.12.0' --source gemcutter.org
 authlogic --version '>=2.1.5'
 formtastic --version '>=1.1.0.beta'
