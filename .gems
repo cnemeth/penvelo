@@ -1,10 +1,7 @@
 rails --version 2.3.8
-rack --version 1.1.0
-activemodel --version 3.0.3
-activesupport --version 3.0.3
 acl9 --version 0.12.0 --source gemcutter.org
 authlogic --version 2.1.5
-formtastic --version 1.1.0.beta
+formtastic --ignore-dependencies
 annotate --version 2.4.0
 validation_reflection --version 0.3.8
 will_paginate --version 2.3.15 --source gemcutter.org
