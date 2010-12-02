@@ -53,6 +53,6 @@ ActionController::Routing::Routes.draw do |map|
   end
 
   map.admin_home "admin/index", :controller => "admin/home", :action => "index"
-  map.root '/', :controller => "home", :action => "index"
+  map.root :controller => "home", :action => "index"
 end
 
