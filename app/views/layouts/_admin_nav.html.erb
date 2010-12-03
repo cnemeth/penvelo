@@ -10,45 +10,45 @@
 <h2>Members</h2>
 <ul>
 	<li><%= link_to "Member profiles", admin_users_path %></li>
-	<li><%= link_to "Contact Info", :controller => 'contacts', :action => 'index' %></li>
+	<li><%= link_to "Contact Info", admin_contacts_path %></li>
 </ul>
 
 <h2>News and Events</h2>
 <ul>
-	<li><%= link_to "Contents (news, events, etc.)", :controller => 'contents', :action => 'index' %></li>
+	<li><%= link_to "Contents (news, events, etc.)", admin_contents_path %></li>
 
 <h2>Sponsors</h2>
 <ul>
-	<li><%= link_to "Club Sponsors", :controller => 'sponsors', :action => 'index' %></li>
-	<li><%= link_to "Sponsors Discounts", :controller => 'sponsor_discounts', :action => 'index' %></li>
+	<li><%= link_to "Sponsors", admin_sponsors_path %></li>
+	<li><%= link_to "Sponsors Discounts", admin_sponsor_discounts_path %></li>
 
 </ul>
 <h2>Races and Rides</h2>
 <ul>
-	<li><%= link_to "Club Rides", :controller => 'rides', :action => 'index' %></li>
+	<li><%= link_to "Club Rides", admin_rides_path %></li>
 
-	<li><%= link_to "Club Races", :controller => 'races', :action => 'index' %></li>
+	<li><%= link_to "Club Races", admin_races_path %></li>
 
-	<li><%= link_to "Race Results", :controller => 'race_results', :action => 'index' %></li>
+	<li><%= link_to "Race Results", admin_race_results_path %></li>
 
 </ul>
 
 <h2>Feedback</h2>
 <ul>
- 	<li><%= link_to "Feedback", :controller => 'feedbacks', :action => 'index' %></li>
+ 	<li><%= link_to "Feedback", admin_feedbacks_path %></li>
 </ul>
 
 <h2>Miscellaneous</h2>
 <ul>
-  <li><%= link_to "Roles", :controller => 'roles', :action => 'index' %></li>
-  <li><%= link_to "Positions", :controller => 'positions', :action => 'index' %></li>
-	<li><%= link_to "IM Types", :controller => 'im_types', :action => 'index' %></li>
-	<li><%= link_to "Content Types", :controller => 'content_types', :action => 'index' %></li>
+  <li><%= link_to "Roles", admin_roles_path %></li>
+  <li><%= link_to "Positions", admin_positions_path %></li>
+	<li><%= link_to "IM Types", admin_im_types_path %></li>
+	<li><%= link_to "Content Types", admin_content_types_path %></li>
 </ul>
-  <li><%= link_to "Sponsor Types", :controller => 'sponsor_types', :action => 'index' %></li>
-  <li><%= link_to "Ride Types", :controller => 'ride_types', :action => 'index' %></li>
-  <li><%= link_to "Race Disciplines", :controller => 'race_disciplines', :action => 'index' %></li>
-	<li><%= link_to "Race Categories", :controller => 'race_categories', :action => 'index' %></li>
-  <li><%= link_to "Feedback Types", :controller => 'feedback_types', :action => 'index' %></li>
+  <li><%= link_to "Sponsor Types", admin_sponsor_types_path %></li>
+  <li><%= link_to "Ride Types", admin_ride_types_path %></li>
+  <li><%= link_to "Race Disciplines", admin_race_disciplines_path %></li>
+	<li><%= link_to "Race Categories", admin_race_categories_path %></li>
+  <li><%= link_to "Feedback Types", admin_feedback_types_path %></li>
 </ul>
 

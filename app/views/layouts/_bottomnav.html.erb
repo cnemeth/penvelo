@@ -1,6 +1,8 @@
 <ul>
 	<li><%= link_to "Legal", common_legals_path %></li>
 	<li><%= link_to "Privacy", common_privacies_path %></li>
-	<li><%= link_to "Feedback", common_feedbacks_path %></li>
+	<% show_to :current_user do %>
+	  <li><%= link_to "Feedback", common_feedbacks_path %></li>
+	<% end %>
 </ul>
 
