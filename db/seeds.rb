@@ -1191,7 +1191,6 @@ ImType.create(
 Race.delete_all
 Race.create(
   :name => 'San Bruno Hill Climb',
-	:date =>  ,
   :organizer => 'Pat McNulty, Penninsula Velo Club',
   :place => 'San Bruno, CA',
   :start_location => "East side of San Bruno Mt. in Brisbane
@@ -1209,7 +1208,6 @@ distance is 3.5 miles.</p>},
 
 Race.create(
   :name => 'Fidelity Investments Burlingame Criterium',
-	:date => ,
   :organizer => 'Travis Ma, Penninsula Velo Club',
   :place => 'Burlingame, CA',
   :start_location => 'Lorton & Burlingame Ave.',
@@ -1227,7 +1225,7 @@ ride.</p>},
 
 Race.create(
   :name => %{Ryan Phua Memorial Kids' Ride (Burlingame)},
-	:date => ,
+
   :organizer => 'Travis Ma, Penninsula Velo Club',
   :place => 'Burlingame, CA',
   :start_location => 'Lorton & Burlingame Ave.',
