@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Module: Admin</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Module</strong></td>
+          <td class="class-name-in-header">Admin</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+            </td>
+        </tr>
+
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+
+
+   </div>
+
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+    <div id="class-list">
+      <h3 class="section-bar">Classes and Modules</h3>
+
+      Module <a href="Admin/ClubsHelper.html" class="link">Admin::ClubsHelper</a><br />
+Module <a href="Admin/ContactsHelper.html" class="link">Admin::ContactsHelper</a><br />
+Module <a href="Admin/ContentTypesHelper.html" class="link">Admin::ContentTypesHelper</a><br />
+Module <a href="Admin/ContentsHelper.html" class="link">Admin::ContentsHelper</a><br />
+Module <a href="Admin/FeedbackTypesHelper.html" class="link">Admin::FeedbackTypesHelper</a><br />
+Module <a href="Admin/FeedbacksHelper.html" class="link">Admin::FeedbacksHelper</a><br />
+Module <a href="Admin/HomeHelper.html" class="link">Admin::HomeHelper</a><br />
+Module <a href="Admin/ImTypesHelper.html" class="link">Admin::ImTypesHelper</a><br />
+Module <a href="Admin/PositionsHelper.html" class="link">Admin::PositionsHelper</a><br />
+Module <a href="Admin/RaceCategoriesHelper.html" class="link">Admin::RaceCategoriesHelper</a><br />
+Module <a href="Admin/RaceDisciplinesHelper.html" class="link">Admin::RaceDisciplinesHelper</a><br />
+Module <a href="Admin/RaceResultsHelper.html" class="link">Admin::RaceResultsHelper</a><br />
+Module <a href="Admin/RacesHelper.html" class="link">Admin::RacesHelper</a><br />
+Module <a href="Admin/RideTypesHelper.html" class="link">Admin::RideTypesHelper</a><br />
+Module <a href="Admin/RidesHelper.html" class="link">Admin::RidesHelper</a><br />
+Module <a href="Admin/RolesHelper.html" class="link">Admin::RolesHelper</a><br />
+Module <a href="Admin/SponsorDiscountsHelper.html" class="link">Admin::SponsorDiscountsHelper</a><br />
+Module <a href="Admin/SponsorTypesHelper.html" class="link">Admin::SponsorTypesHelper</a><br />
+Module <a href="Admin/SponsorsHelper.html" class="link">Admin::SponsorsHelper</a><br />
+Module <a href="Admin/UsersHelper.html" class="link">Admin::UsersHelper</a><br />
+Class <a href="Admin/ClubsController.html" class="link">Admin::ClubsController</a><br />
+Class <a href="Admin/ContactsController.html" class="link">Admin::ContactsController</a><br />
+Class <a href="Admin/ContentTypesController.html" class="link">Admin::ContentTypesController</a><br />
+Class <a href="Admin/ContentsController.html" class="link">Admin::ContentsController</a><br />
+Class <a href="Admin/FeedbackTypesController.html" class="link">Admin::FeedbackTypesController</a><br />
+Class <a href="Admin/FeedbacksController.html" class="link">Admin::FeedbacksController</a><br />
+Class <a href="Admin/HomeController.html" class="link">Admin::HomeController</a><br />
+Class <a href="Admin/ImTypesController.html" class="link">Admin::ImTypesController</a><br />
+Class <a href="Admin/PositionsController.html" class="link">Admin::PositionsController</a><br />
+Class <a href="Admin/RaceCategoriesController.html" class="link">Admin::RaceCategoriesController</a><br />
+Class <a href="Admin/RaceDisciplinesController.html" class="link">Admin::RaceDisciplinesController</a><br />
+Class <a href="Admin/RaceResultsController.html" class="link">Admin::RaceResultsController</a><br />
+Class <a href="Admin/RacesController.html" class="link">Admin::RacesController</a><br />
+Class <a href="Admin/RideTypesController.html" class="link">Admin::RideTypesController</a><br />
+Class <a href="Admin/RidesController.html" class="link">Admin::RidesController</a><br />
+Class <a href="Admin/RolesController.html" class="link">Admin::RolesController</a><br />
+Class <a href="Admin/SponsorDiscountsController.html" class="link">Admin::SponsorDiscountsController</a><br />
+Class <a href="Admin/SponsorTypesController.html" class="link">Admin::SponsorTypesController</a><br />
+Class <a href="Admin/SponsorsController.html" class="link">Admin::SponsorsController</a><br />
+Class <a href="Admin/UsersController.html" class="link">Admin::UsersController</a><br />
+
+    </div>
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>
