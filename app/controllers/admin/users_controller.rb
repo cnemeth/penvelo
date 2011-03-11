@@ -91,6 +91,11 @@ class Admin::UsersController < ApplicationController
   # DELETE /admin/users/1.xml
   def destroy
     @user = User.find(params[:id])
+
+    if @user.contacts.present?
+      @user.contacts.destroy
+    end
+
     @user.destroy
 
     respond_to do |format|
